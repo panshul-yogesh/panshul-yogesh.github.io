@@ -7,584 +7,371 @@
     <title>STC India - Connecting Technical Communicators</title>
     <meta name="description"
         content="STC India is a chapter of the Society for Technical Communication, fostering a learning network for professionals involved in technical writing, UX writing, content design, and documentation.">
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-
-    <!-- Custom Styles -->
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .line-clamp-2 {
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .line-clamp-3 {
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .gradient-bg {
-            background: linear-gradient(135deg, #f0fdfa 0%, #e0f2fe 50%, #faf5ff 100%);
-        }
-
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-
-        .card-hover:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        }
-
-        .btn-gradient {
-            background: linear-gradient(135deg, #14b8a6 0%, #2563eb 100%);
-        }
-
-        .btn-gradient:hover {
-            background: linear-gradient(135deg, #0f766e 0%, #1d4ed8 100%);
-        }
-
-        .text-gradient {
-            background: linear-gradient(135deg, #14b8a6 0%, #9333ea 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .mobile-menu {
-            transform: translateX(-100%);
-            transition: transform 0.3s ease;
-        }
-
-        .mobile-menu.active {
-            transform: translateX(0);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-white">
+<body>
     <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
                 <!-- Logo -->
-                <div class="flex items-center space-x-3">
-                    <div
-                        class="w-10 h-10 bg-gradient-to-br from-teal-500 to-blue-600 rounded-lg flex items-center justify-center">
-                        <!-- <span class="text-white font-bold text-lg">S</span> -->
-                        <img src="./assets/logo.jpg" alt="STC India Logo" class="w-10 h-10 rounded-lg">
+                <div class="logo-section">
+                    <div class="logo-container">
+                        <img src="./assets/logo.jpg" alt="STC India Logo" class="logo-img">
                     </div>
-                    <div>
-                        <h1 class="text-xl font-bold text-gray-900">STC INDIA</h1>
-                        <p class="text-xs text-gray-600">Connecting Technical Communicators</p>
+                    <div class="logo-text">
+                        <h1 class="logo-title">STC INDIA</h1>
+                        <p class="logo-subtitle">Connecting Technical Communicators</p>
                     </div>
                 </div>
-
                 <!-- Desktop Navigation -->
-                <nav class="hidden md:flex items-center space-x-8">
-                    <a href="#about" class="text-gray-700 hover:text-teal-600 font-medium transition-colors">About
-                        Us</a>
-                    <a href="#events" class="text-gray-700 hover:text-teal-600 font-medium transition-colors">Events</a>
-                    <a href="#blog" class="text-gray-700 hover:text-teal-600 font-medium transition-colors">Blogs</a>
-                    <a href="#learning"
-                        class="text-gray-700 hover:text-teal-600 font-medium transition-colors">Learning</a>
-                    <a href="#focus" class="text-gray-700 hover:text-teal-600 font-medium transition-colors">Focus
-                        Areas</a>
-                    <a href="#contact"
-                        class="text-gray-700 hover:text-teal-600 font-medium transition-colors">Contact</a>
+                <nav class="desktop-nav">
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#events" class="nav-link">Events</a>
+                    <a href="#blog" class="nav-link">Blogs</a>
+                    <a href="#learning" class="nav-link">Learning</a>
+                    <a href="#focus" class="nav-link">Focus Areas</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </nav>
-
                 <!-- CTA Button -->
-                <div class="hidden md:block">
-                    <button
-                        class="btn-gradient text-white rounded-full px-6 py-2 font-medium transition-all duration-300">
+                <div class="desktop-cta">
+                    <button class="btn-primary">
                         Join Google Group
                     </button>
                 </div>
-
                 <!-- Mobile menu button -->
-                <button class="md:hidden" id="mobile-menu-btn">
-                    <i data-lucide="menu" class="h-6 w-6"></i>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="icon"></i>
                 </button>
             </div>
-
             <!-- Mobile Navigation -->
-            <div class="md:hidden py-4 border-t hidden" id="mobile-menu">
-                <div class="flex flex-col space-y-4">
-                    <a href="#about" class="text-gray-700 hover:text-teal-600 font-medium">About Us</a>
-                    <a href="#events" class="text-gray-700 hover:text-teal-600 font-medium">Events</a>
-                    <a href="#blog" class="text-gray-700 hover:text-teal-600 font-medium">Blogs</a>
-                    <a href="#learning" class="text-gray-700 hover:text-teal-600 font-medium">Learning</a>
-                    <a href="#focus" class="text-gray-700 hover:text-teal-600 font-medium">Focus Areas</a>
-                    <a href="#contact" class="text-gray-700 hover:text-teal-600 font-medium">Contact</a>
-                    <button class="btn-gradient text-white rounded-full w-full py-2 font-medium">Join Google
-                        Group</button>
+            <div class="mobile-nav hidden" id="mobile-menu">
+                <div class="mobile-nav-content">
+                    <a href="#about" class="mobile-nav-link">About Us</a>
+                    <a href="#events" class="mobile-nav-link">Events</a>
+                    <a href="#blog" class="mobile-nav-link">Blogs</a>
+                    <a href="#learning" class="mobile-nav-link">Learning</a>
+                    <a href="#focus" class="mobile-nav-link">Focus Areas</a>
+                    <a href="#contact" class="mobile-nav-link">Contact</a>
+                    <button class="btn-primary mobile-cta-btn">Join Google Group</button>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative gradient-bg py-20 lg:py-32">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">
                         Empowering Technical Communicators
                         <span class="text-gradient"> Across India</span>
                     </h1>
-                    <p class="text-xl text-gray-600 mt-6 leading-relaxed">
+                    <p class="hero-description">
+                        The premier global community of technical writers, at the forefront of excellence and
+                        leadership. STC India is not just
+                        the first and largest network of its kind in India; we are the pinnacle of premium professional
+                        growth, fostering a
+                        dynamic and collaborative environment where industry leaders, emerging talents, and visionary
+                        thinkers converge. Join us
+                        to unlock unparalleled opportunities, access cutting-edge resources, and connect with a vibrant
+                        network of experts who
+                        are shaping the future of technical communication worldwide.
+                        <br>
+                        <br>
                         Join our thriving community of content professionals, educators, and innovators. Connect, learn,
                         and grow with fellow technical communicators.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4 mt-8">
-                        <button
-                            class="btn-gradient text-white rounded-full px-8 py-3 font-medium flex items-center justify-center transition-all duration-300">
-                            <i data-lucide="users" class="w-5 h-5 mr-2"></i>
-                            Join Our Google Group
-                            <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+                    <div class="hero-buttons">
+                        <button class="btn-primary hero-btn">
+                            <i data-lucide="users" class="btn-icon"></i>
+                            Join STC channels
+                            <i data-lucide="arrow-right" class="btn-icon"></i>
                         </button>
-                        <button
-                            class="border-2 border-purple-500 text-purple-600 hover:bg-purple-50 rounded-full px-8 py-3 font-medium flex items-center justify-center transition-all duration-300">
-                            <i data-lucide="calendar" class="w-5 h-5 mr-2"></i>
+                        <button class="btn-secondary hero-btn">
+                            <i data-lucide="calendar" class="btn-icon"></i>
                             Upcoming Events
                         </button>
+                        <button class="btn-secondary hero-btn">
+                            <i data-lucide="linkedin" class="btn-icon"></i>
+                            Linkedin
+                        </button>
+                        <button class="btn-secondary hero-btn">
+                            <i data-lucide="mail" class="btn-icon"></i>
+                            Mailing list
+                        </button>
+                        <button class="btn-secondary hero-btn">
+                            <i data-lucide="message-circle" class="btn-icon"></i>
+                            Whatsapp
+                        </button>
                     </div>
-                    <div class="flex items-center gap-8 mt-12">
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-teal-600">500+</div>
-                            <div class="text-gray-600">Members</div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number stat-teal">500+</div>
+                            <div class="stat-label">Members</div>
                         </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-blue-600">50+</div>
-                            <div class="text-gray-600">Events</div>
+                        <div class="stat-item">
+                            <div class="stat-number stat-blue">50+</div>
+                            <div class="stat-label">Events</div>
                         </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-purple-600">100+</div>
-                            <div class="text-gray-600">Resources</div>
+                        <div class="stat-item">
+                            <div class="stat-number stat-purple">100+</div>
+                            <div class="stat-label">Resources</div>
                         </div>
                     </div>
                 </div>
-                <div class="relative">
-                    <div class="relative z-10">
+                <div class="hero-image-container">
+                    <div class="hero-image-wrapper">
                         <img src="./assets/collab.png" height="600" width="500"
-                            alt="Technical communicators collaborating" class="rounded-2xl shadow-2xl">
+                            alt="Technical communicators collaborating" class="hero-image">
                     </div>
-                    <div
-                        class="absolute -top-4 -right-4 w-full h-full bg-gradient-to-br from-teal-200 to-purple-200 rounded-2xl -z-10">
-                    </div>
+                    <div class="hero-image-bg"></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">About STC India</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About STC India</h2>
+                <p class="section-description">
                     STC India is a chapter of the Society for Technical Communication, fostering a learning network for
                     professionals involved in technical writing, UX writing, content design, documentation, and more.
                 </p>
             </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div
-                    class="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg p-8 text-center">
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-teal-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="target" class="w-8 h-8 text-white"></i>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i data-lucide="target" class="icon-large"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Mission</h3>
-                    <p class="text-gray-600">Foster a learning network for technical communication professionals across
-                        India</p>
+                    <h3 class="card-title">Mission</h3>
+                    <p class="card-description">Foster a learning network for technical communication professionals
+                        across India</p>
                 </div>
-
-                <div
-                    class="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg p-8 text-center">
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-teal-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="heart" class="w-8 h-8 text-white"></i>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i data-lucide="heart" class="icon-large"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Values</h3>
-                    <p class="text-gray-600">Inclusivity, collaboration, and continuous learning in our community</p>
+                    <h3 class="card-title">Values</h3>
+                    <p class="card-description">Inclusivity, collaboration, and continuous learning in our community</p>
                 </div>
-
-                <div
-                    class="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg p-8 text-center">
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-teal-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="lightbulb" class="w-8 h-8 text-white"></i>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i data-lucide="lightbulb" class="icon-large"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Vision</h3>
-                    <p class="text-gray-600">Be the leading platform for technical communication excellence in India</p>
+                    <h3 class="card-title">Vision</h3>
+                    <p class="card-description">Be the leading platform for technical communication excellence in India
+                    </p>
                 </div>
-
-                <div
-                    class="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg p-8 text-center">
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-teal-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="users" class="w-8 h-8 text-white"></i>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i data-lucide="users" class="icon-large"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Community</h3>
-                    <p class="text-gray-600">Connect professionals from diverse backgrounds and experience levels</p>
+                    <h3 class="card-title">Community</h3>
+                    <p class="card-description">Connect professionals from diverse backgrounds and experience levels</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Events Section -->
-    <section id="events" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Upcoming Events</h2>
-                <p class="text-xl text-gray-600">Join our workshops, webinars, and networking events to enhance your
+    <section id="events" class="events-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Upcoming Events</h2>
+                <p class="section-description">Join our workshops, webinars, and networking events to enhance your
                     skills</p>
             </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="events-grid">
                 <!-- Event 1 -->
-                <div class="bg-white overflow-hidden hover:shadow-xl transition-shadow duration-300 rounded-lg">
-                    <div class="relative">
+                <div class="event-card">
+                    <div class="event-image-container">
                         <img src="./assets/event1.jpg" height="200" width="300" alt="Technical Writing Workshop"
-                            class="w-full h-48 object-cover">
-                        <div
-                            class="absolute top-4 left-4 bg-white rounded-full px-3 py-1 text-sm font-medium text-teal-600">
+                            class="event-image">
+                        <div class="event-date-badge">
                             March 15, 2024
                         </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Technical Writing Workshop</h3>
-                        <div class="space-y-2 mb-4">
-                            <div class="flex items-center text-gray-600">
-                                <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
-                                <span class="text-sm">2:00 PM - 5:00 PM</span>
+                    <div class="event-content">
+                        <h3 class="event-title">Technical Writing Workshop</h3>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i data-lucide="calendar" class="detail-icon"></i>
+                                <span class="detail-text">2:00 PM - 5:00 PM</span>
                             </div>
-                            <div class="flex items-center text-gray-600">
-                                <i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>
-                                <span class="text-sm">Virtual Event</span>
+                            <div class="event-detail">
+                                <i data-lucide="map-pin" class="detail-icon"></i>
+                                <span class="detail-text">Virtual Event</span>
                             </div>
-                            <div class="flex items-center text-gray-600">
-                                <i data-lucide="users" class="w-4 h-4 mr-2"></i>
-                                <span class="text-sm">150 registered</span>
+                            <div class="event-detail">
+                                <i data-lucide="users" class="detail-icon"></i>
+                                <span class="detail-text">150 registered</span>
                             </div>
                         </div>
-                        <div class="border-t pt-4 mb-4">
-                            <p class="font-medium text-gray-900">Dr. Priya Sharma</p>
-                            <p class="text-sm text-gray-600">Senior Technical Writer, Microsoft</p>
+                        <div class="event-speaker">
+                            <p class="speaker-name">Dr. Priya Sharma</p>
+                            <p class="speaker-title">Senior Technical Writer, Microsoft</p>
                         </div>
-                        <button
-                            class="w-full btn-gradient text-white rounded-full py-2 font-medium flex items-center justify-center">
+                        <button class="btn-primary event-btn">
                             Register Now
-                            <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                            <i data-lucide="arrow-right" class="btn-icon"></i>
                         </button>
                     </div>
                 </div>
-
                 <!-- Event 2 -->
-                <div class="bg-white overflow-hidden hover:shadow-xl transition-shadow duration-300 rounded-lg">
-                    <div class="relative">
+                <div class="event-card">
+                    <div class="event-image-container">
                         <img src="./assets/event2.jpg" height="200" width="300" alt="UX Writing Masterclass"
-                            class="w-full h-48 object-cover">
-                        <div
-                            class="absolute top-4 left-4 bg-white rounded-full px-3 py-1 text-sm font-medium text-teal-600">
+                            class="event-image">
+                        <div class="event-date-badge">
                             March 22, 2024
                         </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">UX Writing Masterclass</h3>
-                        <div class="space-y-2 mb-4">
-                            <div class="flex items-center text-gray-600">
-                                <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
-                                <span class="text-sm">10:00 AM - 1:00 PM</span>
+                    <div class="event-content">
+                        <h3 class="event-title">UX Writing Masterclass</h3>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i data-lucide="calendar" class="detail-icon"></i>
+                                <span class="detail-text">10:00 AM - 1:00 PM</span>
                             </div>
-                            <div class="flex items-center text-gray-600">
-                                <i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>
-                                <span class="text-sm">Bangalore</span>
+                            <div class="event-detail">
+                                <i data-lucide="map-pin" class="detail-icon"></i>
+                                <span class="detail-text">Bangalore</span>
                             </div>
-                            <div class="flex items-center text-gray-600">
-                                <i data-lucide="users" class="w-4 h-4 mr-2"></i>
-                                <span class="text-sm">80 registered</span>
+                            <div class="event-detail">
+                                <i data-lucide="users" class="detail-icon"></i>
+                                <span class="detail-text">80 registered</span>
                             </div>
                         </div>
-                        <div class="border-t pt-4 mb-4">
-                            <p class="font-medium text-gray-900">Rahul Gupta</p>
-                            <p class="text-sm text-gray-600">UX Writer, Google</p>
+                        <div class="event-speaker">
+                            <p class="speaker-name">Rahul Gupta</p>
+                            <p class="speaker-title">UX Writer, Google</p>
                         </div>
-                        <button
-                            class="w-full btn-gradient text-white rounded-full py-2 font-medium flex items-center justify-center">
+                        <button class="btn-primary event-btn">
                             Register Now
-                            <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                            <i data-lucide="arrow-right" class="btn-icon"></i>
                         </button>
                     </div>
                 </div>
-
                 <!-- Event 3 -->
-                <div class="bg-white overflow-hidden hover:shadow-xl transition-shadow duration-300 rounded-lg">
-                    <div class="relative">
+                <div class="event-card">
+                    <div class="event-image-container">
                         <img src="./assets/event3.jpg" height="200" width="300" alt="API Documentation Best Practices"
-                            class="w-full h-48 object-cover">
-                        <div
-                            class="absolute top-4 left-4 bg-white rounded-full px-3 py-1 text-sm font-medium text-teal-600">
+                            class="event-image">
+                        <div class="event-date-badge">
                             March 29, 2024
                         </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">API Documentation Best Practices</h3>
-                        <div class="space-y-2 mb-4">
-                            <div class="flex items-center text-gray-600">
-                                <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
-                                <span class="text-sm">3:00 PM - 6:00 PM</span>
+                    <div class="event-content">
+                        <h3 class="event-title">API Documentation Best Practices</h3>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i data-lucide="calendar" class="detail-icon"></i>
+                                <span class="detail-text">3:00 PM - 6:00 PM</span>
                             </div>
-                            <div class="flex items-center text-gray-600">
-                                <i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>
-                                <span class="text-sm">Virtual Event</span>
+                            <div class="event-detail">
+                                <i data-lucide="map-pin" class="detail-icon"></i>
+                                <span class="detail-text">Virtual Event</span>
                             </div>
-                            <div class="flex items-center text-gray-600">
-                                <i data-lucide="users" class="w-4 h-4 mr-2"></i>
-                                <span class="text-sm">200 registered</span>
+                            <div class="event-detail">
+                                <i data-lucide="users" class="detail-icon"></i>
+                                <span class="detail-text">200 registered</span>
                             </div>
                         </div>
-                        <div class="border-t pt-4 mb-4">
-                            <p class="font-medium text-gray-900">Sarah Johnson</p>
-                            <p class="text-sm text-gray-600">Documentation Lead, Stripe</p>
+                        <div class="event-speaker">
+                            <p class="speaker-name">Sarah Johnson</p>
+                            <p class="speaker-title">Documentation Lead, Stripe</p>
                         </div>
-                        <button
-                            class="w-full btn-gradient text-white rounded-full py-2 font-medium flex items-center justify-center">
+                        <button class="btn-primary event-btn">
                             Register Now
-                            <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                            <i data-lucide="arrow-right" class="btn-icon"></i>
                         </button>
                     </div>
                 </div>
             </div>
-
-            <div class="text-center mt-12">
-                <button
-                    class="border-2 border-teal-500 text-teal-600 hover:bg-teal-50 rounded-full px-8 py-3 font-medium transition-all duration-300">
+            <div class="section-cta">
+                <button class="btn-outline">
                     View All Events
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blog" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Latest from Our Blog</h2>
-                <p class="text-xl text-gray-600">Insights, tips, and trends in technical communication</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Blog Post 1 -->
-                <div class="bg-white overflow-hidden hover:shadow-xl transition-shadow duration-300 rounded-lg">
-                    <div class="relative">
-                        <img src="./assets/blog1.jpg" height="200" width="400"
-                            alt="The Future of Technical Writing in AI Era" class="w-full h-48 object-cover">
-                        <div
-                            class="absolute top-4 left-4 bg-purple-500 text-white rounded-full px-3 py-1 text-sm font-medium">
-                            Industry Trends
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2">The Future of Technical Writing in
-                            AI Era</h3>
-                        <p class="text-gray-600 mb-4 line-clamp-3">Exploring how artificial intelligence is transforming
-                            the landscape of technical communication and what it means for writers.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
-                            <div class="flex items-center">
-                                <i data-lucide="user" class="w-4 h-4 mr-1"></i>
-                                <span>Anita Patel</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i data-lucide="clock" class="w-4 h-4 mr-1"></i>
-                                <span>5 min read</span>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">March 10, 2024</span>
-                            <button class="text-teal-600 hover:text-teal-700 p-0 flex items-center">
-                                Read More
-                                <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Blog Post 2 -->
-                <div class="bg-white overflow-hidden hover:shadow-xl transition-shadow duration-300 rounded-lg">
-                    <div class="relative">
-                        <img src="./assets/blog2.jpg" height="200" width="400" alt="Building Inclusive Documentation"
-                            class="w-full h-48 object-cover">
-                        <div
-                            class="absolute top-4 left-4 bg-purple-500 text-white rounded-full px-3 py-1 text-sm font-medium">
-                            Best Practices
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2">Building Inclusive Documentation
-                        </h3>
-                        <p class="text-gray-600 mb-4 line-clamp-3">Best practices for creating documentation that serves
-                            diverse audiences and promotes accessibility in technical content.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
-                            <div class="flex items-center">
-                                <i data-lucide="user" class="w-4 h-4 mr-1"></i>
-                                <span>Rajesh Kumar</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i data-lucide="clock" class="w-4 h-4 mr-1"></i>
-                                <span>7 min read</span>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">March 8, 2024</span>
-                            <button class="text-teal-600 hover:text-teal-700 p-0 flex items-center">
-                                Read More
-                                <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Blog Post 3 -->
-                <div class="bg-white overflow-hidden hover:shadow-xl transition-shadow duration-300 rounded-lg">
-                    <div class="relative">
-                        <img src="./assets/blog3.jpg" height="200" width="400"
-                            alt="API Documentation That Developers Love" class="w-full h-48 object-cover">
-                        <div
-                            class="absolute top-4 left-4 bg-purple-500 text-white rounded-full px-3 py-1 text-sm font-medium">
-                            API Documentation
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2">API Documentation That Developers
-                            Love</h3>
-                        <p class="text-gray-600 mb-4 line-clamp-3">Learn the key principles and practical tips for
-                            creating API documentation that truly helps developers succeed.</p>
-                        <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
-                            <div class="flex items-center">
-                                <i data-lucide="user" class="w-4 h-4 mr-1"></i>
-                                <span>Meera Singh</span>
-                            </div>
-                            <div class="flex items-center">
-                                <i data-lucide="clock" class="w-4 h-4 mr-1"></i>
-                                <span>6 min read</span>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">March 5, 2024</span>
-                            <button class="text-teal-600 hover:text-teal-700 p-0 flex items-center">
-                                Read More
-                                <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-12">
-                <button
-                    class="border-2 border-purple-500 text-purple-600 hover:bg-purple-50 rounded-full px-8 py-3 font-medium transition-all duration-300">
-                    View All Posts
-                </button>
-            </div>
-        </div>
-    </section>
-
     <!-- Learning Section -->
-    <section id="learning" class="py-20 gradient-bg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Learning Resources</h2>
-                <p class="text-xl text-gray-600">Curated resources to help you grow as a technical communicator</p>
+    <section id="learning" class="learning-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Learning Resources</h2>
+                <p class="section-description">Curated resources to help you grow as a technical communicator</p>
             </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="learning-grid">
                 <!-- Resource 1 -->
-                <div class="bg-white border-0 shadow-lg card-hover rounded-lg p-8 text-center">
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-teal-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="play" class="w-8 h-8 text-white"></i>
+                <div class="learning-card">
+                    <div class="learning-icon learning-icon-teal">
+                        <i data-lucide="play" class="icon-large"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Live & Recorded Sessions</h3>
-                    <p class="text-gray-600 mb-4">Access our library of expert-led webinars covering various aspects of
+                    <h3 class="card-title">Live & Recorded Sessions</h3>
+                    <p class="card-description">Access our library of expert-led webinars covering various aspects of
                         technical communication.</p>
-                    <div class="text-sm font-medium text-teal-600 mb-4">25+ Sessions</div>
-                    <button
-                        class="w-full border border-gray-300 rounded-full py-2 font-medium hover:bg-gray-50 transition-colors">
+                    <div class="resource-count">25+ Sessions</div>
+                    <button class="btn-outline-full">
                         Explore Webinars
                     </button>
                 </div>
-
                 <!-- Resource 2 -->
-                <div class="bg-white border-0 shadow-lg card-hover rounded-lg p-8 text-center">
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="book-open" class="w-8 h-8 text-white"></i>
+                <div class="learning-card">
+                    <div class="learning-icon learning-icon-purple">
+                        <i data-lucide="book-open" class="icon-large"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Comprehensive Guides</h3>
-                    <p class="text-gray-600 mb-4">Download detailed guides and handbooks written by industry experts and
+                    <h3 class="card-title">Comprehensive Guides</h3>
+                    <p class="card-description">Download detailed guides and handbooks written by industry experts and
                         practitioners.</p>
-                    <div class="text-sm font-medium text-teal-600 mb-4">15+ Guides</div>
-                    <button
-                        class="w-full border border-gray-300 rounded-full py-2 font-medium hover:bg-gray-50 transition-colors">
+                    <div class="resource-count">15+ Guides</div>
+                    <button class="btn-outline-full">
                         Explore E-books
                     </button>
                 </div>
-
                 <!-- Resource 3 -->
-                <div class="bg-white border-0 shadow-lg card-hover rounded-lg p-8 text-center">
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="download" class="w-8 h-8 text-white"></i>
+                <div class="learning-card">
+                    <div class="learning-icon learning-icon-orange">
+                        <i data-lucide="download" class="icon-large"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Templates & Checklists</h3>
-                    <p class="text-gray-600 mb-4">Ready-to-use templates, checklists, and frameworks for your technical
+                    <h3 class="card-title">Templates & Checklists</h3>
+                    <p class="card-description">Ready-to-use templates, checklists, and frameworks for your technical
                         writing projects.</p>
-                    <div class="text-sm font-medium text-teal-600 mb-4">30+ Resources</div>
-                    <button
-                        class="w-full border border-gray-300 rounded-full py-2 font-medium hover:bg-gray-50 transition-colors">
+                    <div class="resource-count">30+ Resources</div>
+                    <button class="btn-outline-full">
                         Explore Best Practices
                     </button>
                 </div>
-
                 <!-- Resource 4 -->
-                <div class="bg-white border-0 shadow-lg card-hover rounded-lg p-8 text-center">
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="users" class="w-8 h-8 text-white"></i>
+                <div class="learning-card">
+                    <div class="learning-icon learning-icon-green">
+                        <i data-lucide="users" class="icon-large"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Peer Learning</h3>
-                    <p class="text-gray-600 mb-4">Connect with fellow professionals, share experiences, and learn from
+                    <h3 class="card-title">Peer Learning</h3>
+                    <p class="card-description">Connect with fellow professionals, share experiences, and learn from
                         each other.</p>
-                    <div class="text-sm font-medium text-teal-600 mb-4">500+ Members</div>
-                    <button
-                        class="w-full border border-gray-300 rounded-full py-2 font-medium hover:bg-gray-50 transition-colors">
+                    <div class="resource-count">500+ Members</div>
+                    <button class="btn-outline-full">
                         Explore Community
                     </button>
                 </div>
             </div>
-
-            <div class="mt-16 bg-white rounded-2xl shadow-xl p-8 md:p-12">
-                <div class="text-center">
-                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Ready to Start Learning?</h3>
-                    <p class="text-xl text-gray-600 mb-8">
+            <div class="learning-cta">
+                <div class="cta-content">
+                    <h3 class="cta-title">Ready to Start Learning?</h3>
+                    <p class="cta-description">
                         Join our community and get access to all learning resources, exclusive content, and networking
                         opportunities.
                     </p>
-                    <button class="btn-gradient text-white rounded-full px-12 py-3 font-medium text-lg">
+                    <button class="btn-primary cta-btn">
                         Join STC India Today
                     </button>
                 </div>
@@ -592,193 +379,80 @@
         </div>
     </section>
 
-    <!-- Focus Areas Section -->
-    <section id="focus" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Focus Areas</h2>
-                <p class="text-xl text-gray-600">Specialized domains where our community excels and shares expertise</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Focus Area 1 -->
-                <div class="group bg-white border-0 shadow-lg card-hover rounded-lg p-8">
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-blue-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <i data-lucide="pen-tool" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Technical Writing</h3>
-                    <p class="text-gray-600 leading-relaxed">Creating clear, concise documentation for complex technical
-                        products and services.</p>
-                </div>
-
-                <!-- Focus Area 2 -->
-                <div class="group bg-white border-0 shadow-lg card-hover rounded-lg p-8">
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <i data-lucide="palette" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Content Design</h3>
-                    <p class="text-gray-600 leading-relaxed">Designing user-centered content experiences that guide and
-                        inform users effectively.</p>
-                </div>
-
-                <!-- Focus Area 3 -->
-                <div class="group bg-white border-0 shadow-lg card-hover rounded-lg p-8">
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-green-500 to-blue-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <i data-lucide="globe" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Localization</h3>
-                    <p class="text-gray-600 leading-relaxed">Adapting content for global audiences while maintaining
-                        cultural sensitivity and accuracy.</p>
-                </div>
-
-                <!-- Focus Area 4 -->
-                <div class="group bg-white border-0 shadow-lg card-hover rounded-lg p-8">
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <i data-lucide="eye" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">Accessibility</h3>
-                    <p class="text-gray-600 leading-relaxed">Ensuring content is accessible to users with diverse
-                        abilities and needs.</p>
-                </div>
-
-                <!-- Focus Area 5 -->
-                <div class="group bg-white border-0 shadow-lg card-hover rounded-lg p-8">
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-teal-500 to-green-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <i data-lucide="code" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">UX Writing</h3>
-                    <p class="text-gray-600 leading-relaxed">Crafting microcopy and interface text that enhances user
-                        experience and usability.</p>
-                </div>
-
-                <!-- Focus Area 6 -->
-                <div class="group bg-white border-0 shadow-lg card-hover rounded-lg p-8">
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <i data-lucide="file-text" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-4">API Documentation</h3>
-                    <p class="text-gray-600 leading-relaxed">Creating comprehensive guides that help developers
-                        integrate and use APIs effectively.</p>
-                </div>
-            </div>
-
-            <div class="mt-16 text-center">
-                <div class="bg-gradient-to-r from-teal-50 to-blue-50 rounded-2xl p-8 md:p-12">
-                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Want to contribute to any of these areas?</h3>
-                    <p class="text-xl text-gray-600 mb-8">
-                        Share your expertise, lead workshops, or collaborate on projects with fellow professionals.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button
-                            class="btn-gradient text-white px-8 py-3 rounded-full font-medium transition-all duration-300">
-                            Become a Speaker
-                        </button>
-                        <button
-                            class="border-2 border-purple-500 text-purple-600 hover:bg-purple-50 px-8 py-3 rounded-full font-medium transition-all duration-300">
-                            Join a Project
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer id="contact" class="bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
                 <!-- Logo and Description -->
-                <div class="lg:col-span-2">
-                    <div class="flex items-center space-x-3 mb-6">
-                        <div
-                            class="w-12 h-12 bg-gradient-to-br from-teal-500 to-blue-600 rounded-lg flex items-center justify-center">
-                            <img src="./assets/logo.jpg" alt="STC India" class="w-12 h-12">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <div class="footer-logo-container">
+                            <img src="./assets/logo.jpg" alt="STC India" class="footer-logo-img">
                         </div>
-                        <div>
-                            <h3 class="text-2xl font-bold">STC INDIA</h3>
-                            <p class="text-gray-400 text-sm">Learn. Share. Grow.</p>
+                        <div class="footer-logo-text">
+                            <h3 class="footer-title">STC INDIA</h3>
+                            <p class="footer-subtitle">Learn. Share. Grow.</p>
                         </div>
                     </div>
-                    <p class="text-gray-300 mb-6 max-w-md">
+                    <p class="footer-description">
                         Connecting technical communicators across India through knowledge sharing, events, and
                         collaboration. Join our community of passionate professionals.
                     </p>
-                    <button class="btn-gradient text-white rounded-full px-6 py-2 font-medium">
+                    <button class="btn-primary footer-cta">
                         Join Google Group
                     </button>
                 </div>
-
                 <!-- Quick Links -->
-                <div>
-                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#about" class="text-gray-300 hover:text-teal-400 transition-colors">About Us</a>
-                        </li>
-                        <li><a href="#events" class="text-gray-300 hover:text-teal-400 transition-colors">Events</a>
-                        </li>
-                        <li><a href="#blog" class="text-gray-300 hover:text-teal-400 transition-colors">Blog</a></li>
-                        <li><a href="#learning" class="text-gray-300 hover:text-teal-400 transition-colors">Learning</a>
-                        </li>
-                        <li><a href="#focus" class="text-gray-300 hover:text-teal-400 transition-colors">Focus Areas</a>
-                        </li>
+                <div class="footer-links">
+                    <h4 class="footer-section-title">Quick Links</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#about" class="footer-link">About Us</a></li>
+                        <li><a href="#events" class="footer-link">Events</a></li>
+                        <li><a href="#blog" class="footer-link">Blog</a></li>
+                        <li><a href="#learning" class="footer-link">Learning</a></li>
+                        <li><a href="#focus" class="footer-link">Focus Areas</a></li>
                     </ul>
                 </div>
-
                 <!-- Contact Info -->
-                <div>
-                    <h4 class="text-lg font-semibold mb-6">Contact Us</h4>
-                    <div class="space-y-4">
-                        <div class="flex items-center space-x-3">
-                            <i data-lucide="mail" class="w-5 h-5 text-teal-400"></i>
-                            <a href="mailto:contact@stcindia.org"
-                                class="text-gray-300 hover:text-teal-400 transition-colors">
+                <div class="footer-contact">
+                    <h4 class="footer-section-title">Contact Us</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i data-lucide="mail" class="contact-icon"></i>
+                            <a href="mailto:contact@stcindia.org" class="contact-link">
                                 contact@stcindia.org
                             </a>
                         </div>
-                        <div class="flex items-center space-x-3">
-                            <i data-lucide="map-pin" class="w-5 h-5 text-teal-400"></i>
-                            <span class="text-gray-300">India</span>
+                        <div class="contact-item">
+                            <i data-lucide="map-pin" class="contact-icon"></i>
+                            <span class="contact-text">India</span>
                         </div>
                     </div>
-
                     <!-- Social Links -->
-                    <div class="mt-6">
-                        <h5 class="text-sm font-semibold mb-3 text-gray-400">Follow Us</h5>
-                        <div class="flex space-x-4">
-                            <a href="#"
-                                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-teal-600 transition-colors">
-                                <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    <div class="social-section">
+                        <h5 class="social-title">Follow Us</h5>
+                        <div class="social-links">
+                            <a href="#" class="social-link social-linkedin">
+                                <i data-lucide="linkedin" class="social-icon"></i>
                             </a>
-                            <a href="#"
-                                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
-                                <i data-lucide="twitter" class="w-5 h-5"></i>
+                            <a href="#" class="social-link social-twitter">
+                                <i data-lucide="twitter" class="social-icon"></i>
                             </a>
-                            <a href="#"
-                                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
-                                <i data-lucide="youtube" class="w-5 h-5"></i>
+                            <a href="#" class="social-link social-youtube">
+                                <i data-lucide="youtube" class="social-icon"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-
             <!-- Bottom Bar -->
-            <div class="border-t border-gray-800 mt-12 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-gray-400 text-sm">© 2025 STC India - All Rights Reserved.</p>
-                    <div class="flex space-x-6 mt-4 md:mt-0">
-                        <a href="#" class="text-gray-400 hover:text-teal-400 text-sm transition-colors">Privacy
-                            Policy</a>
-                        <a href="#" class="text-gray-400 hover:text-teal-400 text-sm transition-colors">Terms of
-                            Service</a>
-                        <a href="#" class="text-gray-400 hover:text-teal-400 text-sm transition-colors">Code of
-                            Conduct</a>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">© 2025 STC India - All Rights Reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                        <a href="#" class="footer-bottom-link">Terms of Service</a>
+                        <a href="#" class="footer-bottom-link">Code of Conduct</a>
                     </div>
                 </div>
             </div>
@@ -799,10 +473,10 @@
             isMenuOpen = !isMenuOpen;
             if (isMenuOpen) {
                 mobileMenu.classList.remove('hidden');
-                mobileMenuBtn.innerHTML = '<i data-lucide="x" class="h-6 w-6"></i>';
+                mobileMenuBtn.innerHTML = '<i data-lucide="x" class="icon"></i>';
             } else {
                 mobileMenu.classList.add('hidden');
-                mobileMenuBtn.innerHTML = '<i data-lucide="menu" class="h-6 w-6"></i>';
+                mobileMenuBtn.innerHTML = '<i data-lucide="menu" class="icon"></i>';
             }
             lucide.createIcons();
         });
@@ -813,7 +487,7 @@
             link.addEventListener('click', () => {
                 isMenuOpen = false;
                 mobileMenu.classList.add('hidden');
-                mobileMenuBtn.innerHTML = '<i data-lucide="menu" class="h-6 w-6"></i>';
+                mobileMenuBtn.innerHTML = '<i data-lucide="menu" class="icon"></i>';
                 lucide.createIcons();
             });
         });
@@ -836,9 +510,9 @@
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
-                header.classList.add('shadow-lg');
+                header.classList.add('scrolled');
             } else {
-                header.classList.remove('shadow-lg');
+                header.classList.remove('scrolled');
             }
         });
     </script>

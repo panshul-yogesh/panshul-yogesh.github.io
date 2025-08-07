@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="Time_Icon" data-name="Time Icon" transform="translate(0.5 0.5)">
+    <path id="Path_44" data-name="Path 44" d="M12.5,25A12.5,12.5,0,1,0,0,12.5,12.515,12.515,0,0,0,12.5,25Zm0-23.333A10.833,10.833,0,1,1,1.667,12.5,10.844,10.844,0,0,1,12.5,1.667Z" fill="#757575" stroke="#757575" stroke-width="1"/>
+    <path id="Path_45" data-name="Path 45" d="M172.146,83.341a.82.82,0,0,0,.521.183.833.833,0,0,0,.521-1.483l-3.854-3.083V72.691a.833.833,0,1,0-1.667,0v6.667a.836.836,0,0,0,.312.65Z" transform="translate(-156 -66.858)" fill="#757575" stroke="#757575" stroke-width="1"/>
+  </g>
+</svg>

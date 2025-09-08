@@ -1,0 +1,2620 @@
+@font-face {
+	font-family: "Inter";
+	src: url("./fonts/Inter-Regular.ttf") format("truetype");
+}
+
+body {
+	font-family: "Inter";
+}
+
+.cke_panel_listItem a {
+	font-family: inherit !important;
+	font-size: inherit !important;
+	font-weight: inherit !important;
+	color: inherit !important;
+	text-decoration: none !important;
+	line-height: inherit !important;
+}
+
+/* Remove specific heading styles from dropdown */
+.cke_panel_listItem a h1,
+.cke_panel_listItem a h2,
+.cke_panel_listItem a h3,
+.cke_panel_listItem a h4,
+.cke_panel_listItem a h5,
+.cke_panel_listItem a h6,
+.cke_panel_listItem a pre,
+.cke_panel_listItem a code,
+.cke_panel_listItem a span[class="marker"],
+.cke_panel_listItem a big,
+.cke_panel_listItem a small,
+.cke_panel_listItem a kbd,
+.cke_panel_listItem a samp,
+.cke_panel_listItem a span[dir="rtl"],
+.cke_panel_listItem a span[dir="ltr"],
+.cke_panel_listItem a span[class="text-center"],
+.cke_panel_listItem a span[class="text-right"],
+.cke_panel_listItem a span[class="text-left"],
+.cke_panel_listItem a span[class="text-justify"],
+.cke_panel_listItem a span[class="text-nowrap"],
+.cke_panel_listItem a span[class="text-break"] {
+	background-color: transparent !important;
+	font-size: inherit !important;
+	font-weight: inherit !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	color: inherit !important;
+	text-decoration: none !important;
+	line-height: inherit !important;
+	cursor: pointer !important;
+	border: none !important;
+	outline: none !important;
+	box-shadow: none !important;
+	transition: none !important;
+	user-select: none !important;
+
+}
+
+span[class^="mstp_suggestion"],
+span[class*=" mstp_suggestion"] {
+	background-color: #f0fe94;
+	border-bottom-color: #e5004c !important;
+	border-bottom: 6px solid;
+}
+
+span[class^="mstp_warning"],
+span[class*=" mstp_warning"] {
+	background-color: #ffce00;
+	border-bottom-color: #e5004c !important;
+	border-bottom: 6px solid;
+}
+
+span[class^="mstp_error"],
+span[class*=" mstp_error"] {
+	background-color: #fccad0;
+	border-bottom-color: #e5004c !important;
+	border-bottom: 6px solid;
+}
+
+.active_mstp {
+	background-color: yellow;
+	-webkit-animation: blink 800ms step-end infinite;
+	animation: blink 800ms step-end infinite;
+}
+
+@-webkit-keyframes blink {
+	50% {
+		background-color: #1668c1;
+		color: #fff;
+	}
+}
+
+@keyframes blink {
+	50% {
+		background-color: #1668c1;
+		color: #fff;
+	}
+}
+
+/* Admonitions CSS starts*/
+
+
+.admonition {
+	position: relative;
+	border-radius: 16px;
+	padding: 16px 20px;
+	margin: 16px 0;
+	font-family: 'Inter';
+	background-color: #f5f5f5;
+}
+
+.admonition::before {
+	content: attr(data-admonition-type);
+	position: absolute;
+	top: -10px;
+	left: 0;
+	background-color: #f1f8ff;
+	font-size: 12px;
+	padding: 0px 6px;
+	border-radius: 1px;
+	z-index: 2;
+	white-space: nowrap;
+	color: #666;
+	font-weight: 700;
+}
+
+/* Ensure the copy button doesn't interfere with admonition type label */
+.admonition::before {
+	left: 0;
+	right: auto;
+}
+
+/* Add copy button in editor only */
+.admonition::after {
+	content: "Copy";
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	padding: 4px 8px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 12px;
+	color: #666;
+	opacity: 0;
+	transition: all 0.2s;
+	z-index: 100;
+}
+
+.admonition:hover::after {
+	opacity: 1;
+}
+
+.admonition.copying::after {
+	content: "Copied!";
+	background: #4CAF50;
+	color: white;
+	border-color: #43A047;
+}
+
+.admonition-note-content {
+	border-left: 6px solid rgb(74, 209, 95);
+}
+
+.admonition-important-content {
+	border-left: 6px solid rgb(255, 179, 25);
+}
+
+.admonition-tip-content {
+	border-left: 6px solid rgb(26, 106, 255);
+}
+
+.admonition-caution-content {
+	border-left: 6px solid rgb(252, 218, 218);
+}
+
+.admonition-deprecated-content {
+	border-left: 6px solid rgb(252, 218, 218);
+}
+
+.admonition-recommendation-content {
+	border-left: 6px solid rgb(26, 106, 255);
+}
+
+.admonition-internal-content {
+	border-left: 6px solid rgb(255, 51, 51);
+}
+
+.admonition-example-content {
+	border-left: 6px solid rgb(74, 209, 95);
+}
+
+.admonition-nolabel-content {
+	border-left: 4px solid rgb(74, 209, 95);
+}
+
+.admonition a {
+	font-size: 14px;
+	color: #1a6aff;
+	text-decoration: none;
+	word-break: break-word;
+}
+
+/* 
+  .admonition-content::before {
+	display: block;
+	color: #333;
+	font-family: "Inter";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	margin-bottom: 4px;
+  }
+  
+  .admonition-tip-content::before {
+	content: "Tip";
+  }
+  
+  .admonition-note-content::before {
+	content: "Note";
+  }
+  
+  .admonition-caution-content::before {
+	content: "Caution";
+  }
+  
+  .admonition-important-content::before {
+	content: "Important";
+  }
+  
+  .admonition-deprecated-content::before {
+	content: "Deprecated";
+  }
+  
+  .admonition-recommendation-content::before {
+	content: "Recommendation";
+  }
+  
+  .admonition-internal-content::before {
+	content: "Internal";
+  }
+  
+  .admonition-content {
+	font-family: "Inter";
+	color: #333;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px;
+	padding-left: 24px;
+  }
+  
+  .admonition-icon {
+	width: 64px;
+	height: 64px;
+	margin-top: 8px;
+	flex-shrink: 0;
+	border-radius: 35px;
+  }
+  
+  .admonition-tip-icon {
+	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="%23D7E5FF"/><path d="M50.4905 33.3208H46.5283C45.8679 33.3208 45.2075 32.7925 45.2075 32C45.2075 31.3396 45.7358 30.6792 46.5283 30.6792H50.4905C51.1509 30.6792 51.8113 31.2075 51.8113 32C51.8113 32.7925 51.283 33.3208 50.4905 33.3208Z" fill="%23797979"/><path d="M37.5472 37.6793C38.2075 35.9623 38.6038 34.1132 38.6038 32C38.6038 26.1887 35.6981 21.434 32 21.434C26.1887 21.434 21.434 26.1887 21.434 32C21.434 34.1132 22.0943 35.9623 23.0189 37.6793C23.8113 39.1321 25.1321 41.6415 25.3962 43.3585C25.3962 43.6226 25.6604 43.8868 25.9245 43.8868C26.1887 43.8868 36.0943 43.8868 36.0943 43.8868C36.0943 42.1698 37.0189 39.2642 37.5472 37.6793Z" fill="%231A6AFF"/><path d="M40.8491 37.6793C41.9057 35.9623 42.566 34.1132 42.566 32C42.566 26.1887 37.8113 21.434 32 21.434C35.6981 21.434 38.6038 26.1887 38.6038 32C38.6038 34.1132 38.2075 35.9623 37.5472 37.6793C37.0189 39.2642 36.0943 42.1698 36.0943 43.8868C36.0943 43.8868 37.6792 43.8868 37.9434 43.8868C38.2075 43.8868 38.6038 43.4906 38.6038 43.3585C38.8679 41.6415 40.1887 39.1321 40.8491 37.6793Z" fill="%231A6AFF"/><path d="M46 19.8491L43.2264 22.6227C42.6981 23.151 41.9057 23.151 41.3774 22.6227C40.8491 22.0944 40.8491 21.3019 41.3774 20.7736L44.151 18C44.6793 17.4717 45.4717 17.4717 46 18C46.5283 18.5283 46.5283 19.3208 46 19.8491Z" fill="%23797979"/><path d="M33.3208 13.5094V17.4717C33.3208 18.1321 32.7925 18.7925 32 18.7925C31.3396 18.7925 30.6793 18.2642 30.6793 17.4717V13.5094C30.6793 12.8491 31.2076 12.1887 32 12.1887C32.7925 12.1887 33.3208 12.717 33.3208 13.5094Z" fill="%23797979"/><path d="M19.849 18L22.6226 20.7736C23.1509 21.3019 23.1509 22.0944 22.6226 22.6227C22.0943 23.151 21.3019 23.151 20.7736 22.6227L18 19.8491C17.4717 19.4528 17.4717 18.5283 18 18C18.5283 17.4717 19.3207 17.4717 19.849 18Z" fill="%23797979"/><path d="M13.5094 30.6792H17.4717C18.1321 30.6792 18.7924 31.2075 18.7924 32C18.7924 32.6604 18.2641 33.3208 17.4717 33.3208H13.5094C12.849 33.3208 12.1887 32.7925 12.1887 32C12.1887 31.2075 12.717 30.6792 13.5094 30.6792Z" fill="%23797979"/><path d="M18 44.151L20.7736 41.3774C21.3019 40.8491 22.0943 40.8491 22.6226 41.3774C23.1509 41.9057 23.1509 42.6981 22.6226 43.2264L19.849 46C19.3207 46.5283 18.5283 46.5283 18 46C17.4717 45.4717 17.4717 44.6793 18 44.151Z" fill="%23797979"/><path d="M44.151 46L41.3774 43.2264C40.8491 42.6981 40.8491 41.9057 41.3774 41.3774C41.9057 40.8491 42.6981 40.8491 43.2264 41.3774L46 44.151C46.5283 44.6793 46.5283 45.4717 46 46C45.4717 46.5283 44.6793 46.5283 44.151 46Z" fill="%23797979"/><path d="M37.9434 45.2076H33.3208H30.8113H26.1887C25.7925 45.2076 25.3962 45.6038 25.3962 46C25.3962 46.3962 25.7925 46.7925 26.1887 46.7925C26.5849 46.7925 27.3774 47.1887 27.3774 47.5849C27.3774 47.9811 27.9057 48.3774 28.434 48.3774C28.8302 48.3774 29.4906 48.7736 29.4906 49.1698V51.0189C29.4906 51.4151 29.7547 51.8113 30.151 51.8113H33.9811C34.3774 51.8113 34.6415 51.4151 34.6415 51.0189V49.1698C34.6415 48.7736 35.3019 48.3774 35.6981 48.3774C36.2264 48.3774 36.7547 47.9811 36.7547 47.5849C36.7547 47.1887 37.5472 46.7925 37.9434 46.7925C38.3396 46.7925 38.7359 46.3962 38.7359 46C38.7359 45.6038 38.3396 45.2076 37.9434 45.2076Z" fill="%23999999"/></svg>');
+  }
+  
+  .admonition-note-icon {
+	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="%23CDF1D3"/><path d="M41.9626 14.4906H20.8305C19.1492 14.4906 17.5366 15.1585 16.3477 16.3474C15.1588 17.5363 14.4909 19.1489 14.4909 20.8302V41.9623C14.4909 43.6437 15.1588 45.2562 16.3477 46.4451C17.5366 47.634 19.1492 48.3019 20.8305 48.3019H35.9855C37.1065 48.3019 38.1815 47.8566 38.9741 47.064L47.0643 38.9737C47.4568 38.5813 47.7681 38.1154 47.9805 37.6026C48.1929 37.0898 48.3022 36.5403 48.3022 35.9852V20.8302C48.3022 19.1489 47.6343 17.5363 46.4454 16.3474C45.2565 15.1585 43.644 14.4906 41.9626 14.4906ZM22.9437 21.8868H39.8494C40.2697 21.8868 40.6729 22.0538 40.9701 22.351C41.2673 22.6483 41.4343 23.0514 41.4343 23.4717C41.4343 23.8921 41.2673 24.2952 40.9701 24.5924C40.6729 24.8897 40.2697 25.0566 39.8494 25.0566H22.9437C22.5234 25.0566 22.1203 24.8897 21.823 24.5924C21.5258 24.2952 21.3588 23.8921 21.3588 23.4717C21.3588 23.0514 21.5258 22.6483 21.823 22.351C22.1203 22.0538 22.5234 21.8868 22.9437 21.8868ZM22.9437 32.4529C22.5234 32.4529 22.1203 32.2859 21.823 31.9887C21.5258 31.6914 21.3588 31.2883 21.3588 30.868C21.3588 30.4476 21.5258 30.0445 21.823 29.7473C22.1203 29.45 22.5234 29.2831 22.9437 29.2831H39.8494C40.2697 29.2831 40.6729 29.45 40.9701 29.7473C41.2673 30.0445 41.4343 30.4476 41.4343 30.868C41.4343 31.2883 41.2673 31.6914 40.9701 31.9887C40.6729 32.2859 40.2697 32.4529 39.8494 32.4529H22.9437ZM37.7362 45.3135V39.8491C37.7368 39.2888 37.9597 38.7517 38.3558 38.3555C38.752 37.9594 39.2891 37.7365 39.8494 37.7359H45.3136L37.7362 45.3135Z" fill="%234AD15F"/></svg>');
+  }
+  
+  .admonition-caution-icon {
+	background-image: url('data:image/svg+xml,<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="32" fill="%23FCDADA"/><g clip-path="url(%23clip0_1211_43681)"><path d="M29.2888 15.4127C30.0572 14.1832 31.9015 14.1832 32.6699 15.4127L48.8072 43.6913C49.5756 44.9208 49.1145 46.9187 47.5777 46.9187H14.3811C12.8442 46.9187 12.8442 45.0745 13.6127 43.6913L29.2888 15.4127Z" fill="%23D33030"/><path fill-rule="evenodd" clip-rule="evenodd" d="M47.5776 45.0745L30.9794 16.3349L14.5348 45.0745H47.5776ZM32.6699 15.4127C31.9015 14.1832 30.0572 14.1832 29.2888 15.4127L12.8442 44.1524C12.0758 45.3819 12.9979 47.0724 14.5348 47.0724H47.5776C49.1145 47.0724 50.0367 45.5355 49.2682 44.1524L32.6699 15.4127Z" fill="%23D33030"/><path d="M31.2867 42.1544C32.5162 42.1544 33.592 41.0786 33.592 39.8491C33.592 38.6196 32.5162 37.5438 31.2867 37.5438C30.0572 37.5438 28.9814 38.6196 28.9814 39.8491C28.9814 41.0786 30.0572 42.1544 31.2867 42.1544Z" fill="white"/><rect x="28.9814" y="23.7119" width="4.61063" height="10.7581" rx="2.30532" fill="white"/></g><defs><clipPath id="clip0_1211_43681"><rect width="38.422" height="33.8113" fill="white" transform="translate(12.0757 14.4906)"/></clipPath></defs></svg>');
+  }
+  
+  .admonition-important-icon {
+	background-image: url('data:image/svg+xml,<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle cx="32" cy="32" r="32" fill="%23FFF4DE"/><g clip-path="url(%23clip0_1211_43662)"><path d="M31.3962 48.3019C40.7329 48.3019 48.3019 40.733 48.3019 31.3962C48.3019 22.0595 40.7329 14.4906 31.3962 14.4906C22.0595 14.4906 14.4905 22.0595 14.4905 31.3962C14.4905 40.733 22.0595 48.3019 31.3962 48.3019Z" fill="%23FFB319"/><mask id="mask0_1211_43662" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="8" width="47" height="47"><rect x="8.85535" y="8.85535" width="45.3072" height="45.3072" fill="url(%23pattern0)"/></mask><g mask="url(%23mask0_1211_43662)"><path d="M31.3962 48.3019C40.7329 48.3019 48.3019 40.733 48.3019 31.3962C48.3019 22.0595 40.7329 14.4906 31.3962 14.4906C22.0595 14.4906 14.4905 22.0595 14.4905 31.3962C14.4905 40.733 22.0595 48.3019 31.3962 48.3019Z" fill="%23FFB319"/></g><path d="M31.3962 45.4843C39.1768 45.4843 45.4843 39.1768 45.4843 31.3962C45.4843 23.6156 39.1768 17.3082 31.3962 17.3082C23.6156 17.3082 17.3082 23.6156 17.3082 31.3962C17.3082 39.1768 23.6156 45.4843 31.3962 45.4843Z" fill="%23FFB319"/><mask id="mask1_1211_43662" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="11" y="11" width="41" height="41"><rect x="11.673" y="11.6729" width="39.8974" height="39.8974" fill="url(%23pattern1)"/></mask><g mask="url(%23mask1_1211_43662)"><path d="M31.3962 45.4843C39.1768 45.4843 45.4843 39.1768 45.4843 31.3962C45.4843 23.6156 39.1768 17.3082 31.3962 17.3082C23.6156 17.3082 17.3082 23.6156 17.3082 31.3962C17.3082 39.1768 23.6156 45.4843 31.3962 45.4843Z" fill="%23FFB319"/></g><path d="M31.3962 34.2138V20.1258" stroke="white" stroke-width="2" stroke-miterlimit="10"/><path d="M31.3962 37.0314V42.6667" stroke="white" stroke-width="2" stroke-miterlimit="10"/></g><defs><pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="%23image0_1211_43662"/></pattern><pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="%23image0_1211_43662"/></pattern><clipPath id="clip0_1211_43662"><rect width="33.8113" height="33.8113" fill="white" transform="translate(14.4905 14.4906)"/></clipPath><image id="image0_1211_43662" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEBLAEsAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA"/></defs></svg>');
+  }
+  
+  .admonition-deprecated-icon {
+	background-image: url('data:image/svg+xml,<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="32" fill="%23FCDADA"/><g clip-path="url(%23clip0_1211_43681)"><path d="M29.2888 15.4127C30.0572 14.1832 31.9015 14.1832 32.6699 15.4127L48.8072 43.6913C49.5756 44.9208 49.1145 46.9187 47.5777 46.9187H14.3811C12.8442 46.9187 12.8442 45.0745 13.6127 43.6913L29.2888 15.4127Z" fill="%23D33030"/><path fill-rule="evenodd" clip-rule="evenodd" d="M47.5776 45.0745L30.9794 16.3349L14.5348 45.0745H47.5776ZM32.6699 15.4127C31.9015 14.1832 30.0572 14.1832 29.2888 15.4127L12.8442 44.1524C12.0758 45.3819 12.9979 47.0724 14.5348 47.0724H47.5776C49.1145 47.0724 50.0367 45.5355 49.2682 44.1524L32.6699 15.4127Z" fill="%23D33030"/><path d="M31.2867 42.1544C32.5162 42.1544 33.592 41.0786 33.592 39.8491C33.592 38.6196 32.5162 37.5438 31.2867 37.5438C30.0572 37.5438 28.9814 38.6196 28.9814 39.8491C28.9814 41.0786 30.0572 42.1544 31.2867 42.1544Z" fill="white"/><rect x="28.9814" y="23.7119" width="4.61063" height="10.7581" rx="2.30532" fill="white"/></g><defs><clipPath id="clip0_1211_43681"><rect width="38.422" height="33.8113" fill="white" transform="translate(12.0757 14.4906)"/></clipPath></defs></svg>');
+  }
+  
+  .admonition-recommendation-icon {
+	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="%23D7E5FF"/><path d="M50.4905 33.3208H46.5283C45.8679 33.3208 45.2075 32.7925 45.2075 32C45.2075 31.3396 45.7358 30.6792 46.5283 30.6792H50.4905C51.1509 30.6792 51.8113 31.2075 51.8113 32C51.8113 32.7925 51.283 33.3208 50.4905 33.3208Z" fill="%23797979"/><path d="M37.5472 37.6793C38.2075 35.9623 38.6038 34.1132 38.6038 32C38.6038 26.1887 35.6981 21.434 32 21.434C26.1887 21.434 21.434 26.1887 21.434 32C21.434 34.1132 22.0943 35.9623 23.0189 37.6793C23.8113 39.1321 25.1321 41.6415 25.3962 43.3585C25.3962 43.6226 25.6604 43.8868 25.9245 43.8868C26.1887 43.8868 36.0943 43.8868 36.0943 43.8868C36.0943 42.1698 37.0189 39.2642 37.5472 37.6793Z" fill="%231A6AFF"/><path d="M40.8491 37.6793C41.9057 35.9623 42.566 34.1132 42.566 32C42.566 26.1887 37.8113 21.434 32 21.434C35.6981 21.434 38.6038 26.1887 38.6038 32C38.6038 34.1132 38.2075 35.9623 37.5472 37.6793C37.0189 39.2642 36.0943 42.1698 36.0943 43.8868C36.0943 43.8868 37.6792 43.8868 37.9434 43.8868C38.2075 43.8868 38.6038 43.4906 38.6038 43.3585C38.8679 41.6415 40.1887 39.1321 40.8491 37.6793Z" fill="%231A6AFF"/><path d="M46 19.8491L43.2264 22.6227C42.6981 23.151 41.9057 23.151 41.3774 22.6227C40.8491 22.0944 40.8491 21.3019 41.3774 20.7736L44.151 18C44.6793 17.4717 45.4717 17.4717 46 18C46.5283 18.5283 46.5283 19.3208 46 19.8491Z" fill="%23797979"/><path d="M33.3208 13.5094V17.4717C33.3208 18.1321 32.7925 18.7925 32 18.7925C31.3396 18.7925 30.6793 18.2642 30.6793 17.4717V13.5094C30.6793 12.8491 31.2076 12.1887 32 12.1887C32.7925 12.1887 33.3208 12.717 33.3208 13.5094Z" fill="%23797979"/><path d="M19.849 18L22.6226 20.7736C23.1509 21.3019 23.1509 22.0944 22.6226 22.6227C22.0943 23.151 21.3019 23.151 20.7736 22.6227L18 19.8491C17.4717 19.4528 17.4717 18.5283 18 18C18.5283 17.4717 19.3207 17.4717 19.849 18Z" fill="%23797979"/><path d="M13.5094 30.6792H17.4717C18.1321 30.6792 18.7924 31.2075 18.7924 32C18.7924 32.6604 18.2641 33.3208 17.4717 33.3208H13.5094C12.849 33.3208 12.1887 32.7925 12.1887 32C12.1887 31.2075 12.717 30.6792 13.5094 30.6792Z" fill="%23797979"/><path d="M18 44.151L20.7736 41.3774C21.3019 40.8491 22.0943 40.8491 22.6226 41.3774C23.1509 41.9057 23.1509 42.6981 22.6226 43.2264L19.849 46C19.3207 46.5283 18.5283 46.5283 18 46C17.4717 45.4717 17.4717 44.6793 18 44.151Z" fill="%23797979"/><path d="M44.151 46L41.3774 43.2264C40.8491 42.6981 40.8491 41.9057 41.3774 41.3774C41.9057 40.8491 42.6981 40.8491 43.2264 41.3774L46 44.151C46.5283 44.6793 46.5283 45.4717 46 46C45.4717 46.5283 44.6793 46.5283 44.151 46Z" fill="%23797979"/><path d="M37.9434 45.2076H33.3208H30.8113H26.1887C25.7925 45.2076 25.3962 45.6038 25.3962 46C25.3962 46.3962 25.7925 46.7925 26.1887 46.7925C26.5849 46.7925 27.3774 47.1887 27.3774 47.5849C27.3774 47.9811 27.9057 48.3774 28.434 48.3774C28.8302 48.3774 29.4906 48.7736 29.4906 49.1698V51.0189C29.4906 51.4151 29.7547 51.8113 30.151 51.8113H33.9811C34.3774 51.8113 34.6415 51.4151 34.6415 51.0189V49.1698C34.6415 48.7736 35.3019 48.3774 35.6981 48.3774C36.2264 48.3774 36.7547 47.9811 36.7547 47.5849C36.7547 47.1887 37.5472 46.7925 37.9434 46.7925C38.3396 46.7925 38.7359 46.3962 38.7359 46C38.7359 45.6038 38.3396 45.2076 37.9434 45.2076Z" fill="%23999999"/></svg>');
+  }
+  
+  .admonition-internal-icon {
+	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="%23FFE6E6"/><path d="M50.4905 33.3208H46.5283C45.8679 33.3208 45.2075 32.7925 45.2075 32C45.2075 31.3396 45.7358 30.6792 46.5283 30.6792H50.4905C51.1509 30.6792 51.8113 31.2075 51.8113 32C51.8113 32.7925 51.283 33.3208 50.4905 33.3208Z" fill="%23797979"/><path d="M37.5472 37.6793C38.2075 35.9623 38.6038 34.1132 38.6038 32C38.6038 26.1887 35.6981 21.434 32 21.434C26.1887 21.434 21.434 26.1887 21.434 32C21.434 34.1132 22.0943 35.9623 23.0189 37.6793C23.8113 39.1321 25.1321 41.6415 25.3962 43.3585C25.3962 43.6226 25.6604 43.8868 25.9245 43.8868C26.1887 43.8868 36.0943 43.8868 36.0943 43.8868C36.0943 42.1698 37.0189 39.2642 37.5472 37.6793Z" fill="%23FF3333"/><path d="M40.8491 37.6793C41.9057 35.9623 42.566 34.1132 42.566 32C42.566 26.1887 37.8113 21.434 32 21.434C35.6981 21.434 38.6038 26.1887 38.6038 32C38.6038 34.1132 38.2075 35.9623 37.5472 37.6793C37.0189 39.2642 36.0943 42.1698 36.0943 43.8868C36.0943 43.8868 37.6792 43.8868 37.9434 43.8868C38.2075 43.8868 38.6038 43.4906 38.6038 43.3585C38.8679 41.6415 40.1887 39.1321 40.8491 37.6793Z" fill="%23FF3333"/><path d="M46 19.8491L43.2264 22.6227C42.6981 23.151 41.9057 23.151 41.3774 22.6227C40.8491 22.0944 40.8491 21.3019 41.3774 20.7736L44.151 18C44.6793 17.4717 45.4717 17.4717 46 18C46.5283 18.5283 46.5283 19.3208 46 19.8491Z" fill="%23797979"/><path d="M33.3208 13.5094V17.4717C33.3208 18.1321 32.7925 18.7925 32 18.7925C31.3396 18.7925 30.6793 18.2642 30.6793 17.4717V13.5094C30.6793 12.8491 31.2076 12.1887 32 12.1887C32.7925 12.1887 33.3208 12.717 33.3208 13.5094Z" fill="%23797979"/><path d="M19.849 18L22.6226 20.7736C23.1509 21.3019 23.1509 22.0944 22.6226 22.6227C22.0943 23.151 21.3019 23.151 20.7736 22.6227L18 19.8491C17.4717 19.4528 17.4717 18.5283 18 18C18.5283 17.4717 19.3207 17.4717 19.849 18Z" fill="%23797979"/><path d="M13.5094 30.6792H17.4717C18.1321 30.6792 18.7924 31.2075 18.7924 32C18.7924 32.6604 18.2641 33.3208 17.4717 33.3208H13.5094C12.849 33.3208 12.1887 32.7925 12.1887 32C12.1887 31.2075 12.717 30.6792 13.5094 30.6792Z" fill="%23797979"/><path d="M18 44.151L20.7736 41.3774C21.3019 40.8491 22.0943 40.8491 22.6226 41.3774C23.1509 41.9057 23.1509 42.6981 22.6226 43.2264L19.849 46C19.3207 46.5283 18.5283 46.5283 18 46C17.4717 45.4717 17.4717 44.6793 18 44.151Z" fill="%23797979"/><path d="M44.151 46L41.3774 43.2264C40.8491 42.6981 40.8491 41.9057 41.3774 41.3774C41.9057 40.8491 42.6981 40.8491 43.2264 41.3774L46 44.151C46.5283 44.6793 46.5283 45.4717 46 46C45.4717 46.5283 44.6793 46.5283 44.151 46Z" fill="%23797979"/><path d="M37.9434 45.2076H33.3208H30.8113H26.1887C25.7925 45.2076 25.3962 45.6038 25.3962 46C25.3962 46.3962 25.7925 46.7925 26.1887 46.7925C26.5849 46.7925 27.3774 47.1887 27.3774 47.5849C27.3774 47.9811 27.9057 48.3774 28.434 48.3774C28.8302 48.3774 29.4906 48.7736 29.4906 49.1698V51.0189C29.4906 51.4151 29.7547 51.8113 30.151 51.8113H33.9811C34.3774 51.8113 34.6415 51.4151 34.6415 51.0189V49.1698C34.6415 48.7736 35.3019 48.3774 35.6981 48.3774C36.2264 48.3774 36.7547 47.9811 36.7547 47.5849C36.7547 47.1887 37.5472 46.7925 37.9434 46.7925C38.3396 46.7925 38.7359 46.3962 38.7359 46C38.7359 45.6038 38.3396 45.2076 37.9434 45.2076Z" fill="%23999999"/></svg>');
+  } */
+
+/* Admonitions CSS ends*/
+
+.x-body {
+	background: #fff !important;
+}
+
+body {
+	line-height: 160%;
+	font-size: 14px !important;
+}
+
+body.mediawiki,
+body.x-body {
+	padding: 0px;
+}
+
+/* Heading CSS starts */
+
+h1 {
+	font-family: "Inter";
+	word-wrap: break-word;
+	word-break: break-word;
+	font-size: clamp(1.59375rem, 18.7895px + 1.39803vw, 2.125rem);
+	line-height: 1.3;
+	color: #161616 !important;
+	font-weight: 500;
+}
+
+h1.displaytitle {
+	font-family: 'Inter';
+	font-size: clamp(1.875rem, 22.1053px + 1.64474vw, 2.5rem) !important;
+	font-weight: 700 !important;
+	color: #2c3e50 !important;
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+h2 {
+	color: #161616 !important;
+	font-size: clamp(1.59375rem, 18.7895px + 1.39803vw, 2.125rem);
+	line-height: 1.3;
+	font-weight: 500;
+	margin-top: 36px;
+	margin-bottom: 6px;
+	letter-spacing: normal;
+	font-family: "Inter";
+}
+
+h3 {
+	font-size: clamp(1.3125rem, 15.4737px + 1.15132vw, 1.75rem);
+	line-height: 1.5em;
+	margin-top: 36px;
+	margin-bottom: 6px;
+	letter-spacing: normal;
+	font-family: "Inter";
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: 500;
+	color: #161616 !important;
+}
+
+h4 {
+	line-height: 1.3;
+	font-weight: 500;
+	letter-spacing: normal;
+	font-family: "Inter";
+	margin-inline-start: -1.875rem;
+	padding-inline-start: 1.875rem;
+	margin-top: 36px;
+	margin-bottom: 6px;
+	font-size: clamp(1.125rem, 13.2632px + 0.986842vw, 1.5rem);
+	color: #161616 !important;
+}
+
+h5 {
+	margin-inline-start: -1.875rem !important;
+	padding-inline-start: 1.875rem !important;
+	line-height: 1.3;
+	letter-spacing: 1px !important;
+	margin-top: 36px !important;
+	margin-bottom: 6px !important;
+	font-size: clamp(1.1rem, 15.7053px + 0.394737vw, 1.25rem);
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+	color: #161616 !important;
+	padding-top: 0.2em;
+	letter-spacing: normal;
+	font-family: "Inter";
+}
+
+h6 {
+	font-size: clamp(1.05rem, 15.8526px + 0.197368vw, 1.125rem);
+	line-height: 1.3;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+	display: block;
+	font-family: "Inter";
+	margin-top: 36px;
+	margin-bottom: 6px;
+	color: #161616 !important;
+}
+
+/* Heading CSS ends */
+
+/* Code CSS starts */
+code {
+	font-family: Consolas, Menlo, "DejaVu Sans Mono", "Liberation Mono", monospace;
+	color: #333333;
+	direction: ltr;
+	word-wrap: break-word;
+	/* white-space: pre-wrap; */
+	border-radius: 3px;
+	padding: 0.1em 0.2em;
+	background-color: #e1e8f6;
+}
+
+/* 
+  pre,
+  .mw-code {
+	border: 0.125rem solid #e6e6e6;
+	background-color: #f2f2f2;
+	white-space: pre-wrap;
+	word-spacing: normal;
+	word-break: break-word;
+	word-wrap: normal;
+	tab-size: 4;
+	hyphens: none;
+	margin: 1rem 0 0;
+	padding: 1rem;
+	font-size: 0.875rem;
+	line-height: 1.3571;
+	overflow: auto;
+  } */
+
+blockquote {
+	padding-left: 20px !important;
+	padding-right: 8px !important;
+	border-left-width: 5px !important;
+
+	font-style: italic;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	padding: 2px 0;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 0;
+}
+
+/* Code CSS ends */
+
+/* Link CSS starts */
+a[href] {
+	font-size: 14px;
+	color: #1a6aff;
+	text-decoration: none;
+	word-break: break-word;
+}
+
+td a[href] {
+	word-break: inherit;
+}
+
+a[href]:hover {
+	text-decoration: underline;
+	text-underline-offset: 20%;
+	color: #2f4ed1;
+}
+
+a[href]:active {
+	padding: 0 0 0 0;
+	color: #111b58;
+}
+
+a[href]:link {
+	padding: 0 0 0 0;
+	text-decoration: none;
+	color: #1a6aff;
+}
+
+/* Reset styles for <a> tags without href attribute */
+a:not([href]) {
+	font-size: unset;
+	color: unset;
+	text-decoration: unset;
+	word-break: unset;
+	padding: unset;
+}
+
+a:not([href]):hover {
+	text-decoration: unset;
+	text-underline-offset: unset;
+	color: unset;
+}
+
+a:not([href]):active {
+	padding: unset;
+	color: unset;
+}
+
+a:not([href]):link {
+	padding: unset;
+	text-decoration: unset;
+	color: unset;
+}
+
+/* Link CSS ends */
+
+/* Image CSS starts */
+p img {
+	margin: auto;
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	box-sizing: content-box;
+	transition: transform 0.3s cubic-bezier(0.2, 0, 0.2, 1) !important;
+	border: 1px solid #e6e6e6;
+}
+
+p {
+	word-wrap: break-word;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+table p {
+	margin: 0%;
+}
+
+img.floatLeft {
+	border: none;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 2px;
+	border: 1px solid #e6e6e6;
+}
+
+img.floatRight {
+	border: none;
+	float: right;
+	margin-top: 5px;
+	margin-bottom: 2px;
+	border: 1px solid #e6e6e6;
+}
+
+img {
+	max-width: 100% !important;
+	transition: transform 0.3s cubic-bezier(0.2, 0, 0.2, 1) !important;
+}
+
+img {
+	max-width: 100% !important;
+}
+
+/* Image CSS ends */
+
+/* Table CSS starts */
+table {
+	width: 100%;
+	max-width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-family: "Inter";
+	margin: 16px 0 30px;
+	font-size: 14px;
+	table-layout: auto;
+	display: block;
+	overflow-x: auto;
+}
+
+caption {
+	white-space: nowrap;
+	box-sizing: border-box;
+	color: #818a91;
+	text-align: left;
+	caption-side: top;
+	padding: 0.5rem 0;
+	font-weight: 500;
+}
+
+caption:empty {
+	display: none;
+}
+
+caption::before {
+	content: "Table: ";
+	font-weight: 800;
+	color: #999999;
+}
+
+td,
+th {
+	border: 1px solid #d2d2d2;
+	padding: 0.75rem;
+	vertical-align: top;
+	line-height: 1.5;
+	overflow-wrap: break-word;
+	hyphens: auto;
+	white-space: normal;
+}
+
+/* Add center alignment for table headers */
+th {
+	text-align: center;
+}
+
+/* Force long words to break */
+td>*,
+th>* {
+	max-width: 100%;
+	overflow-wrap: break-word;
+	hyphens: auto;
+}
+
+/* Improve table scrollbar styling */
+table::-webkit-scrollbar {
+	height: 8px;
+}
+
+table::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 4px;
+}
+
+table::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 4px;
+}
+
+table::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+/* Add responsive behavior */
+@media screen and (max-width: 768px) {
+
+	td,
+	th {
+		min-width: 60px;
+		padding: 0.5rem;
+		font-size: 13px;
+	}
+}
+
+/* Table CSS ends */
+
+/* Right toc scroll css starts */
+#rtoccontainer::-webkit-scrollbar {
+	height: 8px;
+	width: 8px;
+}
+
+#rtoccontainer::-webkit-scrollbar-thumb {
+	background: rgba(128, 134, 139, 0.26);
+	border-radius: 8px;
+}
+
+/* Right toc scroll css ends */
+
+/* Product Tags start */
+#tag-OOng {
+	background-color: #ccf0ff;
+	padding: 2% 2% 2% 2%;
+	border: 1px solid #ccf0ff;
+	margin-top: 4%;
+	border-radius: 5px;
+	font-size: 16px !important;
+}
+
+div#tag-OOng::before {
+	content: "Information provided in this space is applicable only to the containerized version of Operations Orchestration (OO).";
+}
+
+#tag-codeless {
+	background-color: #ccf0ff;
+	padding: 2% 2% 2% 2%;
+	border: 1px solid #ccf0ff;
+	margin-top: 4%;
+	border-radius: 5px;
+	font-size: 16px !important;
+}
+
+div#tag-codeless::before {
+	content: "This topic is applicable to Service Manager Codeless only.";
+}
+
+#tag-nomsuitefooter {
+	background-color: #ccf0ff;
+	padding: 2% 2% 2% 2%;
+	border: 1px solid #ccf0ff;
+	/* margin-top: 4%; */
+	border-radius: 5px;
+	font-size: 16px !important;
+	line-height: 27px !important;
+	font-weight: normal !important;
+	margin-bottom: 24px;
+}
+
+div#tag-nomsuitefooter::before {
+	content: "This help center is designed to help you use the containerized NOM deployment.  To access help centers of the constituent products of non-containerized NOM, go to: ";
+}
+
+.nomlink {
+	width: fit-content;
+	display: contents;
+	cursor: pointer;
+	float: right;
+	color: #212644;
+}
+
+/* Product Tags ends */
+
+@media only screen and (min-width: 100px) and (max-width: 635px) {}
+
+@media only screen and (min-width: 100px) and (max-width: 767px) {}
+
+@media only screen and (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+div#probox {
+	width: unset !important;
+	max-width: 45% !important;
+	flex: 0 0 45% !important;
+	border: 1px solid #bdbec0;
+	border-radius: 5px;
+	margin: 5px 10px 5px 0px;
+	display: inline-flex !important;
+	min-height: 135px;
+}
+
+div#probox a {
+	font-size: 23px !important;
+}
+
+strong {
+	font-family: "Inter" !important;
+	font-weight: 600;
+}
+
+/*SBM CSS*/
+
+/*SBM Templates*/
+.unresolved {
+	color: black;
+	background-color: #87ceeb;
+}
+
+.noTemplate {
+	color: black;
+	background-color: yellow;
+}
+
+.base {
+	color: black;
+	background-color: #ffffff;
+}
+
+/* Style the filepath class so that it uses a "code" font */
+.filepath {
+	font-family: "Bitstream Vera Sans Mono", "Courier New", monospace;
+}
+
+figure {
+	margin: 1.5em 0;
+	display: table;
+	max-width: 100%;
+}
+
+figure img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+figcaption {
+	display: table-caption;
+	white-space: nowrap;
+	box-sizing: border-box;
+	color: #818a91;
+	text-align: left;
+	caption-side: top;
+	padding: 0.5rem 0;
+	font-weight: 600;
+}
+
+figcaption::before {
+	content: "Figure: ";
+	font-weight: 800;
+	color: #999999;
+}
+
+.figdesc {
+	font-style: normal;
+}
+
+figure a {
+	padding: unset !important;
+}
+
+/* set font for userinput class */
+.userinput {
+	font-family: "Bitstream Vera Sans Mono", "Courier New", monospace;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+/* set font for systemoutput class */
+.sysout,
+.systemoutput {
+	font-family: "Bitstream Vera Sans Mono", "Courier New", monospace;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/* Most link groups are created with <div>. Ensure they have space before
+		 and after. */
+.ullinks {
+	list-style-type: none;
+}
+
+.ulchildlink,
+.olchildlink {
+	margin-top: 0.83em;
+	margin-bottom: 0.83em;
+}
+
+.linklist {
+	margin-bottom: 0.83em;
+}
+
+.linklistwithchild,
+.sublinklist {
+	margin-left: 1.5em;
+	margin-bottom: 0.83em;
+}
+
+.relconcepts,
+.reltasks,
+.relref,
+.relinfo {
+	margin-top: 0.83em;
+	margin-bottom: 0.83em;
+}
+
+.prereq,
+.prerequisite {
+	color: black;
+	background-color: #efefef;
+	padding: 5px 5px 5px 5px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+/* Simple lists do not get a bullet */
+/*  ul.simple {
+	list-style-type: none;
+  }
+  
+   ul {
+	max-width: unset;
+	list-style-type: none;
+	margin: 16px 0 0px 38px;
+	padding: 0;
+	display: block;
+	list-style-type: disc;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+	line-height: 1.5;
+  }
+  
+   ol {
+	max-width: unset;
+	display: block;
+	list-style-type: decimal;
+	margin: 16px 0;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+	padding: 0 0 0 40px;
+	line-height: 1.5;
+  }
+  
+   li {
+	margin: 5px 0 0 38px;
+  } */
+
+/* new list style start */
+
+/* Base list styles */
+ol,
+ul {
+	margin: 8px 0;
+	line-height: 1.5;
+	max-width: 100% !important;
+	padding-left: 0;
+}
+
+/* Common list item styles */
+li {
+	margin: 4px 0;
+	padding-left: 8px;
+	position: relative;
+}
+
+/* Base ordered list styles */
+ol:not([start]) {
+	padding-left: 24px;
+	counter-reset: level1;
+}
+
+ol:not([start])>li:not([value]) {
+	list-style: none;
+	padding-left: 8px;
+}
+
+/* Level 1 */
+ol:not([start])>li:not([value]):before {
+	content: counter(level1) ".";
+	counter-increment: level1;
+	display: flex;
+	position: absolute;
+	left: -20px;
+	width: 16px;
+	text-align: right;
+}
+
+/* Level 2 */
+ol:not([start]) ol:not([start]) {
+	counter-reset: level2;
+	padding-left: 28px;
+}
+
+ol:not([start]) ol:not([start])>li:not([value]):before {
+	content: counter(level1) "." counter(level2);
+	counter-increment: level2;
+	display: flex;
+	left: -28px;
+	width: 24px;
+}
+
+/* Level 3 */
+ol:not([start]) ol:not([start]) ol:not([start]) {
+	counter-reset: level3;
+	padding-left: 36px;
+}
+
+ol:not([start]) ol:not([start]) ol:not([start])>li:not([value]):before {
+	content: counter(level1) "." counter(level2) "." counter(level3);
+	counter-increment: level3;
+	display: flex;
+	left: -36px;
+	width: 32px;
+}
+
+/* Level 4 */
+ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start]) {
+	counter-reset: level4;
+	padding-left: 44px;
+}
+
+ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start])>li:not([value]):before {
+	content: counter(level1) "." counter(level2) "." counter(level3) "."
+		counter(level4);
+	counter-increment: level4;
+	display: flex;
+	left: -44px;
+	width: 40px;
+}
+
+/* Level 5 */
+ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start]) {
+	counter-reset: level5;
+	padding-left: 52px;
+}
+
+ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start])>li:not([value]):before {
+	content: counter(level1) "." counter(level2) "." counter(level3) "."
+		counter(level4) "." counter(level5);
+	counter-increment: level5;
+	display: flex;
+	left: -52px;
+	width: 48px;
+}
+
+/* Level 6 */
+ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start]) {
+	counter-reset: level6;
+	padding-left: 60px;
+}
+
+ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start])>li:not([value]):before {
+	content: counter(level1) "." counter(level2) "." counter(level3) "."
+		counter(level4) "." counter(level5) "." counter(level6);
+	counter-increment: level6;
+	display: flex;
+	left: -60px;
+	width: 56px;
+}
+
+/* Level 7 */
+ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start]) {
+	counter-reset: level7;
+	padding-left: 68px;
+}
+
+ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start]) ol:not([start])>li:not([value]):before {
+	content: counter(level1) "." counter(level2) "." counter(level3) "."
+		counter(level4) "." counter(level5) "." counter(level6) "." counter(level7);
+	counter-increment: level7;
+	display: flex;
+	left: -68px;
+	width: 64px;
+}
+
+/* Lists with start/value attributes */
+ol[start] {
+	padding-left: 24px;
+}
+
+ol[start],
+ol>li[value],
+ol[start] ol,
+ol>li[value] ol {
+	list-style: decimal;
+	margin: 4px 0;
+}
+
+/* Unordered lists */
+ul {
+	list-style-type: disc;
+	padding-left: 24px;
+	margin: 4px 0;
+}
+
+ul ul {
+	list-style-type: " - ";
+	padding-left: 20px;
+}
+
+ul ul ul {
+	list-style-type: disc;
+}
+
+ul ul ul ul {
+	list-style-type: " - ";
+}
+
+ul ul ul ul ul {
+	list-style-type: disc;
+}
+
+ul ul ul ul ul ul {
+	list-style-type: " - ";
+}
+
+ul ul ul ul ul ul ul {
+	list-style-type: disc;
+}
+
+/* Mixed list scenarios */
+ul ol:not([start]),
+ol ul {
+	padding-left: 20px;
+	margin: 4px 0;
+}
+
+/* Apply flex alignment ONLY to <li> elements where the first child is an image or contains an image */
+li:has(> p img),
+li:has(> a img),
+li:has(> img) {
+	/* display: flex; */
+	align-items: flex-start;
+	gap: 8px;
+	margin-bottom: 0.5em;
+	flex-wrap: wrap;
+}
+
+/* Ensure nested lists remain block-level */
+li:has(> p img)>ol,
+li:has(> p img)>ul,
+li:has(> a img)>ol,
+li:has(> a img)>ul {
+	display: block;
+}
+
+li img {
+	/* max-height: 24px; */
+	width: auto;
+	object-fit: contain;
+	vertical-align: top;
+	margin: 0;
+	display: unset;
+}
+
+/* Ensure images are aligned properly within flex container */
+li:has(> p img) img,
+li:has(> a img) img,
+li:has(> img) img {
+	align-self: flex-start;
+	/* margin-right: 8px; */
+}
+
+/* Ensure text wraps properly around images */
+li:has(> p img) p,
+li:has(> a img) a {
+	/* display: flex; */
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0;
+}
+
+/* new list style end */
+
+/* Used on the first column of a table, when rowheader="firstcol" is used */
+.firstcol {
+	font-weight: bold;
+}
+
+/* Various basic phrase styles */
+.bold {
+	font-weight: bold;
+}
+
+.boldItalic {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
+.Stem {
+	font-weight: bold;
+	page-break-after: avoid;
+}
+
+.wintitle {
+	font-weight: bold;
+}
+
+.uicontrol {
+	font-weight: bold;
+}
+
+a[href] .uicontrol {
+	font-weight: normal;
+}
+
+.parmname {
+	font-weight: bold;
+}
+
+.kwd {
+	font-weight: bold;
+}
+
+.defkwd {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+var,
+.var,
+.varname {
+	font-style: italic;
+}
+
+.shortcut {
+	text-decoration: underline;
+}
+
+/* Default of bold for definition list terms */
+.dlterm {
+	font-weight: bold;
+	padding-top: 0.83em;
+	padding-bottom: 0.25em;
+}
+
+/* Use CSS to expand lists with @compact="no" */
+.dltermexpand {
+	font-weight: bold;
+	margin-top: 0.83em;
+}
+
+/*Cell border styles*/
+.cellrowborder {
+	border-left: none;
+	border-top: none;
+	border-right: solid 1px;
+	border-bottom: solid 1px;
+}
+
+.row-nocellborder {
+	border-left: none;
+	border-top: none;
+	border-right: hidden;
+	border-bottom: solid 1px;
+}
+
+.cell-norowborder {
+	border-left: none;
+	border-top: none;
+	border-right: solid 1px;
+	border-bottom: hidden;
+}
+
+.nocellnorowborder {
+	border-left: none;
+	border-top: none;
+	border-right: hidden;
+	border-bottom: hidden;
+}
+
+.linkissue {
+	background-color: rgb(235, 187, 187);
+	text-decoration: none;
+	border-bottom: #ea215a 0.125em solid;
+	text-underline-offset: 1.5px;
+}
+
+.Content_Banner {
+	font-size: 14px;
+	background-color: #dce4e8;
+	padding: 1% 2%;
+	font-weight: 500;
+	color: #014272;
+	border-radius: 5px;
+	line-height: 24px;
+	margin-bottom: 2%;
+}
+
+.codeHeader {
+	box-sizing: content-box;
+	background-color: #e6e6e6;
+	color: #161616;
+	border: 6px solid #e6e6e6;
+	border-bottom: 0;
+	flex-direction: row;
+	min-height: 30px;
+	margin-top: 16px;
+	font-size: 0.8rem;
+	display: flex;
+}
+
+.codeHeader>.language {
+	flex-grow: 1;
+	padding: 2px 16px;
+}
+
+.codeHeader>.action {
+	border: 0.125rem solid #e6e6e6;
+	color: #161616;
+	cursor: pointer;
+	background-color: aliceblue;
+	border-left-width: 6px;
+	align-items: center;
+	padding: 2px 10px;
+	line-height: normal;
+	display: flex;
+}
+
+.position-relative {
+	position: relative !important;
+}
+
+.icon {
+	justify-content: center;
+	align-items: center;
+	display: inline-flex;
+	width: 1em;
+	height: 1em;
+}
+
+.margin-right-xxs {
+	margin-inline-end: 0.5rem !important;
+}
+
+/* 
+  code[class*="language-"],
+  pre {
+	font-family: Monaco, Consolas, "Andale Mono", "Ubuntu Mono", monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: unset;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+  } */
+/* 
+  @media print {
+  
+	code[class*="language-"],
+	pre {
+	  text-shadow: none;
+	}
+  }
+  
+  pre,
+  :not(pre)>code[class*="language-"] {
+	border-radius: 16px;
+	background: #f5f5f7;
+  }
+  
+  pre {
+	padding: 1em;
+	margin: 0.5em 0;
+	overflow: auto;
+  }
+  
+  :not(pre)>code[class*="language-"] {
+	padding: 0.15em 0.2em 0.05em;
+	border-radius: 0.3em;
+	border: 0.13em solid hsl(30, 20%, 40%);
+	box-shadow: 1px 1px 0.3em -0.1em black inset;
+	white-space: normal;
+  }
+  
+  pre {
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linenumber;
+  }
+  
+  pre>code {
+	position: relative;
+	background-color: unset !important;
+  }
+  
+  pre>code .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: -3.8em;
+	width: 3em;
+	letter-spacing: -1px;
+	border-right: 1px solid #999;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  } */
+
+.line-numbers-rows>span {
+	pointer-events: none;
+	display: block;
+	counter-increment: linenumber;
+}
+
+.line-numbers-rows>span:before {
+	content: counter(linenumber);
+	color: #999;
+	display: block;
+	padding-right: 0.8em;
+	text-align: right;
+}
+
+a.externallink::after {
+	content: "";
+	width: 15px;
+	height: 19px;
+	margin-left: 1px;
+	vertical-align: text-top;
+	background-image: url("../../global/action_expand32.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	color: inherit;
+	display: inline-block;
+}
+
+a.externalspace::after {
+	content: "";
+	width: 15px;
+	height: 15px;
+	margin-left: 1px;
+	vertical-align: text-top;
+	background-image: url("../../global/action_expand32.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	color: inherit;
+	display: inline-block;
+}
+
+[data-error] {
+	border: 6px solid #f44336 !important;
+	position: relative;
+	cursor: help;
+	transition: border-color 0.2s ease;
+}
+
+/* Error tooltip container */
+[data-error]::before {
+	content: attr(data-error);
+	position: fixed;
+	padding: 10px 16px;
+	width: max-content;
+	max-width: min(300px, calc(100vw - 40px));
+	background-color: #424242;
+	color: #ffffff;
+	font-family: sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	border-radius: 4px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+	white-space: pre-wrap;
+	word-break: break-word;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 100000;
+	transition: opacity 0.2s ease, visibility 0.2s ease;
+	pointer-events: none;
+}
+
+[data-error]:hover::before {
+	opacity: 1;
+	visibility: visible;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+[class^="UNIT"] {
+	background-color: lightgreen;
+}
+
+.idoc-color-skyblue {
+	background-color: lightblue;
+}
+
+.readyonly-begin {
+	margin: auto;
+	width: 100%;
+	border: 6px solid #ffb24d;
+	padding: 10px;
+	line-height: 4px;
+	background-color: #fde159;
+}
+
+.readyonly-end {
+	margin: auto;
+	width: 100%;
+	border: 6px solid #ffb24d;
+	padding: 10px;
+	line-height: 4px;
+	background-color: #ffb24d;
+}
+
+.readyonly-lst {
+	background-color: #fde159;
+	width: 100%;
+	border: 6px solid #ffb24d;
+}
+
+.cke_show_border {
+	border: none !important;
+}
+
+[data-reuse-section-begin] {
+	position: relative;
+	border-top: 2px solid #ffb24d !important;
+	padding-top: 5px;
+}
+
+[data-reuse-section-end] {
+	border-bottom: 2px solid #ffb24d !important;
+	padding-bottom: 5px;
+}
+
+[data-reuse-section-begin]::before {
+	content: "sec " attr(data-reuse-section-begin);
+	background-color: yellow;
+	font-size: 10px;
+	border: 3px solid black;
+	padding: 2px 5px;
+	z-index: 1000;
+	white-space: nowrap;
+}
+
+[data-reuse-section-end]::after {
+	content: "sec " attr(data-reuse-section-end);
+	background-color: yellow;
+	border: 3px solid black;
+	font-size: 10px;
+	padding: 2px 5px;
+	z-index: 1000;
+	white-space: nowrap;
+}
+
+/* [data-reuse-section-begin]:hover::before {
+	display: block;
+  } */
+
+.mention {
+	display: inline-block;
+	padding: 2px 5px;
+	border-radius: 3px;
+	font-weight: bold;
+}
+
+.mention-blue {
+	background-color: #cce5ff;
+	color: #004085;
+}
+
+.mention-default {
+	background-color: #e9ecef;
+	color: #495057;
+}
+
+.mention-error {
+	background-color: #f8d7da;
+	color: #721c24;
+	border: 1px solid #f5c6cb;
+}
+
+.cke_autocomplete_panel {
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.cke_autocomplete_panel strong {
+	font-weight: bold;
+}
+
+p img {
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+span[class^="data-gnv"],
+span[class^="data-pnv"],
+span[class^="data-nv"] {
+	background-color: #f0f0f0;
+	padding: 2px 4px;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	cursor: pointer;
+}
+
+span[class^="data-gnv"]:hover,
+span[class^="data-pnv"]:hover,
+span[class^="data-nv"]:hover {
+	background-color: #e0e0e0;
+}
+
+span[class^="data-nv"] {
+	border-left: 3px solid #ff9800;
+}
+
+span[class^="data-gnv"] {
+	border-left: 3px solid #4caf50;
+}
+
+span[class^="data-pnv"] {
+	border-left: 3px solid #2196f3;
+}
+
+.marker {
+	background-color: #ccf0ff;
+}
+
+/* Base condition styling */
+[data-condition-name],
+[data-condition-value] {
+	position: relative;
+	background-color: #fff8e6;
+	padding: 16px;
+	border-left: 6px solid #ffb319;
+	border-radius: 4px;
+	margin: 12px 0;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	width: calc(100% - 32px);
+	/* Account for padding */
+	box-sizing: border-box;
+	clear: both;
+	display: block;
+}
+
+/* Condition label styling */
+[data-condition-name]::before,
+[data-condition-value]::before {
+	content: attr(data-condition-name) ": " attr(data-condition-value);
+	position: absolute;
+	top: -8px;
+	left: 8px;
+	display: inline-block;
+	font-family: "Inter";
+	font-size: 0.75em;
+	padding: 2px 8px;
+	border-radius: 12px;
+	background-color: #ffb319;
+	color: #000;
+	font-weight: 500;
+	letter-spacing: 0.3px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	z-index: 1;
+	max-width: calc(100% - 32px);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Paragraph specific styling */
+p[data-condition-name],
+p[data-condition-value] {
+	display: block;
+	line-height: 1.6;
+}
+
+/* Inline element styling */
+span[data-condition-name],
+span[data-condition-value] {
+	display: inline;
+	padding: 2px 4px;
+	margin: 0 2px;
+	border-radius: 3px;
+	border-left: 6px solid #ffb319;
+	background-color: rgba(255, 179, 25, 0.1);
+	box-shadow: none;
+}
+
+/* Inline element label */
+span[data-condition-name]::before,
+span[data-condition-value]::before {
+	position: static;
+	font-size: 0.7em;
+	padding: 1px 4px;
+	margin-right: 4px;
+	border-radius: 3px;
+	vertical-align: top;
+}
+
+/* Nested conditions - Block elements */
+[data-condition-name] [data-condition-name]:not(span),
+[data-condition-value] [data-condition-value]:not(span) {
+	margin: 12px 8px;
+	background-color: #fff;
+	border: 6px solid #ffd700;
+	border-left: 6px solid #ffd700;
+}
+
+/* Nested conditions - Inline elements */
+[data-condition-name] span[data-condition-name],
+[data-condition-value] span[data-condition-value] {
+	background-color: rgba(255, 215, 0, 0.1);
+	border-left: 6px solid #ffd700;
+}
+
+/* Table specific condition styling */
+table[data-condition-name],
+table[data-condition-value] {
+	border-collapse: collapse;
+	width: 100%;
+	background-color: transparent;
+	box-shadow: none;
+	border-left: none;
+	padding: 0;
+}
+
+/* Table cell styling */
+td[data-condition-name],
+td[data-condition-value],
+th[data-condition-name],
+th[data-condition-value] {
+	background-color: #fff8e6;
+	border: 6px solid #ffb319;
+	padding: 8px;
+}
+
+/* List specific styling - Updated */
+ul[data-condition-name],
+ol[data-condition-name],
+ul[data-condition-value],
+ol[data-condition-value] {
+	padding-left: 24px;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/* List item styling - Updated */
+li[data-condition-name],
+li[data-condition-value] {
+	margin: 4px 0;
+	padding: 8px 12px;
+	background-color: #fff8e6;
+	border-radius: 4px;
+	border-left: 6px solid #ffb319;
+	width: calc(100% - 24px);
+	box-sizing: border-box;
+	position: relative;
+}
+
+/* Nested list styling */
+li[data-condition-name] ul,
+li[data-condition-name] ol,
+li[data-condition-value] ul,
+li[data-condition-value] ol {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+/* Handle stacked conditions */
+[data-condition-name]+[data-condition-name],
+[data-condition-value]+[data-condition-value] {
+	margin-top: 16px;
+}
+
+/* Prevent label overflow on small elements */
+[data-condition-name].small-element::before,
+[data-condition-value].small-element::before {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: calc(100% - 16px);
+}
+
+/* Hover state for better visibility */
+[data-condition-name]:hover,
+[data-condition-value]:hover {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Focus state for accessibility */
+[data-condition-name]:focus,
+[data-condition-value]:focus {
+	outline: 2px solid #ffb319;
+	outline-offset: 2px;
+}
+
+/* pre tag styling */
+pre,
+.mw-code {
+	position: relative;
+	background: #f5f5f7 !important;
+	border-radius: 16px;
+	border: 1px solid #e6e6e6;
+	margin: 1.5rem 0 !important;
+	padding: 3rem 1.5rem 1.5rem !important;
+	/* Extra padding on top for copy button */
+	font-family: Monaco, Consolas, "Andale Mono", "Ubuntu Mono", monospace;
+	font-size: 0.875rem;
+	line-height: 1.6;
+	overflow: auto !important;
+	white-space: pre-wrap !important;
+	word-break: break-word !important;
+	word-spacing: normal !important;
+	tab-size: 4 !important;
+	-webkit-hyphens: none !important;
+	-moz-hyphens: none !important;
+	-ms-hyphens: none;
+	hyphens: none;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 3rem;
+	left: 0;
+	width: 3em;
+	letter-spacing: -1px;
+	border-right: 1px solid #e6e6e6;
+	user-select: none;
+	padding: 1.5rem 0;
+}
+
+.line-numbers-rows>span {
+	display: block;
+	counter-increment: linenumber;
+	color: #999;
+	padding: 0 1rem;
+}
+
+.line-numbers-rows>span:before {
+	content: counter(linenumber);
+	display: block;
+	padding-right: 0.8em;
+	text-align: right;
+}
+
+pre>code {
+	background: transparent !important;
+	padding: 0;
+	margin: 0;
+	font-size: inherit;
+	font-family: inherit;
+	line-height: inherit;
+}
+
+pre::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+	background: #f5f5f7;
+	border-radius: 8px;
+}
+
+pre::-webkit-scrollbar-thumb {
+	background: #d1d1d1;
+	border-radius: 8px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+	background: #b3b3b3;
+}
+
+@media (max-width: 768px) {
+
+	pre,
+	.mw-code {
+		padding: 3rem 1rem 1rem;
+		font-size: 0.8125rem;
+	}
+
+}
+
+@media print {
+
+	code[class*="language-"],
+	pre {
+		text-shadow: none;
+		background: #fff !important;
+		border: 1px solid #ddd !important;
+		box-shadow: none !important;
+		page-break-inside: avoid;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+		margin: 1cm 0;
+		padding: 1cm;
+		font-size: 10pt;
+		line-height: 1.4;
+	}
+
+	.line-numbers-rows {
+		border-right: 1px solid #999;
+		color: #666;
+	}
+
+	pre,
+	.mw-code {
+		background: none;
+		box-shadow: none;
+		border: 1px solid #ddd;
+	}
+
+}
+
+.minitoc {
+	display: block;
+	background: linear-gradient(to right, #f8f9fa, #ffffff);
+	border-left: 6px solid #2196;
+	border-radius: 4px;
+	padding: 12px 16px;
+	margin: 16px 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+	position: relative;
+	font-family: sans-serif;
+	font-size: 0.95em;
+	color: #37474f;
+}
+
+a .image {
+	padding: unset !important;
+}
+
+/* Universal snippet styling */
+snippet {
+	position: relative;
+	background-color: #f5f5f5;
+	border-left: 6px solid #008cba;
+	border-radius: 4px;
+	min-height: 20px;
+	display: block;
+	/* Default to block */
+	width: 100%;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+/* Base snippet label */
+snippet::before {
+	content: attr(data-description);
+	position: absolute;
+	top: -18px;
+	left: 0;
+	background-color: #f1f8ff;
+	color: #008cba;
+	font-size: 10px;
+	padding: 0px 6px;
+	border-radius: 1px;
+	z-index: 2;
+	white-space: nowrap;
+}
+
+/* Inline snippet variant */
+snippet[data-display="inline"] {
+	display: inline-block;
+	width: auto;
+}
+
+/* Common styles for all snippets */
+snippet:hover {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Inherit styles for nested elements */
+/* snippet * {
+	background-color: inherit;
+	border-color: inherit;
+	margin: inherit;
+  } */
+
+/* Fix spacing for snippets inside paragraphs */
+p>snippet {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+comment {
+	background-color: #fff3cd;
+	border-bottom: 6px dashed #ffc107;
+	padding: 2px 4px;
+	margin: 0 2px;
+	border-radius: 3px;
+	display: inline;
+	cursor: pointer;
+}
+
+comment::before {
+	content: "💬";
+	font-size: 12px;
+	margin-right: 4px;
+	vertical-align: middle;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	border-bottom: 1px dotted rgba(0, 0, 0, 0.38);
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	z-index: 1000;
+	min-width: 200px;
+	max-width: 300px;
+	background-color: #202124;
+	color: #ffffff;
+	text-align: left;
+	padding: 8px 12px;
+	border-radius: 4px;
+	font-size: 13px;
+	line-height: 1.5;
+	font-weight: 400;
+	font-family: "Inter";
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18), 0 3px 12px rgba(0, 0, 0, 0.12);
+	transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+	pointer-events: none;
+}
+
+/* Show tooltip */
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+	transform: translateX(-50%) translateY(0);
+}
+
+
+/* description list, with terms and descriptions */
+dl {
+	margin: 16px 0;
+	font-family: "Inter";
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+dl dt {
+	font-weight: 600;
+	color: #161616;
+	margin-top: 16px;
+	margin-bottom: 4px;
+	padding-left: 0;
+}
+
+dl dt:first-child {
+	margin-top: 0;
+}
+
+dl dd {
+	margin-left: 24px;
+	margin-top: 0;
+	margin-bottom: 8px;
+	padding-left: 0;
+	color: #333;
+}
+
+/* For nested description lists */
+dl dl {
+	margin: 8px 0 8px 24px;
+}
+
+/* Code styling within description lists */
+dl code {
+	font-family: Consolas, Menlo, "DejaVu Sans Mono", "Liberation Mono", monospace;
+	background-color: #e1e8f6;
+	padding: 2px 4px;
+	border-radius: 3px;
+	font-size: 13px;
+}
+
+/* Link styling within description lists */
+dl a[href],
+dl a.fragment-icon {
+	color: #1a6aff;
+	text-decoration: none;
+}
+
+dl a[href]:active,
+dl a.fragment-icon:active {
+	color: #111b58;
+	text-decoration: none;
+}
+
+dl a[href]:hover,
+dl a.fragment-icon:hover {
+	text-decoration: underline;
+	text-underline-offset: 20%;
+	color: #2f4ed1;
+}
+
+context {
+	background-color: #f1f8ff;
+	border-bottom: 6px dashed #008cba;
+	padding: 2px 4px;
+	margin: 0 2px;
+	border-radius: 3px;
+	display: inline;
+}
+
+/* Attribute Styling */
+[data-type],
+[data-role],
+[data-format] {
+	position: relative;
+	display: inline-block;
+	padding: 2px 8px;
+	margin: 2px 0;
+	border-radius: 3px;
+	background-color: #f8f9fa;
+}
+
+/* Individual attribute background styling */
+[data-type] {
+	background-color: rgba(74, 209, 95, 0.1);
+	border-left: 6px solid #4AD15F;
+}
+
+[data-role] {
+	background-color: rgba(26, 106, 255, 0.1);
+	border-left: 6px solid #1A6AFF;
+}
+
+[data-format] {
+	background-color: rgba(255, 179, 25, 0.1);
+	border-left: 6px solid #FFB319;
+}
+
+
+/* Attribute labels */
+[data-type]::before,
+[data-role]::before,
+[data-format]::before {
+	display: inline-block;
+	padding: 0 6px;
+	margin-right: 8px;
+	font-size: 11px;
+	font-family: "Inter";
+	border-radius: 2px;
+	font-weight: 500;
+}
+
+/* Individual label styling */
+[data-type]::before {
+	content: 'type: ' attr(data-type);
+	background-color: #4AD15F;
+	color: white;
+}
+
+[data-role]::before {
+	content: 'role: ' attr(data-role);
+	background-color: #1A6AFF;
+	color: white;
+}
+
+[data-format]::before {
+	content: 'format: ' attr(data-format);
+	background-color: #FFB319;
+	color: white;
+}
+
+
+/* Multiple attributes styling */
+[data-type][data-role],
+[data-type][data-format],
+[data-role][data-format],
+[data-type][data-name],
+[data-role][data-name],
+[data-format][data-name] {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+/* Specific element type adjustments */
+h1[data-type],
+h1[data-role],
+h1[data-format],
+h2[data-type],
+h2[data-role],
+h2[data-format],
+h3[data-type],
+h3[data-role],
+h3[data-format],
+h4[data-type],
+h4[data-role],
+h4[data-format],
+h5[data-type],
+h5[data-role],
+h5[data-format],
+h6[data-type],
+h6[data-role],
+h6[data-format] {
+	display: block;
+	margin: 8px 0;
+}
+
+/* Handle comma-separated values */
+[data-type]::before,
+[data-role]::before,
+[data-format]::before {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 200px;
+}
+
+
+/* Ensure figcaption works well with showblocks mode */
+.cke_show_blocks figcaption {
+	background-color: rgba(255, 255, 255, 0.95) !important;
+	border: 2px solid rgba(99, 102, 241, 0.2) !important;
+	border-radius: 4px !important;
+	padding: 8px 12px !important;
+	margin: 4px 0 !important;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+}
+
+.cke_show_blocks figcaption::before {
+	content: "figcaption";
+	position: absolute;
+	top: -8px;
+	right: 8px;
+	font-size: 10px;
+	background: #fff;
+	padding: 2px 6px;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	color: #666;
+	font-family: Monaco, monospace;
+	z-index: 1;
+}
+
+/* Ensure figure works well with showblocks mode */
+.cke_show_blocks figure {
+	border: 2px solid rgba(99, 102, 241, 0.2) !important;
+	border-radius: 4px !important;
+	padding: 12px !important;
+	margin: 16px 0 !important;
+	background-color: rgba(99, 102, 241, 0.02) !important;
+}
+
+.cke_show_blocks figure::before {
+	content: "figure";
+	position: absolute;
+	top: -8px;
+	right: 8px;
+	font-size: 10px;
+	background: #fff;
+	padding: 2px 6px;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	color: #666;
+	font-family: Monaco, monospace;
+	z-index: 1;
+}
+
+/* Ensure images work well with showblocks mode */
+.cke_show_blocks figure img {
+	border: 2px solid rgba(236, 72, 153, 0.2) !important;
+	border-radius: 4px !important;
+	padding: 4px !important;
+	background-color: rgba(236, 72, 153, 0.02) !important;
+	box-shadow: 0 1px 3px rgba(236, 72, 153, 0.1) !important;
+}
+
+/* Ensure figcaption works well with showblocks mode */
+.cke_show_blocks figcaption {
+	background-color: rgba(255, 255, 255, 0.95) !important;
+	border: 2px solid rgba(99, 102, 241, 0.2) !important;
+	border-radius: 4px !important;
+	padding: 8px 12px !important;
+	margin: 4px 0 !important;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+}
+
+.cke_show_blocks figcaption::before {
+	content: "figcaption";
+	position: absolute;
+	top: -8px;
+	right: 8px;
+	font-size: 10px;
+	background: #fff;
+	padding: 2px 6px;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	color: #666;
+	font-family: Monaco, monospace;
+	z-index: 1;
+}
+
+/* Ensure figure works well with showblocks mode */
+.cke_show_blocks figure {
+	border: 2px solid rgba(99, 102, 241, 0.2) !important;
+	border-radius: 4px !important;
+	padding: 12px !important;
+	margin: 16px 0 !important;
+	background-color: rgba(99, 102, 241, 0.02) !important;
+}
+
+.cke_show_blocks figure::before {
+	content: "figure";
+	position: absolute;
+	top: -8px;
+	right: 8px;
+	font-size: 10px;
+	background: #fff;
+	padding: 2px 6px;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	color: #666;
+	font-family: Monaco, monospace;
+	z-index: 1;
+}
+
+/* Ensure images work well with showblocks mode */
+.cke_show_blocks figure img {
+	border: 2px solid rgba(236, 72, 153, 0.2) !important;
+	border-radius: 4px !important;
+	padding: 4px !important;
+	background-color: rgba(236, 72, 153, 0.02) !important;
+	box-shadow: 0 1px 3px rgba(236, 72, 153, 0.1) !important;
+}
+
+/* Enhanced Snippet Styling in Show Blocks Mode */
+.cke_show_blocks snippet {
+	border: 2px solid rgba(79, 70, 229, 0.3) !important;
+	background-color: rgba(79, 70, 229, 0.02) !important;
+	padding: 16px 20px !important;
+	margin: 12px 0 !important;
+	border-radius: 6px !important;
+	position: relative !important;
+	display: block !important;
+	box-shadow: 0 2px 4px rgba(79, 70, 229, 0.05) !important;
+}
+
+.cke_show_blocks snippet::before {
+	content: "snippet" !important;
+	position: absolute !important;
+	top: -10px !important;
+	right: 10px !important;
+	background: #fff !important;
+	color: rgba(79, 70, 229, 0.8) !important;
+	padding: 2px 8px !important;
+	font-size: 11px !important;
+	font-family: Monaco, monospace !important;
+	border-radius: 3px !important;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+	z-index: 2 !important;
+}
+
+.cke_show_blocks snippet[data-display="inline"] {
+	display: inline-block !important;
+	padding: 4px 8px !important;
+	margin: 0 4px !important;
+}
+
+/* Enhanced Admonition Styling in Show Blocks Mode */
+.cke_show_blocks .admonition {
+	border: 2px solid rgba(59, 130, 246, 0.3) !important;
+	background-color: rgba(59, 130, 246, 0.02) !important;
+	padding: 20px 24px !important;
+	margin: 16px 0 !important;
+	border-radius: 8px !important;
+	position: relative !important;
+	box-shadow: 0 2px 6px rgba(59, 130, 246, 0.08) !important;
+}
+
+.cke_show_blocks .admonition::before {
+	content: "admonition" !important;
+	position: absolute !important;
+	top: -10px !important;
+	right: 10px !important;
+	background: #fff !important;
+	color: rgba(59, 130, 246, 0.8) !important;
+	padding: 2px 8px !important;
+	font-size: 11px !important;
+	font-family: Monaco, monospace !important;
+	border-radius: 3px !important;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+	z-index: 2 !important;
+}
+
+/* Specific Admonition Types in Show Blocks Mode */
+.cke_show_blocks .admonition-note-content {
+	border-left: 4px solid #3B82F6 !important;
+	background-color: rgba(59, 130, 246, 0.03) !important;
+}
+
+.cke_show_blocks .admonition-important-content {
+	border-left: 4px solid #EF4444 !important;
+	background-color: rgba(239, 68, 68, 0.03) !important;
+}
+
+.cke_show_blocks .admonition-tip-content {
+	border-left: 4px solid #10B981 !important;
+	background-color: rgba(16, 185, 129, 0.03) !important;
+}
+
+.cke_show_blocks .admonition-caution-content {
+	border-left: 4px solid #F59E0B !important;
+	background-color: rgba(245, 158, 11, 0.03) !important;
+}
+
+.cke_show_blocks .admonition-deprecated-content {
+	border-left: 4px solid #6B7280 !important;
+	background-color: rgba(107, 114, 128, 0.03) !important;
+}
+
+.cke_show_blocks .admonition-recommendation-content {
+	border-left: 4px solid #8B5CF6 !important;
+	background-color: rgba(139, 92, 246, 0.03) !important;
+}
+
+.cke_show_blocks .admonition-internal-content {
+	border-left: 4px solid #EC4899 !important;
+	background-color: rgba(236, 72, 153, 0.03) !important;
+}
+
+/* Hover effects for better interaction */
+.cke_show_blocks snippet:hover,
+.cke_show_blocks .admonition:hover {
+	transform: translateY(-1px) !important;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+	transition: all 0.2s ease-in-out !important;
+}
+
+/* Enhanced Variable Styling in Show Blocks Mode */
+.cke_show_blocks span[class^="data-gnv"],
+.cke_show_blocks span[class^="data-pnv"],
+.cke_show_blocks span[class^="data-nv"] {
+	position: relative;
+	display: inline-block;
+	padding: 4px 8px;
+	margin: 0 2px;
+	border-radius: 4px;
+	font-family: "Inter", sans-serif;
+	transition: all 0.2s ease;
+	cursor: pointer;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Global Variables */
+.cke_show_blocks span[class^="data-gnv"] {
+	background-color: rgba(76, 175, 80, 0.1);
+	border: 1px solid #4caf50;
+	border-left: 3px solid #4caf50;
+}
+
+.cke_show_blocks span[class^="data-gnv"]::before {
+	content: "Global Variable";
+	position: absolute;
+	top: -16px;
+	left: 0;
+	font-size: 10px;
+	background-color: #4caf50;
+	color: white;
+	padding: 2px 6px;
+	border-radius: 3px;
+	white-space: nowrap;
+	opacity: 0;
+	transform: translateY(5px);
+	transition: all 0.2s ease;
+}
+
+/* Product Variables */
+.cke_show_blocks span[class^="data-pnv"] {
+	background-color: rgba(33, 150, 243, 0.1);
+	border: 1px solid #2196f3;
+	border-left: 3px solid #2196f3;
+}
+
+.cke_show_blocks span[class^="data-pnv"]::before {
+	content: "Product Variable";
+	position: absolute;
+	top: -16px;
+	left: 0;
+	font-size: 10px;
+	background-color: #2196f3;
+	color: white;
+	padding: 2px 6px;
+	border-radius: 3px;
+	white-space: nowrap;
+	opacity: 0;
+	transform: translateY(5px);
+	transition: all 0.2s ease;
+}
+
+/* Normal Variables */
+.cke_show_blocks span[class^="data-nv"] {
+	background-color: rgba(255, 152, 0, 0.1);
+	border: 1px solid #ff9800;
+	border-left: 3px solid #ff9800;
+}
+
+.cke_show_blocks span[class^="data-nv"]::before {
+	content: "Variable";
+	position: absolute;
+	top: -16px;
+	left: 0;
+	font-size: 10px;
+	background-color: #ff9800;
+	color: white;
+	padding: 2px 6px;
+	border-radius: 3px;
+	white-space: nowrap;
+	opacity: 0;
+	transform: translateY(5px);
+	transition: all 0.2s ease;
+}
+
+/* Hover Effects for Variables */
+.cke_show_blocks span[class^="data-gnv"]:hover,
+.cke_show_blocks span[class^="data-pnv"]:hover,
+.cke_show_blocks span[class^="data-nv"]:hover {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+	transform: translateY(-1px);
+}
+
+.cke_show_blocks span[class^="data-gnv"]:hover::before,
+.cke_show_blocks span[class^="data-pnv"]:hover::before,
+.cke_show_blocks span[class^="data-nv"]:hover::before {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Enhanced Condition Styling in Show Blocks Mode */
+.cke_show_blocks [data-condition-name],
+.cke_show_blocks [data-condition-value] {
+	position: relative;
+	background-color: #fff8e6;
+	padding: 16px;
+	border: 1px solid rgba(255, 179, 25, 0.3);
+	border-left: 6px solid #ffb319;
+	border-radius: 6px;
+	margin: 16px 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+	transition: all 0.2s ease;
+}
+
+/* Condition Label Enhancement */
+.cke_show_blocks [data-condition-name]::before,
+.cke_show_blocks [data-condition-value]::before {
+	content: attr(data-condition-name) ": " attr(data-condition-value);
+	position: absolute;
+	top: -10px;
+	left: 12px;
+	display: inline-block;
+	font-family: "Inter", sans-serif;
+	font-size: 11px;
+	padding: 3px 10px;
+	border-radius: 12px;
+	background: linear-gradient(45deg, #ffb319, #ffd700);
+	color: #000;
+	font-weight: 500;
+	letter-spacing: 0.3px;
+	box-shadow: 0 2px 4px rgba(255, 179, 25, 0.2);
+	z-index: 1;
+	max-width: calc(100% - 40px);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: all 0.2s ease;
+}
+
+/* Hover Effects for Conditions */
+.cke_show_blocks [data-condition-name]:hover,
+.cke_show_blocks [data-condition-value]:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+	transform: translateY(-2px);
+	border-color: rgba(255, 179, 25, 0.5);
+}
+
+.cke_show_blocks [data-condition-name]:hover::before,
+.cke_show_blocks [data-condition-value]:hover::before {
+	transform: translateY(-2px);
+	box-shadow: 0 3px 6px rgba(255, 179, 25, 0.3);
+}
+
+/* Nested Conditions Enhancement */
+.cke_show_blocks [data-condition-name] [data-condition-name],
+.cke_show_blocks [data-condition-value] [data-condition-value] {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(255, 215, 0, 0.3);
+	border-left: 6px solid #ffd700;
+	margin: 12px 8px;
+}
+
+/* Inline Condition Enhancement */
+.cke_show_blocks span[data-condition-name],
+.cke_show_blocks span[data-condition-value] {
+	display: inline;
+	padding: 2px 6px;
+	margin: 0 2px;
+	border-radius: 3px;
+	border: 1px solid rgba(255, 179, 25, 0.3);
+	border-left: 3px solid #ffb319;
+	background-color: rgba(255, 179, 25, 0.1);
+	box-shadow: none;
+	font-family: "Inter", sans-serif;
+	transition: all 0.2s ease;
+}
+
+/* When both width and height HTML attributes exist, use them */
+img[width][height] {
+	width: attr(width px) !important;
+	height: attr(height px) !important;
+}
+
+/* When only width HTML attribute exists, use it */
+img[width] {
+	width: attr(width px) !important;
+}
+
+/* When only height HTML attribute exists, use it */
+img[height] {
+	height: attr(height px) !important;
+}
+
+/* When both inline styles width and width exist, use width attribute */
+img[width][style*="width:"] {
+	width: revert !important;
+}
+
+/* When both inline  styles height and height exist, use height attribute */
+img[height][style*="height:"] {
+	height: revert !important;
+}
+
+/* When only inline width exists (no HTML attributes), ensure height is auto */
+img:not([width]):not([height])[style*="width:"]:not([style*="height:"]) {
+	height: auto;
+}
+
+/* When only inline height exists (no HTML attributes), ensure width is auto */
+img:not([width]):not([height])[style*="height:"]:not([style*="width:"]) {
+	width: auto;
+}
+
+/* When both inline styles exist but no HTML attributes, use  inline styles*/
+img:not([width]):not([height])[style*="width:"][style*="height:"] {
+	width: auto;
+	height: auto;
+}
+
+/* When both inline styles exist AND HTML attributes exist, use HTML attributes */
+img[width][height][style*="width:"][style*="height:"] {
+	width: attr(width px) !important;
+	height: attr(height px) !important;
+}
+
+/* When only inline styles exist AND HTML attributes exist, use HTML attributes */
+img[style*="width:"][style*="height:"]:not([width]):not([height]) {
+	width: auto;
+	height: auto;
+}

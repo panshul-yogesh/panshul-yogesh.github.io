@@ -1,0 +1,5 @@
+{
+  "title": "Change the language in wrapper file",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\"></p><p>When OO Workflow Designer was installed, there was an option to select a supported language in addition to English. This language support is required if, for example, you need to ping a server that is configured in Japanese. You can change this language by editing the <b>designer-wrapper.conf</b> file.\n</p>\n<ol><li>Open the <b>designer-wrapper.conf</b> file in a text editor (located under <b>&lt;installation_folder&gt;/designer/conf</b>).</li>\n<li>Edit the language property. For example, change wrapper.lang=en_US to wrapper.lang=ja_JP.</li>\n<li>Save the <b>designer-wrapper.conf</b> file.</li></ol>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

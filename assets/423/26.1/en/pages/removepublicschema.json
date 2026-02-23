@@ -1,0 +1,5 @@
+{
+  "title": "Remove public schema from external PostgreSQL",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\"></p><div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>The suite uses a private schema for the database of each suite component (such as Service Management and Suite Administration). For best security, you can remove the public schema of both the Postgres database and the suite component databases. However, you need to make sure that each public schema doesn’t contain database objects that are in use before the removal. </p>\n<p>For detailed instructions on how to remove a public schema, see the PostgreSQL documentation. </p>\n<p class=\"mw-empty-elt\"></p></div>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

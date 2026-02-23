@@ -1,0 +1,5 @@
+{
+  "title": "Delete entitlement",
+  "content": "<div class=\"mw-parser-output\"><br/><p>This page explains how to delete an entitlement record.<span style=\"color: rgb(22, 22, 22);\">.</span></p>\n<h2>Prerequisite</h2>\n<p>If the entitlement is in the \"In<em> </em>use\" or \"Deactivating\" phase, change it to the \"Inactive\" phase before deleting it. For the procedure to change the phase of a product instance, see the \"Change phase of entitlement\" section in <em>Entitlement workflow.</em></p>\n<h2>Delete entitlement</h2>\n<ol>\n<li>Click <a class=\"image\" href=\"\"> <img alt=\"Main menu button\" height=\"31\" src=\"../../../images/Main_menu_icon_service_management_375331a5.png\" width=\"30\"/> </a> &gt; <strong>Plan</strong> &gt; <strong>Company</strong>.</li>\n<li>In the <strong>Companies</strong> dropdown, click <b>Entitlement</b><strong>s.</strong></li>\n<li>Select the entitlement you want to delete.</li>\n<li>Click <strong>Delete</strong>.</li>\n<li>Click <strong>OK</strong> in the <strong>Confirm Delete</strong> dialog box.</li>\n</ol>\n</div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

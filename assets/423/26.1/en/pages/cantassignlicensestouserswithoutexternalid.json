@@ -1,0 +1,5 @@
+{
+  "title": "Can't assign licenses to imported users",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>After you export a source tenant and import it to a target tenant, an error occurs when you assign a license to an imported user.</p>\n<h2>Cause</h2>\n<p>After a tenant export and import, an imported user's Person record doesn't have an <strong>ExternalId</strong> value. Note: <strong>ExternalId </strong>is a hidden field in Service Management.</p>\n<h2>Solution </h2>\n<p>All users have an external ID defined in Suite Administration. Synchronize their external ID values from Suite Administration: </p>\n<ol>\n<li>In the agent interface, navigate to <strong>Administration </strong>&gt; <strong>Master Data</strong> &gt; <strong>People</strong>.</li>\n<li>Click <strong>Sync</strong> on the toolbar. The system synchronizes users including their external ID to their Person records. </li>\n<li>Open the user's Person record, and assign licenses to the user. You should be able to do this without error. </li>\n</ol>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

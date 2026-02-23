@@ -1,0 +1,5 @@
+{
+  "title": "The performance of Azure File is poor in West US 2",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>When you are deploying the suite on Azure and use Azure Files as the storage service, Azure File’s performance might be poorer in the <strong>West US 2</strong> region than in other regions. This might cause the suite installation to fail or slow down the system response after installation.</p>\n<h2 id=\"Cause\">Cause</h2>\n<p>The cause of this issue is unknown.</p>\n<h2 id=\"Solution\">Solution 1</h2>\n<p>Use <a href=\"/doc/423/26.1/aksnfshelm\" title=\"Azure NetApp Files\">Azure NetApp Files</a> as the storage service instead which has more stable and higher performance.</p>\n<h2>Solution 2</h2>\n<p>To ensure stable performance in West US 2, you can provision an Azure file share of a larger size. </p>\n<h2>Related topics</h2>\n<p><a href=\"/doc/423/26.1/akssizing\" title=\"Sizing on AKS\">Sizing on AKS</a></p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

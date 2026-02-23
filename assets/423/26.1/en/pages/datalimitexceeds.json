@@ -1,0 +1,5 @@
+{
+  "title": "Data limit exceeded for zone and instance",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>When creating a service design using the aggregated images of GCP, one of the following error messages may appear:</p>\n<p><code>Data limit exceeded for zone and instance</code></p>\n<p>or</p>\n<p><code>An unknown error has occurred, please contact your system administrator</code></p>\n<p>or</p>\n<p><code>Could not execute batch insert into CSA_VALUE</code></p>\n<h2>Cause</h2>\n<p>The first error message occurs when you exceed the data limit by way of zone(s) and instance(s) combination you selected under <strong>Design Configuration</strong> when creating a service design.</p>\n<p>In case of second or third error message, check the DND logs for \"<strong>Data exception</strong>\" error.</p>\n<h2>Solution</h2>\n<p>Reduce the number of zones and instances.</p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

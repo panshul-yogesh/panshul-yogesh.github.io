@@ -1,0 +1,5 @@
+{
+  "title": "Import translated Service Catalog definitions",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><div>If you are an administrator, you can import translated Service Catalog definitions into Service Management. The translations are contained in CSV files exported from the Service Catalog.</div>\n<p>For details, see <a href=\"/doc/423/26.1/localizecatalog\">Localize the Service Catalog</a>.</p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Set up synchronization with LDAP",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>You can synchronize person and group records from an LDAP server to Service Management via the On-Premises Bridge. When you configure the endpoint for the integration, you can define field mappings between the LDAP fields and the record fields in Service Management.</p>\n<p>For details, see Related topics.</p>\n<h2 class=\"mw-headline\" id=\"Related_topics\">Related topics</h2>\n<ul>\n<li><a href=\"/doc/423/26.1/integldap\" title=\"SMAX:25.1/IntegLDAP\">Integrate with LDAP</a></li>\n</ul>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

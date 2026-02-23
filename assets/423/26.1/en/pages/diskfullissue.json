@@ -1,0 +1,5 @@
+{
+  "title": "Disk full issue with NFS server",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p><br/>\nYour NFS server may run into a disk full issue after the suite has been running for a period of time.</p>\n<h2 class=\"mw-headline\" id=\"Cause\">Cause</h2>\n<p>The log files in the suite NFS server's &lt;global NFS root folder&gt;/logs directory keep growing as the suite is running.</p>\n<h2 class=\"mw-headline\" id=\"Solution\">Solution</h2>\n<p>You can remove or archive the log files in this directory without the need to stop the suite system. For details, see <a href=\"/doc/423/26.1/archivedeletelogs\" title=\"SMAX:25.1/archiveDeleteLogs\">Optimize log space utilization of the NFS volume</a>.</p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

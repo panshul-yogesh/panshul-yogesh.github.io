@@ -1,0 +1,5 @@
+{
+  "title": "Log files",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>Logs let you trace errors, warnings, information, and debugging messages.</p>\n<p>The logs are saved in the file server, in the following location: <b>&lt;installation&gt;/designer/var/logs</b></p>\n<p>It must be noted that no sensitive data is kept in the log files in OO Workflow Designer.</p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

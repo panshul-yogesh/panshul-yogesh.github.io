@@ -1,0 +1,5 @@
+{
+  "title": "Install OO Studio",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\"></p><div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>This topic contains the system requirements and instructions for installing Operations Orchestration (OO) Studio.</p>\n<p>The compatibility between the OO Studio version and the suite version is the following:</p>\n<table cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">\n<thead>\n<tr>\n<th scope=\"col\">OO Studio version</th>\n<th scope=\"col\">Suite version</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>24.1.x</td>\n<td>24.x</td>\n</tr>\n</tbody>\n</table>\n<p class=\"mw-empty-elt\"></p></div>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

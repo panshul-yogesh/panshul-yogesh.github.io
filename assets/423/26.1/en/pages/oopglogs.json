@@ -1,0 +1,5 @@
+{
+  "title": "PostgreSQL logs display warnings while OO Containerized is running",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><div>\n<p>While OO Containerized is running, PostgreSQL’s logs will display periodically warnings similar to <code>maas_admin@&lt;component&gt; WARNING: there is no transaction in progress</code>.</p>\n<h2>Cause</h2>\n<p>OO Containerized and its components use static database connection pools to cover all tenant capacity regardless of the number of active tenants. As a result, in periods of low usage when connection refresh occurs, all the idle connections from the connection pool will result in such a message within the PostgreSQL logs.</p>\n<h2>Solution</h2>\n<p>There is no cause for concern regarding these warnings, which are a normal side effect of the static connection pool.</p>\n</div>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

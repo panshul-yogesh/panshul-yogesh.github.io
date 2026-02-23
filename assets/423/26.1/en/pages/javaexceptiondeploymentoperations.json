@@ -1,0 +1,5 @@
+{
+  "title": "java.lang.RuntimeException error while viewing status in Deployment Operations",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>The event details page of <strong>Deployment Operations &gt; Instance Management</strong> does not display the current state of an event with the following error.</p>\n<p><code>java.lang.RuntimeException: Server returned HTTP response code :500</code></p>\n<h2>Cause</h2>\n<p>OO RAS is offline.</p>\n<h2>Solution</h2>\n<p>Check if RAS is available on OO server.</p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

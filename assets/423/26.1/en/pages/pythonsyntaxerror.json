@@ -1,0 +1,5 @@
+{
+  "title": "Python 3.12 syntax changes",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\"></p><div class=\"mw-parser-output\"><p class=\"mw-empty-elt\"></p><div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><div>\n<p>Starting with Python 3.12 special characters are causing flows using Python expressions or scripts to remain stuck in running.</p>\n<h2>Cause</h2>\n<p>Starting with Python 3.12, any unescaped special character will no longer be treated as a <strong>deprecation warning</strong> but as a <strong>syntax warning</strong>. This can cause standalone scripts to fail to complete or remain stuck in a crash loop.</p>\n<h2>Solution</h2>\n<p>In Python expressions or operations, unescaped characters must be escaped, otherwise the flow might fail to complete or get stuck in running. For example, '\\' should be replaced with '\\\\' or '/'.</p>\n</div>\n<p class=\"mw-empty-elt\"></p></div>\n<p class=\"mw-empty-elt\"></p></div>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Devices",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>In Service Management, a device is a type of asset and configuration item, such as a computer, firewall, server, switch, or router.</p>\n<h2 class=\"mw-headline\" id=\"Related_topics\">Related topics</h2>\n<ul>\n<li><a href=\"/doc/423/26.1/adddevice\" title=\"SMAX:25.1/AddDevice\">How to create a device record</a></li>\n<li><a href=\"/doc/423/26.1/editdevicerec\" title=\"SMAX:25.1/EditDeviceRec\">How to edit a device record</a></li>\n<li><a href=\"/doc/423/26.1/deletedevicerec\" title=\"SMAX:25.1/DeleteDeviceRec\">How to delete a device record</a></li>\n<li><a href=\"/doc/423/26.1/devicewflw\" title=\"SMAX:25.1/DeviceWflw\">Device workflow</a></li>\n</ul>\n<p class=\"mw-empty-elt\"></p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

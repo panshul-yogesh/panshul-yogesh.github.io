@@ -1,0 +1,5 @@
+{
+  "title": "Error when importing an image after upgrade",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>When a user tries to import an image using Image Aggregation after the suite upgrade, the following error message appears:</p>\n<pre><code>Dependent &lt;cloud_provider&gt; capsule is missing. Download and install the same from ITOM Marketplace and try again.</code></pre>\n<p>This issue can occur with any cloud provider such as AWS, Azure, GCP, or vCenter.</p>\n<h2>Cause</h2>\n<p>The dependent/required capsule isn't installed on the suite.</p>\n<h2>Solution</h2>\n<ol>\n<li>Download and install the latest capsule from <a href=\"https://marketplace.opentext.com/itom/category/hybrid-cloud-managementx\">ITOM Marketplace</a>. </li>\n<li>Try to import the image again. </li>\n</ol>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

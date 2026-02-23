@@ -1,0 +1,5 @@
+{
+  "title": "Fail to calculate license consumption for Oracle DB",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>Attempts to calculate license consumption for Oracle DB fails.</p>\n<h2 class=\"mw-headline\" id=\"Cause\">Cause</h2>\n<p>SAM calculates Oracle DB license consumption according to the Oracle LMS document, which is Oracle-verified. A possible cause for the calculation failure is that information is missing from the Oracle LMS document.</p>\n<h2 class=\"mw-headline\" id=\"Solution\">Solution</h2>\n<p>To calculate license consumption for Oracle DB, use Universal Discovery jobs related to Oracle LMS, such as the <b>Oracle Database Connection by SQL</b> job and the <b>Oracle LMS Data Collection by SQL</b> job. For more information on how to collect Oracle LMS data, see Universal Discovery Content Pack documentation.</p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

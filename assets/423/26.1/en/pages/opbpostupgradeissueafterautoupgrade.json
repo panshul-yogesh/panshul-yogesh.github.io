@@ -1,0 +1,5 @@
+{
+  "title": "Post upgrade issues after OPB auto-upgrade",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>Permission denial error occurs during post upgrade process on the On-Premises Bridge (OPB) agent after an auto-upgrade. This is due to a change in file permission during the auto-upgrade. </p>\n<h2>Cause</h2>\n<p>Auto-upgrade changes file permission resulting in OPB execution issues during the post upgrade process. The permission of the <code><agent_installation_directory>&lt;Agent_installation_directory&gt;/product/util/opb/ </agent_installation_directory></code> folder changes from 755 to 644, blocking the util tools usage.</p>\n<p><span style=\"color: rgb(0, 115, 231); font-family: Roboto, sans-serif; font-size: 24px;\">Solution</span></p>\n<p>After the OPB auto-upgrade is complete, check the OPB utils to verify the permission is 755. If not, use below command to update it:</p>\n<pre><code>sudo chown -R 755 &lt;Agent_installation_directory&gt;/product/util/opb/</code></pre>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

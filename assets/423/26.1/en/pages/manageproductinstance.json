@@ -1,0 +1,5 @@
+{
+  "title": "Manage product instances",
+  "content": "<div class=\"mw-parser-output\"><br/><div>This page explains product instances and lists the topics related to managing product instances.</div>\n<div>\n<h2 id=\"Product_instance\">Product instance</h2>\n<p>A product instance represents a specific product or bundle purchased by a customer. It captures key details such as the product model (product or bundle) that was purchased, the company that purchased it, the version of the product model, the environment where the product is deployed, and the associated contract. </p>\n<h2>Topics related to managing product instances</h2>\n<ul>\n<li>Product instance workflow</li>\n<li>Add product instance</li>\n<li>View or edit product instance</li>\n<li>Delete product instance</li>\n</ul>\n</div>\n</div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

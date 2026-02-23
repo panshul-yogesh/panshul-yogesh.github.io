@@ -1,0 +1,5 @@
+{
+  "title": "Failed to process email due to unauthorized email domain",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p><br/>\nThe user receives the following email notification after sending an email:</p>\n<pre>We could not process your email because the email address doesn't belong to an authorized email domain.\n\nTo create, track, or update a request, log in to the Service Portal.\n\n</pre>\n<h2 class=\"mw-headline\" id=\"Possible_causes\">Possible causes</h2>\n<p>The user's email domain isn't defined as a permitted domain.</p>\n<h2 class=\"mw-headline\" id=\"Solution\">Solution</h2>\n<p>Make sure to define the user's email domain (for example, example.com) in the endpoint:</p>\n<ol>\n<li>From the main menu, select <b>Administration</b> &gt; <b>Utilities</b> &gt; <b>Integration</b> &gt; <b>Endpoints</b> &gt; <b>Configure</b> &gt; <b>Advanced connection configuration</b> &gt; <b>Authorized email domains</b>.</li>\n<li>Enter the user's email domain and save the change.</li>\n<li>Restart the OPB service.</li>\n</ol>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

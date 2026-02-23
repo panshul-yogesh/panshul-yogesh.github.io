@@ -1,0 +1,5 @@
+{
+  "title": "Service Instance",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>A subscription originates with a subscription request, which is a request for delivery of cloud services that are initiated by the subscriber (end-user) using a catalog in the Service Portal. After a subscription request is approved, a service instance is created. The system constructs service instance artifacts during service deployment and updates service instances during service management. Service instances provide all details of the deployed service and its components; for example, provisioned IP details for a network segment component. Service instances are based on the service design configured for the service offering, and on consumer demand.</p>\n<p>For more information, see <a href=\"/doc/423/26.1/mgmtconssoinstancemanagement\">Service Instance Management</a>.</p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

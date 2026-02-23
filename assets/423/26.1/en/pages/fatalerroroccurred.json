@@ -1,0 +1,5 @@
+{
+  "title": "Fatal error occurred",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>Capsule installation fails with a fatal error message that's displayed on the tile of the respective capsule in Content Store:</p>\n<p><code>Fatal error occurred</code></p>\n<h2>Cause</h2>\n<div>\n<p>This issue occurs if the Content Store backend service restarts during capsule installation process. Restart may occur if the cluster isn't functioning properly or if the cluster has been restarted manually.</p>\n<h2>Solution</h2>\n<ol>\n<li>You will see this error when the backend service is restarting:<br/>\n<code>Unable to load any available content(s) because Content Store service is temporarily unavailable.</code></li>\n<li>Once the service restarts, you will see this message:<br/>\n<code>Fatal error occurred</code></li>\n<li>You can then reinstall the capsule.</li>\n</ol>\n</div>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

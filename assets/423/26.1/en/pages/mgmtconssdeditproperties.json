@@ -1,0 +1,5 @@
+{
+  "title": "Edit service design properties",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><ol>\n<li>Select the design you want to edit.</li>\n<li>Click the gear icon and select <b>Edit</b>.</li>\n<li>In the Edit Design dialog, modify the properties of the service design. For descriptions of the specific properties, see the topic Add a service design.</li>\n<li>Click <b>Save</b>.</li>\n</ol>\n<h2 id=\"Related_topics\">Related topics</h2>\n<ul>\n<li>To know how to create a design, see <a href=\"/doc/423/26.1/mgmtconssdadd\" title=\"SMAX:25.1/MgmtConsSDAdd\">Add a service design</a>.</li>\n</ul>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

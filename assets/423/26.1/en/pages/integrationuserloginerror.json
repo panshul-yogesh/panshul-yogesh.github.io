@@ -1,0 +1,5 @@
+{
+  "title": "Integration user failed to establish a login session",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>You can't establish a login session when using an integration user to connect to the REST API.</p>\n<h2>Cause</h2>\n<p>The integration user's login name isn't unique in the suite instance.</p>\n<h2>Solution</h2>\n<p>Create another integration user with a unique login name.</p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

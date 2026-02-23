@@ -1,0 +1,5 @@
+{
+  "title": "Verify the OO installation in EKS",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>To verify OO installation, do the following:</p>\n<ol>\n<li>\n<p>Log in to the bastion node.</p>\n</li>\n<li>\n<p>Run the following command to make sure that all OO pods are ready.</p>\n<pre><code>kubectl get pod -n &lt;<em>OO NAMESPACE</em>&gt; |grep -v 1/1|grep -v 2/2|grep -v 3/3|grep -v 4/4|grep -v Completed</code></pre>\n<p>Where:</p>\n<p><code>&lt;<em>OO NAMESPACE</em>&gt;</code> is the namespace where you deploy the OO chart.</p>\n<p>This command returns a list of abnormal pods. When it returns no results, all OO pods are ready.</p>\n</li>\n</ol>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

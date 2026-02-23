@@ -1,0 +1,5 @@
+{
+  "title": "Install OO RAS",
+  "content": "<div class=\"mw-parser-output\">\n<div></div>\n<p>This topic contains the system requirements and the instructions to install an External Operations Orchestration (OO) Remote Action Server (RAS). You can install the software using the installer or silent installation property file. </p>\n<table>\n<tbody>\n<tr>\n<th>Topic</th>\n<th>Description</th>\n</tr>\n<tr>\n<td><a href=\"/doc/423/26.1/supportmatrixooras\" title=\"System requirements for OO RAS\">System requirements for OO RAS</a></td>\n<td>Prepare the environment according to the OO RAS System Requirements. </td>\n</tr>\n<tr>\n<td><a href=\"/doc/423/26.1/399-installoorasonpremises\" title=\"Install OO RAS on-premises\">Install OO RAS on-premises</a></td>\n<td>Install OO RAS.</td>\n</tr>\n<tr>\n<td><a href=\"/doc/423/26.1/uninstalloorassilent\" title=\"Uninstall OO RAS\">Uninstall OO RAS</a></td>\n<td>Uninstall OO RAS.</td>\n</tr>\n</tbody>\n</table>\n</div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

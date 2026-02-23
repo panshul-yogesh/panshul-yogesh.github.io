@@ -1,0 +1,5 @@
+{
+  "title": "The comment does not show up in the email notification if you try to add a comment in the discussion before setting and saving an owner",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>When updating a record, if you try to add a comment in the discussion before setting and saving an owner, the comment doesn’t show up in the email notification. Instead, a \"Request has been assigned\" comment appears in the email notification.</p>\n<h2>Cause</h2>\n<p>Before setting and saving an owner, the system doesn’t know the recipient of the email notification and therefore can’t add the comment. Instead, the default \"Request has been assigned\" comment is put in the email notification.</p>\n<h2>Solution</h2>\n<p>Make sure an owner has been assigned to the record and click <strong>Save</strong>. Then, add your comment to the discussion.<br/>\n </p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

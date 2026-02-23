@@ -1,0 +1,5 @@
+{
+  "title": "Edit component templates",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><h2 class=\"mw-headline\" id=\"To_edit_component_type_templates\">To edit component type templates</h2>\n<ol>\n<li>In the left pane of the Sequenced Components area, select the component palette that contains the component type whose template you want to edit.</li>\n<li>Click the component type that contains the template you want to edit.</li>\n<li>Select the <b>Templates</b> tab.</li>\n<li>Click the template you want to edit.</li>\n<li>Click the gear icon and select <b>Edit</b>.</li>\n<li>In the Edit Component Template dialog, make your changes and click <b>Save</b>. For information about certain fields, see Create component templates.</li>\n</ol>\n<h2 class=\"mw-headline\" id=\"Related_topics\">Related topics</h2>\n<ul>\n<li><a href=\"/doc/423/26.1/comptmpltcreate\" title=\"SMAX:25.1/CompTmpltCreate\">Create component templates</a></li>\n</ul>\n<p class=\"mw-empty-elt\"></p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

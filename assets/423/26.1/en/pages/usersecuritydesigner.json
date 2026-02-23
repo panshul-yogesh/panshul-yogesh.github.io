@@ -1,0 +1,5 @@
+{
+  "title": "User management and authentication in OO Workflow Designer",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><h2 id=\"Authentication_model\">Database authentication</h2>\n<p>OO Workflow Designer supports the following databases: Oracle, MS SQL, and PostgreSQL.</p>\n<p>It's recommended to use a strong database password for database authentication and using a strong password policy. For example, blocking after a number of failed attempts.</p>\n<p>When using MS SQL, it's possible to work with either database authentication or with OS authentication. It's recommended to work with OS authentication, where this is possible. For example, it's possible to use Windows authentication to access Microsoft SQL Server databases.</p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Configure SACM",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>You can control where your assets are managed. You can include them in the Service Management <span class=\"SAW_VariablesSACM\">Service Asset and Configuration Management</span> (SACM) database. Or you can manage them in an external database, such as a local instance of UCMDB. Your decision depends on your local environment, the requirements of your customers, and your business use case scenarios.</p>\n<h2 class=\"mw-headline\" id=\"Related_topics\">Related topics</h2>\n<ul>\n<li><a href=\"/doc/423/26.1/configremotecms\" title=\"SMAX:25.1/ConfigRemoteCMS\">Configure a remote UCMDB</a></li>\n<li><a href=\"/doc/423/26.1/connectremotedesktop\" title=\"SMAX:25.1/ConnectRemoteDesktop\">How to create a remote desktop connection</a></li>\n</ul>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

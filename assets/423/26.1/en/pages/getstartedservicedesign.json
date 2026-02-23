@@ -1,0 +1,5 @@
+{
+  "title": "Service Design",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>Designs are the recipes for automating the cloud and include reusable service components. Service components and their relationships in a design define the framework for creating the service. Create, configure, and change service designs to give on-demand, automated service delivery.</p>\n<p>Designs also offer a structure for options that consumers can select when ordering service. You can re-use designs for multiple service offerings, with each service offering customized to meet the needs of different consumer organizations and groups. </p>\n<p>For information on how to add or edit a service design, and to learn more about design-related options, see <a href=\"/doc/423/26.1/mgmtconssdviewall\">Service Designer</a>.</p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

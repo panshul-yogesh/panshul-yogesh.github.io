@@ -1,0 +1,5 @@
+{
+  "title": "Prepare infrastructure",
+  "content": "<div class=\"mw-parser-output\"><br/><p>This topic gives you information on infrastructure specifications to prepare the infrastructure for external Kubernetes distributions manually. While preparing the infrastructure make sure you follow the specifications provided in the following subtopics:</p>\n<ul>\n<li><a href=\"/doc/423/26.1/402-databasereqs\" title=\"Database related infrastructure\">Database related infrastructure</a></li>\n<li><a href=\"/doc/423/26.1/402-storagereqs\" title=\"Storage related infrastructure\">Storage related infrastructure</a></li>\n<li><a href=\"/doc/423/26.1/402-networkreqs\" title=\"Network related infrastructure\">Network related infrastructure</a></li>\n<li><a href=\"/doc/423/26.1/402-prepkubernetes\" title=\"Kubernetes related infrastructure\">Kubernetes related infrastructure</a></li>\n<li><a href=\"/doc/423/26.1/402-image\" title=\"Image registry\">Image registry</a></li>\n</ul>\n</div>",
+  "modifiedon": "2026-01-30 14:51:17"
+}

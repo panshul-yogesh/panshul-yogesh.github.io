@@ -1,0 +1,5 @@
+{
+  "title": "View categories",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>The Category page shows all categories. Follow these steps to view the Category page:</p>\n<ol>\n<li>From the <span class=\"SAW_VariablesMain_menu\" style=\"font-weight: normal;\">main menu</span>, click <b>Administration &gt; Master Data &gt; Categories</b>.</li>\n<li>The Category page lists all categories arranged in column format. You may search for a category by entering a text string in the search box at the top of the column.</li>\n<li>As you select an individual category, Service Management displays any existing subcategories on the right side.</li>\n</ol>\n<h3>Limitation</h3>\n<p>The Category page can display up to 2000 Category records.</p>\n<h2 class=\"mw-headline\" id=\"Related_topics\">Related topics</h2>\n<ul>\n<li><a href=\"/doc/423/26.1/createcategory\" title=\"SMAX:25.1/CreateCategory\">How to create a category</a></li>\n<li><a href=\"/doc/423/26.1/editcategory\" title=\"SMAX:25.1/EditCategory\">How to edit categories</a></li>\n</ul>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

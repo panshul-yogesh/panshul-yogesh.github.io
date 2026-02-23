@@ -1,0 +1,5 @@
+{
+  "title": "Can't log in to IdM Admin Portal after upgrade",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>The suite admin can't log in to IdM Admin Portal (https://<i>&lt;External_Access_Host&gt;</i>/idm-admin) if the suite is upgraded from a version earlier than 2019.05 and the IdM signing key in Suite Administration has been changed, a 503 error occurs.</p>\n<h2 id=\"Cause\">Cause</h2>\n<p>The signing key isn't updated in the idm-config config map.</p>\n<h2 id=\"Solution\">Solution</h2>\n<ol>\n<li>Log in to the control plane node or bastion node as root or a sudo user.</li>\n<li>Run the following command to update the config map: <br/>\n<code>kubectl patch configmap/idm-config -n &lt;suite_namespace&gt; -p '{\"data\":{\"idm_token_signingkey\":\"{\\\"itom-bo\\\":\\\"idm_token_signingkey_secret_key\\\"}\",\"idm_token_signingkey_for_read\": \"idm_token_signingkey_secret_key itom-bo\"}}'</code></li>\n</ol>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

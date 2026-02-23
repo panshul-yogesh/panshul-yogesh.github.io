@@ -1,0 +1,1607 @@
+/* any element with class mw-parser-output */
+::ng-deep .mw-parser-output {
+  font-family: "Inter", sans-serif !important;
+}
+
+@media (max-width: 480px) {
+  ::ng-deep .mw-parser-output * {
+    font-size: 12px !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  ::ng-deep .mw-parser-output * {
+    font-size: 12px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  ::ng-deep .mw-parser-output * {
+    font-size: 12px !important;
+  }
+}
+
+/* Admonitions CSS starts*/
+
+.admonition {
+  border-radius: 16px;
+  background: #f5f5f7;
+  padding: 16px 20px;
+  margin: 16px 0;
+  display: flex;
+}
+
+.mw-parser-output .admonition-content a {
+  font-size: 14px;
+  color: #1a6aff;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.admonition-content::before {
+  display: block;
+  color: #333;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+.admonition-tip-content::before {
+  content: "Tip";
+}
+
+.admonition-note-content::before {
+  content: "Note";
+}
+
+.admonition-caution-content::before {
+  content: "Caution";
+}
+
+.admonition-important-content::before {
+  content: "Important";
+}
+
+.admonition-deprecated-content::before {
+  content: "Deprecated";
+}
+
+.admonition-recommendation-content::before {
+  content: "Recommendation";
+}
+
+.admonition-internal-content::before {
+  content: "Internal";
+}
+
+.admonition-example-content::before {
+  content: "Example";
+}
+
+.admonition-nolabel-content::before {
+  content: "";
+}
+
+.admonition-content {
+  font-family: "Inter";
+  color: #333;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  padding-left: 24px;
+  flex: 1 1 auto;
+  min-width: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.admonition-icon {
+  width: 64px;
+  height: 64px;
+  margin-top: 8px;
+  flex-shrink: 0;
+  border-radius: 35px;
+}
+
+.admonition-tip-icon {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="%23D7E5FF"/><path d="M50.4905 33.3208H46.5283C45.8679 33.3208 45.2075 32.7925 45.2075 32C45.2075 31.3396 45.7358 30.6792 46.5283 30.6792H50.4905C51.1509 30.6792 51.8113 31.2075 51.8113 32C51.8113 32.7925 51.283 33.3208 50.4905 33.3208Z" fill="%23797979"/><path d="M37.5472 37.6793C38.2075 35.9623 38.6038 34.1132 38.6038 32C38.6038 26.1887 35.6981 21.434 32 21.434C26.1887 21.434 21.434 26.1887 21.434 32C21.434 34.1132 22.0943 35.9623 23.0189 37.6793C23.8113 39.1321 25.1321 41.6415 25.3962 43.3585C25.3962 43.6226 25.6604 43.8868 25.9245 43.8868C26.1887 43.8868 36.0943 43.8868 36.0943 43.8868C36.0943 42.1698 37.0189 39.2642 37.5472 37.6793Z" fill="%231A6AFF"/><path d="M40.8491 37.6793C41.9057 35.9623 42.566 34.1132 42.566 32C42.566 26.1887 37.8113 21.434 32 21.434C35.6981 21.434 38.6038 26.1887 38.6038 32C38.6038 34.1132 38.2075 35.9623 37.5472 37.6793C37.0189 39.2642 36.0943 42.1698 36.0943 43.8868C36.0943 43.8868 37.6792 43.8868 37.9434 43.8868C38.2075 43.8868 38.6038 43.4906 38.6038 43.3585C38.8679 41.6415 40.1887 39.1321 40.8491 37.6793Z" fill="%231A6AFF"/><path d="M46 19.8491L43.2264 22.6227C42.6981 23.151 41.9057 23.151 41.3774 22.6227C40.8491 22.0944 40.8491 21.3019 41.3774 20.7736L44.151 18C44.6793 17.4717 45.4717 17.4717 46 18C46.5283 18.5283 46.5283 19.3208 46 19.8491Z" fill="%23797979"/><path d="M33.3208 13.5094V17.4717C33.3208 18.1321 32.7925 18.7925 32 18.7925C31.3396 18.7925 30.6793 18.2642 30.6793 17.4717V13.5094C30.6793 12.8491 31.2076 12.1887 32 12.1887C32.7925 12.1887 33.3208 12.717 33.3208 13.5094Z" fill="%23797979"/><path d="M19.849 18L22.6226 20.7736C23.1509 21.3019 23.1509 22.0944 22.6226 22.6227C22.0943 23.151 21.3019 23.151 20.7736 22.6227L18 19.8491C17.4717 19.4528 17.4717 18.5283 18 18C18.5283 17.4717 19.3207 17.4717 19.849 18Z" fill="%23797979"/><path d="M13.5094 30.6792H17.4717C18.1321 30.6792 18.7924 31.2075 18.7924 32C18.7924 32.6604 18.2641 33.3208 17.4717 33.3208H13.5094C12.849 33.3208 12.1887 32.7925 12.1887 32C12.1887 31.2075 12.717 30.6792 13.5094 30.6792Z" fill="%23797979"/><path d="M18 44.151L20.7736 41.3774C21.3019 40.8491 22.0943 40.8491 22.6226 41.3774C23.1509 41.9057 23.1509 42.6981 22.6226 43.2264L19.849 46C19.3207 46.5283 18.5283 46.5283 18 46C17.4717 45.4717 17.4717 44.6793 18 44.151Z" fill="%23797979"/><path d="M44.151 46L41.3774 43.2264C40.8491 42.6981 40.8491 41.9057 41.3774 41.3774C41.9057 40.8491 42.6981 40.8491 43.2264 41.3774L46 44.151C46.5283 44.6793 46.5283 45.4717 46 46C45.4717 46.5283 44.6793 46.5283 44.151 46Z" fill="%23797979"/><path d="M37.9434 45.2076H33.3208H30.8113H26.1887C25.7925 45.2076 25.3962 45.6038 25.3962 46C25.3962 46.3962 25.7925 46.7925 26.1887 46.7925C26.5849 46.7925 27.3774 47.1887 27.3774 47.5849C27.3774 47.9811 27.9057 48.3774 28.434 48.3774C28.8302 48.3774 29.4906 48.7736 29.4906 49.1698V51.0189C29.4906 51.4151 29.7547 51.8113 30.151 51.8113H33.9811C34.3774 51.8113 34.6415 51.4151 34.6415 51.0189V49.1698C34.6415 48.7736 35.3019 48.3774 35.6981 48.3774C36.2264 48.3774 36.7547 47.9811 36.7547 47.5849C36.7547 47.1887 37.5472 46.7925 37.9434 46.7925C38.3396 46.7925 38.7359 46.3962 38.7359 46C38.7359 45.6038 38.3396 45.2076 37.9434 45.2076Z" fill="%23999999"/></svg>');
+}
+
+.admonition-note-icon {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="%23CDF1D3"/><path d="M41.9626 14.4906H20.8305C19.1492 14.4906 17.5366 15.1585 16.3477 16.3474C15.1588 17.5363 14.4909 19.1489 14.4909 20.8302V41.9623C14.4909 43.6437 15.1588 45.2562 16.3477 46.4451C17.5366 47.634 19.1492 48.3019 20.8305 48.3019H35.9855C37.1065 48.3019 38.1815 47.8566 38.9741 47.064L47.0643 38.9737C47.4568 38.5813 47.7681 38.1154 47.9805 37.6026C48.1929 37.0898 48.3022 36.5403 48.3022 35.9852V20.8302C48.3022 19.1489 47.6343 17.5363 46.4454 16.3474C45.2565 15.1585 43.644 14.4906 41.9626 14.4906ZM22.9437 21.8868H39.8494C40.2697 21.8868 40.6729 22.0538 40.9701 22.351C41.2673 22.6483 41.4343 23.0514 41.4343 23.4717C41.4343 23.8921 41.2673 24.2952 40.9701 24.5924C40.6729 24.8897 40.2697 25.0566 39.8494 25.0566H22.9437C22.5234 25.0566 22.1203 24.8897 21.823 24.5924C21.5258 24.2952 21.3588 23.8921 21.3588 23.4717C21.3588 23.0514 21.5258 22.6483 21.823 22.351C22.1203 22.0538 22.5234 21.8868 22.9437 21.8868ZM22.9437 32.4529C22.5234 32.4529 22.1203 32.2859 21.823 31.9887C21.5258 31.6914 21.3588 31.2883 21.3588 30.868C21.3588 30.4476 21.5258 30.0445 21.823 29.7473C22.1203 29.45 22.5234 29.2831 22.9437 29.2831H39.8494C40.2697 29.2831 40.6729 29.45 40.9701 29.7473C41.2673 30.0445 41.4343 30.4476 41.4343 30.868C41.4343 31.2883 41.2673 31.6914 40.9701 31.9887C40.6729 32.2859 40.2697 32.4529 39.8494 32.4529H22.9437ZM37.7362 45.3135V39.8491C37.7368 39.2888 37.9597 38.7517 38.3558 38.3555C38.752 37.9594 39.2891 37.7365 39.8494 37.7359H45.3136L37.7362 45.3135Z" fill="%234AD15F"/></svg>');
+}
+
+.admonition-caution-icon {
+  background-image: url('data:image/svg+xml,<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="32" fill="%23FCDADA"/><g clip-path="url(%23clip0_1211_43681)"><path d="M29.2888 15.4127C30.0572 14.1832 31.9015 14.1832 32.6699 15.4127L48.8072 43.6913C49.5756 44.9208 49.1145 46.9187 47.5777 46.9187H14.3811C12.8442 46.9187 12.8442 45.0745 13.6127 43.6913L29.2888 15.4127Z" fill="%23D33030"/><path fill-rule="evenodd" clip-rule="evenodd" d="M47.5776 45.0745L30.9794 16.3349L14.5348 45.0745H47.5776ZM32.6699 15.4127C31.9015 14.1832 30.0572 14.1832 29.2888 15.4127L12.8442 44.1524C12.0758 45.3819 12.9979 47.0724 14.5348 47.0724H47.5776C49.1145 47.0724 50.0367 45.5355 49.2682 44.1524L32.6699 15.4127Z" fill="%23D33030"/><path d="M31.2867 42.1544C32.5162 42.1544 33.592 41.0786 33.592 39.8491C33.592 38.6196 32.5162 37.5438 31.2867 37.5438C30.0572 37.5438 28.9814 38.6196 28.9814 39.8491C28.9814 41.0786 30.0572 42.1544 31.2867 42.1544Z" fill="white"/><rect x="28.9814" y="23.7119" width="4.61063" height="10.7581" rx="2.30532" fill="white"/></g><defs><clipPath id="clip0_1211_43681"><rect width="38.422" height="33.8113" fill="white" transform="translate(12.0757 14.4906)"/></clipPath></defs></svg>');
+}
+
+.admonition-important-icon {
+  background-image: url('data:image/svg+xml,<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle cx="32" cy="32" r="32" fill="%23FFF4DE"/><g clip-path="url(%23clip0_1211_43662)"><path d="M31.3962 48.3019C40.7329 48.3019 48.3019 40.733 48.3019 31.3962C48.3019 22.0595 40.7329 14.4906 31.3962 14.4906C22.0595 14.4906 14.4905 22.0595 14.4905 31.3962C14.4905 40.733 22.0595 48.3019 31.3962 48.3019Z" fill="%23FFB319"/><mask id="mask0_1211_43662" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="8" width="47" height="47"><rect x="8.85535" y="8.85535" width="45.3072" height="45.3072" fill="url(%23pattern0)"/></mask><g mask="url(%23mask0_1211_43662)"><path d="M31.3962 48.3019C40.7329 48.3019 48.3019 40.733 48.3019 31.3962C48.3019 22.0595 40.7329 14.4906 31.3962 14.4906C22.0595 14.4906 14.4905 22.0595 14.4905 31.3962C14.4905 40.733 22.0595 48.3019 31.3962 48.3019Z" fill="%23FFB319"/></g><path d="M31.3962 45.4843C39.1768 45.4843 45.4843 39.1768 45.4843 31.3962C45.4843 23.6156 39.1768 17.3082 31.3962 17.3082C23.6156 17.3082 17.3082 23.6156 17.3082 31.3962C17.3082 39.1768 23.6156 45.4843 31.3962 45.4843Z" fill="%23FFB319"/><mask id="mask1_1211_43662" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="11" y="11" width="41" height="41"><rect x="11.673" y="11.6729" width="39.8974" height="39.8974" fill="url(%23pattern1)"/></mask><g mask="url(%23mask1_1211_43662)"><path d="M31.3962 45.4843C39.1768 45.4843 45.4843 39.1768 45.4843 31.3962C45.4843 23.6156 39.1768 17.3082 31.3962 17.3082C23.6156 17.3082 17.3082 23.6156 17.3082 31.3962C17.3082 39.1768 23.6156 45.4843 31.3962 45.4843Z" fill="%23FFB319"/></g><path d="M31.3962 34.2138V20.1258" stroke="white" stroke-width="2" stroke-miterlimit="10"/><path d="M31.3962 37.0314V42.6667" stroke="white" stroke-width="2" stroke-miterlimit="10"/></g><defs><pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="%23image0_1211_43662"/></pattern><pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="%23image0_1211_43662"/></pattern><clipPath id="clip0_1211_43662"><rect width="33.8113" height="33.8113" fill="white" transform="translate(14.4905 14.4906)"/></clipPath><image id="image0_1211_43662" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEBLAEsAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA"/></defs></svg>');
+}
+
+.admonition-deprecated-icon {
+  background-image: url('data:image/svg+xml,<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="32" fill="%23FCDADA"/><g clip-path="url(%23clip0_1211_43681)"><path d="M29.2888 15.4127C30.0572 14.1832 31.9015 14.1832 32.6699 15.4127L48.8072 43.6913C49.5756 44.9208 49.1145 46.9187 47.5777 46.9187H14.3811C12.8442 46.9187 12.8442 45.0745 13.6127 43.6913L29.2888 15.4127Z" fill="%23D33030"/><path fill-rule="evenodd" clip-rule="evenodd" d="M47.5776 45.0745L30.9794 16.3349L14.5348 45.0745H47.5776ZM32.6699 15.4127C31.9015 14.1832 30.0572 14.1832 29.2888 15.4127L12.8442 44.1524C12.0758 45.3819 12.9979 47.0724 14.5348 47.0724H47.5776C49.1145 47.0724 50.0367 45.5355 49.2682 44.1524L32.6699 15.4127Z" fill="%23D33030"/><path d="M31.2867 42.1544C32.5162 42.1544 33.592 41.0786 33.592 39.8491C33.592 38.6196 32.5162 37.5438 31.2867 37.5438C30.0572 37.5438 28.9814 38.6196 28.9814 39.8491C28.9814 41.0786 30.0572 42.1544 31.2867 42.1544Z" fill="white"/><rect x="28.9814" y="23.7119" width="4.61063" height="10.7581" rx="2.30532" fill="white"/></g><defs><clipPath id="clip0_1211_43681"><rect width="38.422" height="33.8113" fill="white" transform="translate(12.0757 14.4906)"/></clipPath></defs></svg>');
+}
+
+.admonition-recommendation-icon {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="%23D7E5FF"/><path d="M50.4905 33.3208H46.5283C45.8679 33.3208 45.2075 32.7925 45.2075 32C45.2075 31.3396 45.7358 30.6792 46.5283 30.6792H50.4905C51.1509 30.6792 51.8113 31.2075 51.8113 32C51.8113 32.7925 51.283 33.3208 50.4905 33.3208Z" fill="%23797979"/><path d="M37.5472 37.6793C38.2075 35.9623 38.6038 34.1132 38.6038 32C38.6038 26.1887 35.6981 21.434 32 21.434C26.1887 21.434 21.434 26.1887 21.434 32C21.434 34.1132 22.0943 35.9623 23.0189 37.6793C23.8113 39.1321 25.1321 41.6415 25.3962 43.3585C25.3962 43.6226 25.6604 43.8868 25.9245 43.8868C26.1887 43.8868 36.0943 43.8868 36.0943 43.8868C36.0943 42.1698 37.0189 39.2642 37.5472 37.6793Z" fill="%231A6AFF"/><path d="M40.8491 37.6793C41.9057 35.9623 42.566 34.1132 42.566 32C42.566 26.1887 37.8113 21.434 32 21.434C35.6981 21.434 38.6038 26.1887 38.6038 32C38.6038 34.1132 38.2075 35.9623 37.5472 37.6793C37.0189 39.2642 36.0943 42.1698 36.0943 43.8868C36.0943 43.8868 37.6792 43.8868 37.9434 43.8868C38.2075 43.8868 38.6038 43.4906 38.6038 43.3585C38.8679 41.6415 40.1887 39.1321 40.8491 37.6793Z" fill="%231A6AFF"/><path d="M46 19.8491L43.2264 22.6227C42.6981 23.151 41.9057 23.151 41.3774 22.6227C40.8491 22.0944 40.8491 21.3019 41.3774 20.7736L44.151 18C44.6793 17.4717 45.4717 17.4717 46 18C46.5283 18.5283 46.5283 19.3208 46 19.8491Z" fill="%23797979"/><path d="M33.3208 13.5094V17.4717C33.3208 18.1321 32.7925 18.7925 32 18.7925C31.3396 18.7925 30.6793 18.2642 30.6793 17.4717V13.5094C30.6793 12.8491 31.2076 12.1887 32 12.1887C32.7925 12.1887 33.3208 12.717 33.3208 13.5094Z" fill="%23797979"/><path d="M19.849 18L22.6226 20.7736C23.1509 21.3019 23.1509 22.0944 22.6226 22.6227C22.0943 23.151 21.3019 23.151 20.7736 22.6227L18 19.8491C17.4717 19.4528 17.4717 18.5283 18 18C18.5283 17.4717 19.3207 17.4717 19.849 18Z" fill="%23797979"/><path d="M13.5094 30.6792H17.4717C18.1321 30.6792 18.7924 31.2075 18.7924 32C18.7924 32.6604 18.2641 33.3208 17.4717 33.3208H13.5094C12.849 33.3208 12.1887 32.7925 12.1887 32C12.1887 31.2075 12.717 30.6792 13.5094 30.6792Z" fill="%23797979"/><path d="M18 44.151L20.7736 41.3774C21.3019 40.8491 22.0943 40.8491 22.6226 41.3774C23.1509 41.9057 23.1509 42.6981 22.6226 43.2264L19.849 46C19.3207 46.5283 18.5283 46.5283 18 46C17.4717 45.4717 17.4717 44.6793 18 44.151Z" fill="%23797979"/><path d="M44.151 46L41.3774 43.2264C40.8491 42.6981 40.8491 41.9057 41.3774 41.3774C41.9057 40.8491 42.6981 40.8491 43.2264 41.3774L46 44.151C46.5283 44.6793 46.5283 45.4717 46 46C45.4717 46.5283 44.6793 46.5283 44.151 46Z" fill="%23797979"/><path d="M37.9434 45.2076H33.3208H30.8113H26.1887C25.7925 45.2076 25.3962 45.6038 25.3962 46C25.3962 46.3962 25.7925 46.7925 26.1887 46.7925C26.5849 46.7925 27.3774 47.1887 27.3774 47.5849C27.3774 47.9811 27.9057 48.3774 28.434 48.3774C28.8302 48.3774 29.4906 48.7736 29.4906 49.1698V51.0189C29.4906 51.4151 29.7547 51.8113 30.151 51.8113H33.9811C34.3774 51.8113 34.6415 51.4151 34.6415 51.0189V49.1698C34.6415 48.7736 35.3019 48.3774 35.6981 48.3774C36.2264 48.3774 36.7547 47.9811 36.7547 47.5849C36.7547 47.1887 37.5472 46.7925 37.9434 46.7925C38.3396 46.7925 38.7359 46.3962 38.7359 46C38.7359 45.6038 38.3396 45.2076 37.9434 45.2076Z" fill="%23999999"/></svg>');
+}
+
+.admonition-internal-icon {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="%23FFE6E6"/><path d="M50.4905 33.3208H46.5283C45.8679 33.3208 45.2075 32.7925 45.2075 32C45.2075 31.3396 45.7358 30.6792 46.5283 30.6792H50.4905C51.1509 30.6792 51.8113 31.2075 51.8113 32C51.8113 32.7925 51.283 33.3208 50.4905 33.3208Z" fill="%23797979"/><path d="M37.5472 37.6793C38.2075 35.9623 38.6038 34.1132 38.6038 32C38.6038 26.1887 35.6981 21.434 32 21.434C26.1887 21.434 21.434 26.1887 21.434 32C21.434 34.1132 22.0943 35.9623 23.0189 37.6793C23.8113 39.1321 25.1321 41.6415 25.3962 43.3585C25.3962 43.6226 25.6604 43.8868 25.9245 43.8868C26.1887 43.8868 36.0943 43.8868 36.0943 43.8868C36.0943 42.1698 37.0189 39.2642 37.5472 37.6793Z" fill="%23FF3333"/><path d="M40.8491 37.6793C41.9057 35.9623 42.566 34.1132 42.566 32C42.566 26.1887 37.8113 21.434 32 21.434C35.6981 21.434 38.6038 26.1887 38.6038 32C38.6038 34.1132 38.2075 35.9623 37.5472 37.6793C37.0189 39.2642 36.0943 42.1698 36.0943 43.8868C36.0943 43.8868 37.6792 43.8868 37.9434 43.8868C38.2075 43.8868 38.6038 43.4906 38.6038 43.3585C38.8679 41.6415 40.1887 39.1321 40.8491 37.6793Z" fill="%23FF3333"/><path d="M46 19.8491L43.2264 22.6227C42.6981 23.151 41.9057 23.151 41.3774 22.6227C40.8491 22.0944 40.8491 21.3019 41.3774 20.7736L44.151 18C44.6793 17.4717 45.4717 17.4717 46 18C46.5283 18.5283 46.5283 19.3208 46 19.8491Z" fill="%23797979"/><path d="M33.3208 13.5094V17.4717C33.3208 18.1321 32.7925 18.7925 32 18.7925C31.3396 18.7925 30.6793 18.2642 30.6793 17.4717V13.5094C30.6793 12.8491 31.2076 12.1887 32 12.1887C32.7925 12.1887 33.3208 12.717 33.3208 13.5094Z" fill="%23797979"/><path d="M19.849 18L22.6226 20.7736C23.1509 21.3019 23.1509 22.0944 22.6226 22.6227C22.0943 23.151 21.3019 23.151 20.7736 22.6227L18 19.8491C17.4717 19.4528 17.4717 18.5283 18 18C18.5283 17.4717 19.3207 17.4717 19.849 18Z" fill="%23797979"/><path d="M13.5094 30.6792H17.4717C18.1321 30.6792 18.7924 31.2075 18.7924 32C18.7924 32.6604 18.2641 33.3208 17.4717 33.3208H13.5094C12.849 33.3208 12.1887 32.7925 12.1887 32C12.1887 31.2075 12.717 30.6792 13.5094 30.6792Z" fill="%23797979"/><path d="M18 44.151L20.7736 41.3774C21.3019 40.8491 22.0943 40.8491 22.6226 41.3774C23.1509 41.9057 23.1509 42.6981 22.6226 43.2264L19.849 46C19.3207 46.5283 18.5283 46.5283 18 46C17.4717 45.4717 17.4717 44.6793 18 44.151Z" fill="%23797979"/><path d="M44.151 46L41.3774 43.2264C40.8491 42.6981 40.8491 41.9057 41.3774 41.3774C41.9057 40.8491 42.6981 40.8491 43.2264 41.3774L46 44.151C46.5283 44.6793 46.5283 45.4717 46 46C45.4717 46.5283 44.6793 46.5283 44.151 46Z" fill="%23797979"/><path d="M37.9434 45.2076H33.3208H30.8113H26.1887C25.7925 45.2076 25.3962 45.6038 25.3962 46C25.3962 46.3962 25.7925 46.7925 26.1887 46.7925C26.5849 46.7925 27.3774 47.1887 27.3774 47.5849C27.3774 47.9811 27.9057 48.3774 28.434 48.3774C28.8302 48.3774 29.4906 48.7736 29.4906 49.1698V51.0189C29.4906 51.4151 29.7547 51.8113 30.151 51.8113H33.9811C34.3774 51.8113 34.6415 51.4151 34.6415 51.0189V49.1698C34.6415 48.7736 35.3019 48.3774 35.6981 48.3774C36.2264 48.3774 36.7547 47.9811 36.7547 47.5849C36.7547 47.1887 37.5472 46.7925 37.9434 46.7925C38.3396 46.7925 38.7359 46.3962 38.7359 46C38.7359 45.6038 38.3396 45.2076 37.9434 45.2076Z" fill="%23999999"/></svg>');
+}
+
+.admonition-example-icon {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="%23CDF1D3"/><path d="M41.9626 14.4906H20.8305C19.1492 14.4906 17.5366 15.1585 16.3477 16.3474C15.1588 17.5363 14.4909 19.1489 14.4909 20.8302V41.9623C14.4909 43.6437 15.1588 45.2562 16.3477 46.4451C17.5366 47.634 19.1492 48.3019 20.8305 48.3019H35.9855C37.1065 48.3019 38.1815 47.8566 38.9741 47.064L47.0643 38.9737C47.4568 38.5813 47.7681 38.1154 47.9805 37.6026C48.1929 37.0898 48.3022 36.5403 48.3022 35.9852V20.8302C48.3022 19.1489 47.6343 17.5363 46.4454 16.3474C45.2565 15.1585 43.644 14.4906 41.9626 14.4906ZM22.9437 21.8868H39.8494C40.2697 21.8868 40.6729 22.0538 40.9701 22.351C41.2673 22.6483 41.4343 23.0514 41.4343 23.4717C41.4343 23.8921 41.2673 24.2952 40.9701 24.5924C40.6729 24.8897 40.2697 25.0566 39.8494 25.0566H22.9437C22.5234 25.0566 22.1203 24.8897 21.823 24.5924C21.5258 24.2952 21.3588 23.8921 21.3588 23.4717C21.3588 23.0514 21.5258 22.6483 21.823 22.351C22.1203 22.0538 22.5234 21.8868 22.9437 21.8868ZM22.9437 32.4529C22.5234 32.4529 22.1203 32.2859 21.823 31.9887C21.5258 31.6914 21.3588 31.2883 21.3588 30.868C21.3588 30.4476 21.5258 30.0445 21.823 29.7473C22.1203 29.45 22.5234 29.2831 22.9437 29.2831H39.8494C40.2697 29.2831 40.6729 29.45 40.9701 29.7473C41.2673 30.0445 41.4343 30.4476 41.4343 30.868C41.4343 31.2883 41.2673 31.6914 40.9701 31.9887C40.6729 32.2859 40.2697 32.4529 39.8494 32.4529H22.9437ZM37.7362 45.3135V39.8491C37.7368 39.2888 37.9597 38.7517 38.3558 38.3555C38.752 37.9594 39.2891 37.7365 39.8494 37.7359H45.3136L37.7362 45.3135Z" fill="%234AD15F"/></svg>');
+}
+
+.admonition-nolabel-icon {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="%23CDF1D3"/><path d="M41.9626 14.4906H20.8305C19.1492 14.4906 17.5366 15.1585 16.3477 16.3474C15.1588 17.5363 14.4909 19.1489 14.4909 20.8302V41.9623C14.4909 43.6437 15.1588 45.2562 16.3477 46.4451C17.5366 47.634 19.1492 48.3019 20.8305 48.3019H35.9855C37.1065 48.3019 38.1815 47.8566 38.9741 47.064L47.0643 38.9737C47.4568 38.5813 47.7681 38.1154 47.9805 37.6026C48.1929 37.0898 48.3022 36.5403 48.3022 35.9852V20.8302C48.3022 19.1489 47.6343 17.5363 46.4454 16.3474C45.2565 15.1585 43.644 14.4906 41.9626 14.4906ZM22.9437 21.8868H39.8494C40.2697 21.8868 40.6729 22.0538 40.9701 22.351C41.2673 22.6483 41.4343 23.0514 41.4343 23.4717C41.4343 23.8921 41.2673 24.2952 40.9701 24.5924C40.6729 24.8897 40.2697 25.0566 39.8494 25.0566H22.9437C22.5234 25.0566 22.1203 24.8897 21.823 24.5924C21.5258 24.2952 21.3588 23.8921 21.3588 23.4717C21.3588 23.0514 21.5258 22.6483 21.823 22.351C22.1203 22.0538 22.5234 21.8868 22.9437 21.8868ZM22.9437 32.4529C22.5234 32.4529 22.1203 32.2859 21.823 31.9887C21.5258 31.6914 21.3588 31.2883 21.3588 30.868C21.3588 30.4476 21.5258 30.0445 21.823 29.7473C22.1203 29.45 22.5234 29.2831 22.9437 29.2831H39.8494C40.2697 29.2831 40.6729 29.45 40.9701 29.7473C41.2673 30.0445 41.4343 30.4476 41.4343 30.868C41.4343 31.2883 41.2673 31.6914 40.9701 31.9887C40.6729 32.2859 40.2697 32.4529 39.8494 32.4529H22.9437ZM37.7362 45.3135V39.8491C37.7368 39.2888 37.9597 38.7517 38.3558 38.3555C38.752 37.9594 39.2891 37.7365 39.8494 37.7359H45.3136L37.7362 45.3135Z" fill="%234AD15F"/></svg>');
+}
+
+/* Admonitions CSS ends*/
+
+.mw-parser-output .x-body {
+  background: #fff !important;
+}
+
+.mw-parser-output body {
+  line-height: 160%;
+  font-size: 14px !important;
+}
+
+.mw-parser-output body.mediawiki,
+.mw-parser-output body.x-body {
+  padding: 0px;
+}
+
+/* Heading CSS starts */
+
+.mw-parser-output h1 {
+  font-family: "Inter";
+  word-wrap: break-word;
+  word-break: break-word;
+  font-size: clamp(1.875rem, 22.1053px + 1.64474vw, 2.5rem);
+  line-height: 1.3;
+  color: #161616 !important;
+  font-weight: 500;
+}
+
+.mw-parser-output h2 {
+  color: #161616 !important;
+  font-size: clamp(1.59375rem, 18.7895px + 1.39803vw, 2.125rem);
+  line-height: 1.3;
+  font-weight: 500;
+  margin-top: 36px;
+  margin-bottom: 6px;
+  letter-spacing: normal;
+  font-family: "Inter";
+}
+
+.mw-parser-output h3 {
+  font-size: clamp(1.3125rem, 15.4737px + 1.15132vw, 1.75rem);
+  line-height: 1.5em;
+  margin-top: 36px;
+  margin-bottom: 6px;
+  letter-spacing: normal;
+  font-family: "Inter";
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: 500;
+  color: #161616 !important;
+}
+
+.mw-parser-output h4 {
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: normal;
+  font-family: "Inter";
+  margin-inline-start: -1.875rem;
+  padding-inline-start: 1.875rem;
+  margin-top: 36px;
+  margin-bottom: 6px;
+  font-size: clamp(1.125rem, 13.2632px + 0.986842vw, 1.5rem);
+  color: #161616 !important;
+}
+
+.mw-parser-output h5 {
+  margin-inline-start: -1.875rem !important;
+  padding-inline-start: 1.875rem !important;
+  line-height: 1.3;
+  letter-spacing: 1px !important;
+  margin-top: 36px !important;
+  margin-bottom: 6px !important;
+  font-size: clamp(1.1rem, 15.7053px + 0.394737vw, 1.25rem);
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  color: #161616 !important;
+  padding-top: 0.2em;
+  letter-spacing: normal;
+  font-family: "Inter";
+}
+
+.mw-parser-output h6 {
+  font-size: clamp(1.05rem, 15.8526px + 0.197368vw, 1.125rem);
+  line-height: 1.3;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: "Inter";
+  margin-top: 36px;
+  margin-bottom: 6px;
+  color: #161616 !important;
+}
+
+/* Heading CSS ends */
+
+/* Code CSS starts */
+.mw-parser-output code {
+  font-family: Consolas, Menlo, "DejaVu Sans Mono", "Liberation Mono", monospace;
+  color: #333333;
+  direction: ltr;
+  word-wrap: break-word;
+  /* white-space: pre-wrap; */
+  border-radius: 3px;
+  /* padding: 0.1em 0.2em; */
+  background-color: #e1e8f6;
+}
+
+/*
+.mw-parser-output pre,
+.mw-parser-output .mw-code {
+  border: 0.125rem solid #e6e6e6;
+  background-color: #f2f2f2;
+  white-space: pre-wrap;
+  word-spacing: normal;
+  word-break: break-word;
+  word-wrap: normal;
+  tab-size: 4;
+  hyphens: none;
+  margin: 1rem 0 0;
+  padding: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.3571;
+  overflow: auto;
+} */
+
+.mw-parser-output blockquote {
+  padding-left: 20px !important;
+  padding-right: 8px !important;
+  border-left-width: 5px !important;
+
+  font-style: italic;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  padding: 2px 0;
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 0;
+}
+
+/* Code CSS ends */
+
+/* Link CSS starts */
+.mw-parser-output a[href],
+.mw-parser-output a.fragment-icon {
+  font-size: 14px;
+  color: #1a6aff;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.mw-parser-output td a[href],
+.mw-parser-output td a.fragment-icon {
+  word-break: inherit;
+}
+
+.mw-parser-output a:not([href]):not(.fragment-icon) {
+  padding: unset !important;
+  color: inherit;
+  text-decoration: none;
+  word-break: normal;
+  cursor: text;
+  font-size: inherit;
+}
+
+.mw-parser-output a[href]:hover,
+.mw-parser-output a.fragment-icon:hover {
+  text-decoration: underline;
+  text-underline-offset: 20%;
+  color: #2f4ed1;
+}
+
+.mw-parser-output a[href]:active,
+.mw-parser-output a.fragment-icon:active {
+  padding: 0 0 0 0;
+  color: #111b58;
+}
+
+.mw-parser-output a[href]:link,
+.mw-parser-output a.fragment-icon:link {
+  padding: 0 0 0 0;
+  text-decoration: none;
+  color: #1a6aff;
+}
+
+/* Link CSS ends */
+
+/* Image CSS starts */
+
+.mw-parser-output p img {
+  margin: auto;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  box-sizing: content-box;
+  cursor: zoom-in;
+  transition: transform 0.3s cubic-bezier(0.2, 0, 0.2, 1) !important;
+  /* border: 1px solid #e6e6e6; */
+}
+
+.mw-parser-output p img[data-zoom="false"] {
+  cursor: default;
+}
+
+.mw-parser-output p {
+  word-wrap: break-word;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.mw-parser-output table p {
+  margin: 0%;
+}
+
+.mw-parser-output img.floatLeft {
+  border: none;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  border: 1px solid #e6e6e6;
+}
+
+.mw-parser-output img.floatRight {
+  border: none;
+  float: right;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  border: 1px solid #e6e6e6;
+}
+
+.mw-parser-output img {
+  max-width: 100% !important;
+  cursor: zoom-in;
+  transition: transform 0.3s cubic-bezier(0.2, 0, 0.2, 1) !important;
+}
+
+.mw-parser-output img {
+  max-width: 100% !important;
+}
+
+.mw-parser-output img[data-zoom="false"] {
+  cursor: default;
+}
+
+/* Image CSS ends */
+
+/* Table CSS starts */
+/* if above mw-parser-output there is a clASS called tablemodal dont use the table css */
+.mw-parser-output table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "Inter";
+  margin: 16px 0 30px;
+  font-size: 14px;
+  table-layout: auto;
+  display: block;
+  overflow-x: auto;
+}
+
+.tablemodal .mw-parser-output table {
+  width: 98% !important;
+  max-width: 100% !important;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "Inter";
+  margin: 16px !important;
+  font-size: 14px;
+  table-layout: auto;
+  display: table !important;
+}
+
+.mw-parser-output caption {
+  white-space: nowrap;
+  box-sizing: border-box;
+  color: #818a91;
+  text-align: left;
+  caption-side: top;
+  padding: 0.5rem 0;
+  font-weight: 500;
+}
+
+.mw-parser-output caption:empty {
+  display: none;
+}
+
+.mw-parser-output caption::before {
+  content: "Table: ";
+  font-weight: 800;
+  color: #999999;
+}
+
+.mw-parser-output td,
+.mw-parser-output th {
+  border: 1px solid #d2d2d2;
+  padding: 0.75rem;
+  vertical-align: top;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  white-space: normal;
+}
+
+/* Add center alignment for table headers */
+.mw-parser-output th {
+  text-align: center;
+}
+
+/* Force long words to break */
+.mw-parser-output td>*,
+.mw-parser-output th>* {
+  max-width: 100%;
+  /* word-break: break-word; */
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Improve table scrollbar styling */
+.mw-parser-output table::-webkit-scrollbar {
+  height: 8px;
+}
+
+.mw-parser-output table::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.mw-parser-output table::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.mw-parser-output table::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Add responsive behavior */
+@media screen and (max-width: 768px) {
+
+  .mw-parser-output td,
+  .mw-parser-output th {
+    min-width: 60px;
+    padding: 0.5rem;
+    font-size: 13px;
+  }
+}
+
+/* Table CSS ends */
+
+/* Right toc scroll css starts */
+#rtoccontainer::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+#rtoccontainer::-webkit-scrollbar-thumb {
+  background: rgba(128, 134, 139, 0.26);
+  border-radius: 8px;
+}
+
+/* Right toc scroll css ends */
+
+/* Product Tags start */
+.mw-parser-output #tag-OOng {
+  background-color: #ccf0ff;
+  padding: 2% 2% 2% 2%;
+  border: 1px solid #ccf0ff;
+  margin-top: 4%;
+  border-radius: 5px;
+  font-size: 16px !important;
+}
+
+.mw-parser-output div#tag-OOng::before {
+  content: "Information provided in this space is applicable only to the containerized version of Operations Orchestration (OO).";
+}
+
+.mw-parser-output #tag-codeless {
+  background-color: #ccf0ff;
+  padding: 2% 2% 2% 2%;
+  border: 1px solid #ccf0ff;
+  margin-top: 4%;
+  border-radius: 5px;
+  font-size: 16px !important;
+}
+
+.mw-parser-output div#tag-codeless::before {
+  content: "This topic is applicable to Service Manager Codeless only.";
+}
+
+.mw-parser-output #tag-nomsuitefooter {
+  background-color: #ccf0ff;
+  padding: 2% 2% 2% 2%;
+  border: 1px solid #ccf0ff;
+  /* margin-top: 4%; */
+  border-radius: 5px;
+  font-size: 16px !important;
+  line-height: 27px !important;
+  font-weight: normal !important;
+  margin-bottom: 24px;
+}
+
+.mw-parser-output div#tag-nomsuitefooter::before {
+  content: "This help center is designed to help you use the containerized NOM deployment.  To access help centers of the constituent products of non-containerized NOM, go to: ";
+}
+
+.mw-parser-output .nomlink {
+  width: fit-content;
+  display: contents;
+  cursor: pointer;
+  float: right;
+  color: #212644;
+}
+
+/* Product Tags ends */
+
+@media only screen and (min-width: 100px) and (max-width: 635px) {}
+
+@media only screen and (min-width: 100px) and (max-width: 767px) {}
+
+@media only screen and (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+.mw-parser-output div#probox {
+  width: unset !important;
+  max-width: 45% !important;
+  flex: 0 0 45% !important;
+  border: 1px solid #bdbec0;
+  border-radius: 5px;
+  margin: 5px 10px 5px 0px;
+  display: inline-flex !important;
+  min-height: 135px;
+}
+
+.mw-parser-output div#probox a {
+  font-size: 23px !important;
+}
+
+strong {
+  font-family: "Inter" !important;
+  font-weight: 600;
+}
+
+/*SBM CSS*/
+
+/*SBM Templates*/
+.mw-parser-output .unresolved {
+  color: black;
+  background-color: #87ceeb;
+}
+
+.mw-parser-output .noTemplate {
+  color: black;
+  background-color: yellow;
+}
+
+.mw-parser-output .base {
+  color: black;
+  background-color: #ffffff;
+}
+
+/* Style the filepath class so that it uses a "code" font */
+.mw-parser-output .filepath {
+  font-family: "Bitstream Vera Sans Mono", "Courier New", monospace;
+}
+
+.mw-parser-output figure {
+  margin: 1.5em 0;
+  display: table;
+  max-width: 100%;
+}
+
+.mw-parser-output figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.mw-parser-output figcaption {
+  display: table-caption;
+  white-space: nowrap;
+  box-sizing: border-box;
+  color: #818a91;
+  text-align: left;
+  caption-side: top;
+  padding: 0.5rem 0;
+  font-weight: 500;
+}
+
+.mw-parser-output figcaption:empty {
+  display: none;
+}
+
+.mw-parser-output figcaption::before {
+  content: "Figure: ";
+  font-weight: 800;
+  color: #999999;
+}
+
+.mw-parser-output .figdesc {
+  font-style: normal;
+}
+
+.mw-parser-output figure a {
+  padding: unset !important;
+}
+
+/* set font for userinput class */
+.mw-parser-output .userinput {
+  font-family: "Bitstream Vera Sans Mono", "Courier New", monospace;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* set font for systemoutput class */
+.mw-parser-output .sysout,
+.mw-parser-output .systemoutput {
+  font-family: "Bitstream Vera Sans Mono", "Courier New", monospace;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* Most link groups are created with <div>. Ensure they have space before
+     and after. */
+.mw-parser-output .ullinks {
+  list-style-type: none;
+}
+
+.mw-parser-output .ulchildlink,
+.mw-parser-output .olchildlink {
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+}
+
+.mw-parser-output .linklist {
+  margin-bottom: 0.83em;
+}
+
+.mw-parser-output .linklistwithchild,
+.sublinklist {
+  margin-left: 1.5em;
+  margin-bottom: 0.83em;
+}
+
+.mw-parser-output .relconcepts,
+.mw-parser-output .reltasks,
+.mw-parser-output .relref,
+.mw-parser-output .relinfo {
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+}
+
+.mw-parser-output .prereq,
+.mw-parser-output .prerequisite {
+  color: black;
+  background-color: #efefef;
+  padding: 5px 5px 5px 5px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+/* Simple lists do not get a bullet */
+
+/*
+.mw-parser-output ul.simple {
+  list-style-type: none;
+}
+
+ .mw-parser-output ul {
+  max-width: unset;
+  list-style-type: none;
+  margin: 16px 0 0px 38px;
+  padding: 0;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  line-height: 1.5;
+}
+
+.mw-parser-output ol {
+  max-width: unset;
+  display: block;
+  list-style-type: decimal;
+  margin: 16px 0;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  padding: 0 0 0 40px;
+  line-height: 1.5;
+}
+
+.mw-parser-output li {
+  margin: 5px 0 0 38px;
+} */
+
+/* new list style start */
+/* Base list styles - Ultra-minimal, compact design */
+
+.mw-parser-output ol,
+.mw-parser-output ul {
+  padding-left: 0;
+  margin: 6px 0;
+  line-height: 1.5;
+  max-width: 100% !important;
+  font-family: "Inter" !important;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Reset list item margins and add ultra-minimal spacing */
+.mw-parser-output li {
+  margin: 0;
+  margin-bottom: 3px;
+  padding: 0;
+  position: relative;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Ensure paragraphs within list items maintain consistent formatting */
+.mw-parser-output li p {
+  margin: 0;
+  line-height: inherit;
+}
+
+/* Ultra-minimal spacing for nested lists */
+.mw-parser-output li>ol,
+.mw-parser-output li>ul {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 0;
+}
+
+/* Ordered lists: Remove default styling, use custom numbering */
+.mw-parser-output ol {
+  list-style: none;
+  counter-reset: none;
+}
+
+.mw-parser-output ol li {
+  list-style: none;
+  position: relative;
+}
+
+/* Dynamic number positioning with professional styling */
+.mw-parser-output ol li::before {
+  content: attr(data-number) ".";
+  font-weight: 500;
+  color: #1f2937;
+  position: absolute;
+  left: calc(-1 * var(--number-spacing, 32px));
+  top: 0;
+  width: var(--number-width, 20px);
+  text-align: left;
+  line-height: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  white-space: nowrap;
+}
+
+/* Ensure ordered lists show numbers even when nested in unordered lists */
+.mw-parser-output ul ol li::before {
+  content: attr(data-number) ".";
+  font-weight: 500;
+  color: #1f2937;
+  position: absolute;
+  left: calc(-1 * var(--number-spacing, 32px));
+  top: 0;
+  width: var(--number-width, 20px);
+  text-align: left;
+  line-height: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  white-space: nowrap;
+}
+
+/* Handle deeply nested mixed lists with consistent styling */
+.mw-parser-output ul li ol li::before,
+.mw-parser-output ol li ul li ol li::before {
+  content: attr(data-number) ".";
+  font-weight: 500;
+  color: #1f2937;
+  position: absolute;
+  left: calc(-1 * var(--number-spacing, 32px));
+  top: 0;
+  width: var(--number-width, 20px);
+  text-align: left;
+  line-height: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  white-space: nowrap;
+}
+
+/* Unordered lists: Professional bullet styling */
+.mw-parser-output ul {
+  list-style: none;
+}
+
+.mw-parser-output ul li {
+  list-style: none;
+  position: relative;
+}
+
+/* Professional bullet positioning - ultra compact */
+.mw-parser-output ul li::before {
+  content: attr(data-bullet);
+  font-weight: 500;
+  color: #1f2937;
+  position: absolute;
+  left: -16px;
+  top: 0;
+  width: 12px;
+  text-align: center;
+  line-height: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Improved nested list spacing */
+.mw-parser-output li ol,
+.mw-parser-output li ul {
+  width: 100%;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.mw-parser-output li img {
+  width: auto;
+  object-fit: contain;
+  vertical-align: top;
+  margin: 0;
+  display: unset;
+}
+
+/* Ensure images are aligned properly within flex container */
+.mw-parser-output li:has(> p img) img,
+.mw-parser-output li:has(> a img) img,
+.mw-parser-output li:has(> img) img {
+  align-self: flex-start;
+}
+
+/* Ensure text wraps properly around images */
+.mw-parser-output li:has(> p img) p,
+.mw-parser-output li:has(> a img) a {
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+/* new list style end */
+
+/* Used on the first column of a table, when rowheader="firstcol" is used */
+.mw-parser-output .firstcol {
+  font-weight: bold;
+}
+
+/* Various basic phrase styles */
+.mw-parser-output .bold {
+  font-weight: bold;
+}
+
+.mw-parser-output .boldItalic {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.mw-parser-output .italic {
+  font-style: italic;
+}
+
+.mw-parser-output .underlined {
+  text-decoration: underline;
+}
+
+.mw-parser-output .Stem {
+  font-weight: bold;
+  page-break-after: avoid;
+}
+
+.mw-parser-output .wintitle {
+  font-weight: bold;
+}
+
+.mw-parser-output .uicontrol {
+  font-weight: bold;
+}
+
+.mw-parser-output a[href] .uicontrol,
+.mw-parser-output a.fragment-icon .uicontrol {
+  font-weight: normal;
+}
+
+.mw-parser-output.parmname {
+  font-weight: bold;
+}
+
+.mw-parser-output .kwd {
+  font-weight: bold;
+}
+
+.mw-parser-output .defkwd {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.mw-parser-output var,
+.mw-parser-output .var,
+.mw-parser-output .varname {
+  font-style: italic;
+}
+
+.mw-parser-output .shortcut {
+  text-decoration: underline;
+}
+
+/* Default of bold for definition list terms */
+.mw-parser-output .dlterm {
+  font-weight: bold;
+  padding-top: 0.83em;
+  padding-bottom: 0.25em;
+}
+
+/* Use CSS to expand lists with @compact="no" */
+.mw-parser-output .dltermexpand {
+  font-weight: bold;
+  margin-top: 0.83em;
+}
+
+/*Cell border styles*/
+.mw-parser-output .cellrowborder {
+  border-left: none;
+  border-top: none;
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+}
+
+.mw-parser-output .row-nocellborder {
+  border-left: none;
+  border-top: none;
+  border-right: hidden;
+  border-bottom: solid 1px;
+}
+
+.mw-parser-output .cell-norowborder {
+  border-left: none;
+  border-top: none;
+  border-right: solid 1px;
+  border-bottom: hidden;
+}
+
+.mw-parser-output .nocellnorowborder {
+  border-left: none;
+  border-top: none;
+  border-right: hidden;
+  border-bottom: hidden;
+}
+
+/* .mw-parser-output .linkissue {
+  background-color: rgb(235, 187, 187);
+  text-decoration: none;
+  border-bottom: #ea215a 0.125em solid;
+  text-underline-offset: 1.5px;
+} */
+
+.mw-parser-output .linkissue[href],
+.mw-parser-output .linkissue.fragment-icon {
+  color: #dc3545 !important;
+  border-bottom: 2px wavy #dc3545;
+  text-decoration: none;
+  cursor: not-allowed;
+  position: relative;
+}
+
+.mw-parser-output .linkissue[href]:hover,
+.mw-parser-output .linkissue.fragment-icon:hover {
+  color: #bd2130 !important;
+  text-decoration: none;
+}
+
+.mw-parser-output .linkissue[href]::before,
+.mw-parser-output .linkissue.fragment-icon::before {
+  content: "⚠️";
+  margin-right: 4px;
+  font-size: 14px;
+}
+
+/* Add new tooltip styles */
+.mw-parser-output .linkissue[href]:hover::after,
+.mw-parser-output .linkissue.fragment-icon:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 5px);
+  left: 0;
+  transform: none;
+  padding: 8px 12px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.mw-parser-output .Content_Banner {
+  font-size: 14px;
+  background-color: #dce4e8;
+  padding: 1% 2%;
+  font-weight: 500;
+  color: #014272;
+  border-radius: 5px;
+  line-height: 24px;
+  margin-bottom: 2%;
+}
+
+.mw-parser-output .codeHeader {
+  box-sizing: content-box;
+  background-color: #e6e6e6;
+  color: #161616;
+  border: 1px solid #e6e6e6;
+  border-bottom: 0;
+  flex-direction: row;
+  min-height: 30px;
+  margin-top: 16px;
+  font-size: 0.8rem;
+  display: flex;
+}
+
+.mw-parser-output .codeHeader>.language {
+  flex-grow: 1;
+  padding: 2px 16px;
+}
+
+.mw-parser-output .codeHeader>.action {
+  border: 0.125rem solid #e6e6e6;
+  color: #161616;
+  cursor: pointer;
+  background-color: aliceblue;
+  border-left-width: 1px;
+  align-items: center;
+  padding: 2px 10px;
+  line-height: normal;
+  display: flex;
+}
+
+.mw-parser-output .position-relative {
+  position: relative !important;
+}
+
+.mw-parser-output .icon {
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  width: 1em;
+  height: 1em;
+}
+
+.mw-parser-output .margin-right-xxs {
+  margin-inline-end: 0.5rem !important;
+}
+
+[data-error] {
+  border: 2px solid #f22613 !important;
+  position: relative;
+  cursor: pointer;
+}
+
+[data-error]:hover::before {
+  content: attr(data-error);
+  position: absolute;
+  top: -30px;
+  left: 0;
+  background-color: #dc143c;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+/*
+code[class*="language-"],
+pre {
+  font-family: Monaco, Consolas, "Andale Mono", "Ubuntu Mono", monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: unset;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+} */
+/*
+@media print {
+
+  code[class*="language-"],
+  pre {
+    text-shadow: none;
+  }
+} */
+/*
+pre,
+:not(pre)>code[class*="language-"] {
+  border-radius: 16px;
+  background: #f5f5f7;
+} */
+
+/* pre {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+:not(pre)>code[class*="language-"] {
+  padding: 0.15em 0.2em 0.05em;
+  border-radius: 0.3em;
+  border: 0.13em solid hsl(30, 20%, 40%);
+  box-shadow: 1px 1px 0.3em -0.1em black inset;
+  white-space: normal;
+} */
+/*
+pre {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+pre>code {
+  position: relative;
+  background-color: unset !important;
+}
+
+pre>code .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} */
+
+.line-numbers-rows>span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+
+.line-numbers-rows>span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
+.mw-parser-output a.externallink[href]::after,
+.mw-parser-output a.externallink.fragment-icon::after {
+  content: "";
+  width: 15px;
+  height: 19px;
+  margin-left: 1px;
+  vertical-align: text-top;
+  background-image: url("../images/action_expand32.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: inherit;
+  display: inline-block;
+}
+
+.mw-parser-output a.externalspace[href]::after,
+.mw-parser-output a.externalspace.fragment-icon::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  margin-left: 1px;
+  vertical-align: text-top;
+  background-image: url("../images/action_expand32.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: inherit;
+  display: inline-block;
+}
+
+.mw-parser-output .mention {
+  display: inline-block;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.mw-parser-output .mention-blue {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.mw-parser-output .mention-default {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+.mw-parser-output .mention-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.mw-parser-output p img {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+/* Remove right margin when image is followed by a period */
+.mw-parser-output p img.no-right-margin {
+  margin-right: 0;
+}
+
+/* pre styling starts */
+
+.mw-parser-output pre,
+.mw-parser-output .mw-code {
+  position: relative;
+  background: #f5f5f7 !important;
+  border-radius: 16px;
+  border: 1px solid #e6e6e6;
+  margin: 1.5rem 0;
+  padding: 3rem 1.5rem 1.5rem;
+  font-family: Monaco, Consolas, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Copy Button Styling */
+.mw-parser-output .copyButton {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s ease, opacity 0.2s ease;
+  opacity: 0.85;
+}
+
+.mw-parser-output .copyButton:hover {
+  background: #f0f0f0;
+  opacity: 1;
+}
+
+/* Copy Button Icon */
+.mw-parser-output .copyButton svg {
+  width: 16px;
+  height: 16px;
+  fill: #333;
+}
+
+/* Copied State */
+.mw-parser-output .copyButton.copied {
+  background: #d1e7dd;
+  color: #155724;
+  border-color: #badbcc;
+}
+
+.mw-parser-output .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 3rem;
+  left: 0;
+  width: 3em;
+  letter-spacing: -1px;
+  border-right: 1px solid #e6e6e6;
+  user-select: none;
+  padding: 1.5rem 0;
+}
+
+.mw-parser-output .line-numbers-rows>span {
+  display: block;
+  counter-increment: linenumber;
+  color: #999;
+  padding: 0 1rem;
+}
+
+.mw-parser-output .line-numbers-rows>span:before {
+  content: counter(linenumber);
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
+pre>code {
+  background: transparent !important;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+pre::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: #f5f5f7;
+  border-radius: 8px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: #d1d1d1;
+  border-radius: 8px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+}
+
+@media (max-width: 768px) {
+
+  .mw-parser-output pre,
+  pre,
+  .mw-parser-output .mw-code {
+    padding: 3rem 1rem 1rem;
+    font-size: 0.8125rem;
+  }
+
+  .copy-button {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+}
+
+@media (prefers-contrast: high) {
+  .copy-button {
+    border: 2px solid #000;
+  }
+
+  .copy-button.copied {
+    background: #000;
+    color: #fff;
+  }
+}
+
+@media print {
+
+  code[class*="language-"],
+  pre {
+    text-shadow: none;
+    background: #fff !important;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 1cm 0;
+    padding: 1cm;
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+
+  .copy-button {
+    display: none !important;
+  }
+
+  .line-numbers-rows {
+    border-right: 1px solid #999;
+    color: #666;
+  }
+
+  .mw-parser-output pre,
+  pre,
+  .mw-parser-output .mw-code {
+    background: none;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}
+
+.mw-parser-output a.image {
+  padding: unset !important;
+}
+
+.mw-parser-output .copyIcon.copied {
+  filter: brightness(0.6);
+}
+
+.mw-parser-output .copyIcon:hover {
+  filter: brightness(1.2);
+}
+
+.mw-parser-output .mw-parser-output pre {
+  padding: 1rem;
+  padding-top: 2.5rem;
+}
+
+.mw-parser-output .copyIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.mw-parser-output .copyIcon.copied {
+  filter: brightness(0.6);
+}
+
+.mw-parser-output .copyIcon:hover {
+  filter: brightness(1.2);
+}
+
+.mw-parser-output .tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.38);
+}
+
+.mw-parser-output .tooltip .tooltiptext {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: 1000;
+  min-width: 200px;
+  max-width: 300px;
+  background-color: #202124;
+  color: #ffffff;
+  text-align: left;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Inter";
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18), 0 3px 12px rgba(0, 0, 0, 0.12);
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+/* Show tooltip */
+.mw-parser-output .tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* description list, with terms and descriptions */
+.mw-parser-output dl {
+  margin: 16px 0;
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.mw-parser-output dl dt {
+  font-weight: 600;
+  color: #161616;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  padding-left: 0;
+}
+
+.mw-parser-output dl dt:first-child {
+  margin-top: 0;
+}
+
+.mw-parser-output dl dd {
+  margin-left: 24px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding-left: 0;
+  color: #333;
+}
+
+/* For nested description lists */
+.mw-parser-output dl dl {
+  margin: 8px 0 8px 24px;
+}
+
+/* Code styling within description lists */
+.mw-parser-output dl code {
+  font-family: Consolas, Menlo, "DejaVu Sans Mono", "Liberation Mono", monospace;
+  background-color: #e1e8f6;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+/* Link styling within description lists */
+.mw-parser-output dl a[href],
+.mw-parser-output dl a.fragment-icon {
+  color: #1a6aff;
+  text-decoration: none;
+}
+
+.mw-parser-output dl a[href]:active,
+.mw-parser-output dl a.fragment-icon:active {
+  color: #111b58;
+  text-decoration: none;
+}
+
+.mw-parser-output dl a[href]:hover,
+.mw-parser-output dl a.fragment-icon:hover {
+  text-decoration: underline;
+  text-underline-offset: 20%;
+  color: #2f4ed1;
+}
+
+.mw-parser-output p[style*="font-weight: bold"] *,
+.mw-parser-output p b,
+.mw-parser-output p strong {
+  font-weight: 700 !important;
+}
+
+.mw-parser-output td b,
+.mw-parser-output td strong,
+.mw-parser-output td[style*="font-weight: bold"] {
+  font-weight: 600 !important;
+}

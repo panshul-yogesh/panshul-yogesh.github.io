@@ -1,0 +1,5 @@
+{
+  "title": "New emails aren't processed",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p><br/>\nNew emails aren't processed.</p>\n<p class=\"mw-empty-elt\"></p>\n<h2 class=\"mw-headline\" id=\"Cause\">Cause</h2>\n<p>There might be problems with the On-Premises Bridge email integration task.</p>\n<h2 class=\"mw-headline\" id=\"Solution\">Solution</h2>\n<p>In the endpoint configuration dialog box, check if the last SyncEmailTask failed. If so, check the \\\\&lt;OPB_folder&gt;\\product\\log\\email-integration\\email-integration.log and \\\\&lt;OPB_folder&gt;\\product\\log\\controller\\controller.log files.</p>\n<p>The new task will start at the next cycle (at xx:00 or xx:30).</p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

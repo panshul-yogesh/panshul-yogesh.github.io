@@ -1,0 +1,5 @@
+{
+  "title": "Actual services",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>Each service definition contains zero or more <i>actual services</i>. The actual service is an instance of a service that benefits end users. It might be a business service or an infrastructure service. An actual service can also be a nontechnical service, such as a mailbox where you deliver letters and other physical documents.</p>\n<h2 class=\"mw-headline\" id=\"Related_topics\">Related topics</h2>\n<ul>\n<li><a href=\"/doc/423/26.1/addactualservice\" title=\"SMAX:25.1/AddActualService\">How to create an actual service record</a></li>\n<li><a href=\"/doc/423/26.1/editactualservicerec\" title=\"SMAX:25.1/EditActualServiceRec\">How to edit an actual service record</a></li>\n<li><a href=\"/doc/423/26.1/deleteactualservicerec\" title=\"SMAX:25.1/DeleteActualServiceRec\">How to delete an actual service record</a></li>\n<li><a href=\"/doc/423/26.1/actualservicewflw\" title=\"SMAX:25.1/ActualServiceWflw\">Actual service workflow</a></li>\n</ul>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "SACM configuration error",
+  "content": "<div class=\"mw-parser-output\">\n<div>When trying to edit the SACM configuration on Service Management, the following error occurs: \n<pre>\"Cannot invoke \"com.hp.maas.platform.tenantsettings.api.TenantSettingsData.getValue()\" because the return value of \"com.hp.maas.platform.tenantsettings.api.TenantSettingsEtagSupportRWCache.getTenantSetting(String)\" is null.</pre>\n<h2><a id=\"Cause\" name=\"Cause\" title=\"Cause\"></a>Cause</h2>\n<p>This may be due to the Redis cache that fails.</p>\n<h2><a id=\"Solution\" name=\"Solution\" title=\"Solution\"></a>Solution</h2>\n<p>You must restart the Service Management suite. For more details, see the <a href=\"/doc/423/26.1/restartsmasuite\" title=\"Restart the suite\">Restart the suite</a> page.</p>\n</div>\n</div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Create and build your own Content Pack",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>After creating an operation, you must create a content pack from your project, before you can deploy and use it in Central. You can create a content pack from a CloudSlang project using Maven or Workflow Designer.</p>\n<p><a href=\"/doc/423/26.1/buildcpmaven\" title=\"SMAX:25.1/BuildCPMaven\">Build a Content Pack using Maven</a></p>\n<p><a href=\"/doc/423/26.1/createcpui\" title=\"SMAX:25.1/CreateCPUI\">Create a Content Pack from Workflow Designer</a></p>\n<ul>\n</ul>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

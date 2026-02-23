@@ -1,0 +1,5 @@
+{
+  "title": "Install Audit collector (OpenShift)",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>Services that are integrated with the Audit service store the audits on the NFS file system when the audit service isn't reachable. Audit collector is a microservice that collects the audits from the NFS file system and passes them to the Audit service via REST. You can deploy the Audit collector using Helm charts.</p>\n<p>Install and configure Audit collector in each of the namespaces that contain the Audit producer services, for example, Service Management,and UD/UCMDB. Audit collector requires the Audit producer file system and it will use the Audit producer PVC and subpath.</p>\n<p>This section describes the steps to install the Audit collector.</p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

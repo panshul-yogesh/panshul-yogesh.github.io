@@ -1,0 +1,5 @@
+{
+  "title": "Suite isn't accessible",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>The suite is down and you can't access the suite.</p>\n<h2>Cause</h2>\n<p>Run the following command on the control plane node or bastion host:</p>\n<p><code>kubectl get pods --all-namespaces -o wide</code></p>\n<p>Check the last column for the IP addresses of the pods' worker nodes.</p>\n<p>These pods used to run in parallel, but all the pods are now running on a single node if the IP addresses are the same.</p>\n<h2 class=\"mw-headline\" id=\"Solution\">Solution</h2>\n<p>Check the node status by running the <code>kubectl describe node</code> command. Pay attention to the events and resource parts. To ensure a stable suite deployment, it's advisable that you use three control plane nodes and at least three worker nodes depending on your suite size.</p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

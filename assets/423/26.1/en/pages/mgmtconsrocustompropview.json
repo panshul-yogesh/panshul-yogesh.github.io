@@ -1,0 +1,5 @@
+{
+  "title": "View custom resource offering properties",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>Custom properties for resource offerings are user-defined properties that are used for communicating properties and values to providers to customize the functional service they provide. The custom properties can be used to provide any information that's expected by an Operations Orchestration flow. For example, you can use custom properties for a resource offering to provide a specific <code>VM_TEMPLATE_NAME</code> value to an instance of VMware vCenter.</p>\n<p>Perform the following steps to view the custom resource offering properties:</p>\n<ol>\n<li>In the <b>Offerings</b> tab, click the <b>Display Name</b> of the offering whose custom properties you want to view.</li>\n<li>In the <b>Properties</b> tab, review the custom properties created for the offering.</li>\n</ol>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

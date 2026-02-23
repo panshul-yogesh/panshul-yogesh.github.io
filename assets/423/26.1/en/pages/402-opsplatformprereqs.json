@@ -1,0 +1,5 @@
+{
+  "title": "Set up prerequisites",
+  "content": "<div class=\"mw-parser-output\">\n<p>After creating Operations Platform namespace, complete the following tasks before deploying Operations Platform based on your requirements:</p>\n<ul>\n<li>Create Operations Platform relational database using a script</li>\n<li>Enable TLS on PostgreSQL</li>\n<li>Enable TLS in Oracle</li>\n<li>Install Vertica</li>\n<li>Create storage class manually for AWS</li>\n<li>Create persistent volumes</li>\n<li>Create local persistent volumes on worker nodes</li>\n<li>Install storage provisioner chart </li>\n<li>Install AWS load balancer and configure service</li>\n</ul>\n</div>",
+  "modifiedon": "2026-01-30 13:44:08"
+}

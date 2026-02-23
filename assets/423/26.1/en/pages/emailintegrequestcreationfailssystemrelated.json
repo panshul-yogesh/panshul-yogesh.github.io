@@ -1,0 +1,5 @@
+{
+  "title": "Request creation fails due to validation errors",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p><br/>\nThe task to create a request via email fails. The user receives the following email notification:</p>\n<pre>We could not create your request because we need more information, which may be system-related. For details, contact your system administrator.\n\nTo create a new request, log in to the Service Portal.\n</pre>\n<h2 class=\"mw-headline\" id=\"Cause\">Cause</h2>\n<p>The creation of a request fails due to validation errors.</p>\n<h2 class=\"mw-headline\" id=\"Solution\">Solution</h2>\n<p>Fine-tune the request creation process:</p>\n<p>Make sure all users have an entitled default offering and that the default offering consists of default values for all mandatory request fields, OR that a request that has only a title and description can be created.</p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

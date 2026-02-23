@@ -1,0 +1,5 @@
+{
+  "title": "Copy a service design",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>To copy a service design, you must select a specific service design version to copy. For more information about versions, see Design versions. </p>\n<ol>\n<li>Select the design version you want to copy.</li>\n<li>Click the gear icon and select <b>Save As</b>.</li>\n<li>In the Save As dialog, enter a new display name and version.</li>\n<li>Click <b>Save</b>. The new service design appears.</li>\n</ol>\n<p>All parts of service design (such as the service component hierarchy, properties, and configuration options) are copied. The copied service design appears in the <b>All</b> Design area. After you copy a service design, any changes you make to the original or to the copy won't affect the other.</p>\n<h2 id=\"Related_topics\">Related topics</h2>\n<ul>\n<li><a href=\"/doc/423/26.1/mgmtconssdversionabout\" title=\"SMAX:25.1/MgmtConsSDVersionAbout\">Design versions</a></li>\n</ul>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

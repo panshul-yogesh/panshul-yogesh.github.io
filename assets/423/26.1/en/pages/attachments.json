@@ -1,0 +1,5 @@
+{
+  "title": "Attachments",
+  "content": "\n<div class=\"mw-parser-output\">\n<p>You can add attachments to a record if the record type supports attachments.</p>\n<p>Your suite administrator defines an \n    <a href=\"/doc/423/26.1/tenantdetails#File_settings\">attachment allowlist</a> \n    in Suite Administration. You can only upload attachments with a file type in this allowlist.\n  </p>\n<p>Each attachment file name mustn't exceed 200 characters in length.</p>\n</div>\n",
+  "modifiedon": "2025-10-24 08:51:12"
+}

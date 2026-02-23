@@ -1,0 +1,5 @@
+{
+  "title": "Integration user password expires",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p><br/>\nThe system indicates that the integration user password expires.</p>\n<h2 class=\"mw-headline\" id=\"Cause\">Cause</h2>\n<p>The integration user password expires and has to be reset.</p>\n<h2 class=\"mw-headline\" id=\"Solution\">Solution</h2>\n<p>Contact the suite admin user to reset the password for this user in Suite Administration. The system will then send an email to the configured email address of this user to set a new password.</p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

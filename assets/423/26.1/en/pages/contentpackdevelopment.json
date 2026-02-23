@@ -1,0 +1,5 @@
+{
+  "title": "OO Content development",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p id=\"System_requirements\">This topic provides content developers with guidelines for developing new operations for Operations Orchestration (OO). Operations are used to create new flows to execute inside Operations Orchestration's flow execution engine.</p>\n<p>To create new content, build an extension and deploy it to OO Central or Workflow Designer. An extension is an artifact that contains actions written in <code>Java, </code> <code>.NET, or python</code>.</p>\n<p>Actions are code blocks used to create new operations for OO in Advanced Flow Language (AFL) or CloudSlang language.</p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

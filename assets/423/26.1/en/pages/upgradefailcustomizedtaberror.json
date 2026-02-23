@@ -1,0 +1,5 @@
+{
+  "title": "Tenant upgrade fails with \"CustomizedTabConfigRestEndPointUpgrader\" error",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>The suite upgrade fails at the tenant upgrade stage. In the log file, there's a \"CustomizedTabConfigRestEndPointUpgrader\" error.</p>\n<h2 id=\"Cause\">Cause</h2>\n<p>There's a custom field added in Grid columns under the Customized Tab setting, but this field has already been deleted from Studio.</p>\n<h2 id=\"Solution\">Solution</h2>\n<p>Contact your support team to help skipping the \"CustomizedTabConfigRestEndPointUpgrader\" step during content upgrade.</p>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

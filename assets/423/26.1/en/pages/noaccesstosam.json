@@ -1,0 +1,5 @@
+{
+  "title": "Can't access SAM directly from the OO or Audit page",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\"></p><div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>You can't access SAM directly from the OO or Audit page, though it's displayed in the menu.</p>\n<h2 id=\"Cause\">Cause</h2>\n<p>When visiting SAM from OO or Audit, the port number of OO or Audit is wrongly included into the SAM URL as well. </p>\n<h2 id=\"Workaround\">Workaround</h2>\n<p>You can visit other modules of Service Management from the OO or Audit page at first, and then redirect to SAM.</p>\n<p class=\"mw-empty-elt\"></p></div>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

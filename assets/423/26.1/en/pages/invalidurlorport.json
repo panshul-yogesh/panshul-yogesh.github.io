@@ -1,0 +1,5 @@
+{
+  "title": "Error message \"CMS connection: Invalid URL or port\"",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\"></p><div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>When configuring CMS Gateway in Suite Administration, the following error is shown.<br/>\n<a class=\"image\" href=\"/file/images/5/5f/SMAX_Native_SACM_TS2.png\" title=\"/file/images/5/5f/SMAX_Native_SACM_TS2.png\"> <img alt=\"SMAX Native SACM TS2.png\" src=\"../../../images/SMAX_Native_SACM_TS2_10c21105.png\"/> </a></p>\n<h2>Cause</h2>\n<p>The UCMDB Gateway URL or port is invalid.</p>\n<h2>Solution</h2>\n<p>Make sure the UCMDB Gateway connection parameters are valid and the Gateway service is running. In addition, UCMDB Gateway requires SSL/TLS, so make sure HTTPS is used rather than HTTP even if HTTP is enabled on the UCMDB side.</p>\n<p class=\"mw-empty-elt\"></p></div>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

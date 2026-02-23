@@ -1,0 +1,5 @@
+{
+  "title": "Install and configure Vertica database",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\"></p><div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>If you plan to install CMP FinOps, you must install and configure the Vertica database as a prerequisite. For information, refer to <a href=\"/doc/423/26.1/installconfigureverticadb\">Install and configure Vertica database</a>.</p>\n<p class=\"mw-empty-elt\"></p></div>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Secure implementation and deployment",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><h2 id=\"Default_security_settings\">Physical security</h2>\n<p>It is recommended that the OO Workflow Designer is protected by physical security controls defined by your organization. The OO Workflow Designer server components are installed in a physically secured environment, according to best practice. For example, the server must be in a closed room with access control.</p>\n<h2 id=\"Related_topics\">Related topics</h2>\n<ul>\n<li><a href=\"/doc/423/26.1/installationsecuritydesigner\" title=\"SMAX:25.1/InstallationSecurityDesigner\">Secure installation guidelines</a></li>\n</ul>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

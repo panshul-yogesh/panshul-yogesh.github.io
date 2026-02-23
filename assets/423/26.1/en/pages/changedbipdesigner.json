@@ -1,0 +1,5 @@
+{
+  "title": "Change the database IP",
+  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p><br/>\nThis topic is relevant when you need to configure OO Workflow Designer to work with another database instance. All the database parameters, such as database credentials, schema name, tables, should be identical.</p>\n<ol>\n<li>Edit the file <b>&lt;installation_folder&gt;/designer/conf/database.properties</b>.</li>\n<li>Look for the <code>jdbc.url</code> parameter. For example: <code>jdbc.url=jdbc\\:jtds\\:sqlserver\\://16.60.185.109\\:1433/schemaName;sendStringParametersAsUnicode\\=true</code></li>\n<li>Change the IP address/FQDN of the database server.</li>\n<li>Save the file.</li>\n<li>Start OO Workflow Designer</li>\n</ol>\n<p class=\"mw-empty-elt\"></p></div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

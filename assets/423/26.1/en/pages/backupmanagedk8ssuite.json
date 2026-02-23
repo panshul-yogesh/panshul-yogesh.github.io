@@ -1,0 +1,5 @@
+{
+  "title": "Back up the suite before upgrade (managed Kubernetes)",
+  "content": "<div class=\"mw-parser-output\"><p>Always back up your suite data before upgrading. When you upgrade, keep backups of the data from the last two versions. For example, if you're upgrading to version 25.1, keep backups of versions 24.4 and 24.3. You can delete the backup of version 24.3 only after you've successfully upgraded to 25.1.</p>\n<p>For information on the backup procedure, see the <strong>Backup and Restore</strong> section under the <strong>Administer</strong> topic for the products and versions applicable to your deployment.</p>\n</div>",
+  "modifiedon": "2025-10-24 08:51:12"
+}

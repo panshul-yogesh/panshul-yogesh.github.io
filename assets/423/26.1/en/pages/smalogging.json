@@ -1,5 +1,0 @@
-{
-  "title": "SMA logging",
-  "content": "<div class=\"mw-parser-output\"><p>To see SMA logging regarding Native SACM, in the global logs directory, go to the folder <code>itom-xruntime-platform-&lt;pod id&gt;</code>. In this folder, there is the <code>maas_cms-x.log</code> file where the details are tracked. \n\n</p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

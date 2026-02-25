@@ -1,5 +1,0 @@
-{
-  "title": "License models",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>In the Service Management Software Asset Management module, a license model is a classification applied to license assets. Normalizing each license to a particular license model is a prerequisite. The license models home page displays details of your license models.</p>\n<h2 class=\"mw-headline\" id=\"Related_topics\">Related topics</h2>\n<ul>\n<li><a href=\"/doc/423/26.1/softwareassetmgmt\" title=\"SMAX:25.1/SoftwareAssetMgmt\">Software Asset Management</a></li>\n<li><a href=\"/doc/423/26.1/createlicensemodel\" title=\"SMAX:25.1/CreateLicenseModel\">How to create a license model</a></li>\n<li><a href=\"/doc/423/26.1/editlicensemodel\" title=\"SMAX:25.1/EditLicenseModel\">How to edit a license model</a></li>\n<li><a href=\"/doc/423/26.1/retirelicensemodel\" title=\"SMAX:25.1/RetireLicenseModel\">How to retire a license model</a></li>\n</ul>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

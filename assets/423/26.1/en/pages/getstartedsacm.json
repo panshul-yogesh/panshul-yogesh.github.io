@@ -1,5 +1,0 @@
-{
-  "title": "Get started with SACM",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>Before you use Service Asset and Configuration Management, it's helpful to learn a little about the user interface, the model that governs asset management in Service Management, the device and service workflow, Native SACM, and the basic ITIL v3 principles that are the foundation of Service Asset and Configuration Management.</p>\n<h2 id=\"Related_topics\">Related topics</h2>\n<ul>\n<li><a href=\"/doc/423/26.1/sacmuserinterface\" title=\"SMAX:25.1/sacmUserInterface\">SACM user interface</a></li>\n<li><a href=\"/doc/423/26.1/sacmconfig\" title=\"SMAX:25.1/sacmConfig\">Configure Service Asset and Configuration Management</a></li>\n<li><a href=\"/doc/423/26.1/sacmmodel\" title=\"SMAX:25.1/sacmModel\">Service Asset and Configuration Management model</a></li>\n<li><a href=\"/doc/423/26.1/sacmanditil\" title=\"SMAX:25.1/SacmAndItil\">SACM and ITIL</a></li>\n<li><a href=\"/doc/423/26.1/nativesacm\" title=\"SMAX:25.1/NativeSACM\">Native SACM</a></li>\n</ul>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

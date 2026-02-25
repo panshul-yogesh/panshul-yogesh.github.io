@@ -1,5 +1,0 @@
-{
-  "title": "Image aggregation page fails to load",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p><strong>Image Aggregation</strong> page isn't loaded when accessed from <strong>Main Menu &gt; Build &gt; Design &gt; Image Aggregation</strong>.</p>\n<h2 id=\"Cause\">Cause</h2>\n<p>The cause is unknown.</p>\n<h2 id=\"Solution\">Solution</h2>\n<p>Refresh the page to load the Image Aggregation page.</p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

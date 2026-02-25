@@ -1,5 +1,0 @@
-{
-  "title": "Dev2Prod - Offering rules aren't imported",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>When you run a Dev2Prod import, an offering is imported, but the rules of the offering are not. </p>\n<h2>Cause</h2>\n<p>A <strong>Set field based on routing definition</strong> rule is defined for the offering. </p>\n<p>During import, the data of the offering is imported first, and then the workflow. Because routing definitions can't be exported into a Dev2Prod package, during the workflow import, the routing definition defined in the rule can't be found and hence the workflow import is blocked. As a result, all rules of the offering are not imported. </p>\n<h2>Solution</h2>\n<p>This is a limitation of the Dev2Prod functionality. To resolve this issue:</p>\n<ol>\n<li>Create the same routing definition in the target tenant (<strong>Administration</strong> &gt; <strong>Routing Definitions</strong> &gt; <strong>New</strong>).</li>\n<li>Rerun the import.</li>\n</ol>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

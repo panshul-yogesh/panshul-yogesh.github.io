@@ -1,5 +1,0 @@
-{
-  "title": "Aggregation providers",
-  "content": "<div class=\"mw-parser-output\">\n<div id=\"tag-premium\"></div>\n<p>An aggregation provider consists of an end-point system and its properties to enable integration with the suite.</p>\n<p>For example, an aggregation provider can be added for Design and Deployment (DND), and then the published service designs from the particular provider can be aggregated into the suite. As a result, end users can request the aggregated offerings from the provider.</p>\n<div class=\"transcontent stn-begin--relatedTopics\"> </div>\n<h2 class=\"mw-headline\" id=\"Related_topics\">Related topics</h2>\n<p><a href=\"/doc/423/26.1/createaggregationproviders\" title=\"SMAX:25.1/CreateAggregationProviders\">Create and edit aggregation providers</a></p>\n<div class=\"transcontent stn-end--relatedTopics\"> </div>\n</div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

@@ -1,5 +1,0 @@
-{
-  "title": "Delete component template properties",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>To delete component template properties, perform the following steps:</p>\n<ol>\n<li>In the left pane of the Sequenced Components area, select the component palette that contains the component type whose template properties you want to delete.</li>\n<li>Click the component type whose template properties you want to delete.</li>\n<li>Select the <b>Templates</b> tab.</li>\n<li>In the templates list, click the template whose properties you want to delete.</li>\n<li>Click the gear icon for the property and select <b>Delete</b>.</li>\n<li>Click <b>Yes</b> in the confirmation dialog.</li>\n</ol>\n<p>Note that you can't delete these component template properties: locked properties (indicated by the <strong>Lock</strong> icon) or inherited properties.</p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

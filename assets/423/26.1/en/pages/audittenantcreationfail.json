@@ -1,5 +1,0 @@
-{
-  "title": "Create Tenant in Audit API fails",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>During tenant creation in Suite Administration, the tenant gets created in the Suite Administration, but not in the Audit service. You may see this message under the <strong>Operation history</strong> tab in Suite Administration:</p>\n<p><code>Fail to call Audit Api:Error occurred</code></p>\n<h2>Cause</h2>\n<p>This failure occurs because the Create Tenant in Audit API, which helps to create a tenant in the Audit service, has failed.</p>\n<h2>Solution</h2>\n<p>Create the tenant manually by running the Create Tenant in Audit API.</p>\n<h2>Related topic</h2>\n<p>To know more about Create Tenant in Audit API, see <a href=\"/doc/423/26.1/audittenantlifecycleapis\">Audit tenant lifecycle APIs</a>.</p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

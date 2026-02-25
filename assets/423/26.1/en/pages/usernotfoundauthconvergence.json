@@ -1,5 +1,0 @@
-{
-  "title": "\"User not found\" error when assigning role to user",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>A \"User not found\" error appears when you assign roles to a user.</p>\n<h2>Cause</h2>\n<p>One possible cause is that the user record is absent from IdM.</p>\n<h2>Solution</h2>\n<p>In Suite Administration, go to your tenant's IdM settings, and verify that the user is absent from IdM. Contact support to fix the user data for you.</p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

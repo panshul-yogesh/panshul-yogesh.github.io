@@ -1,5 +1,0 @@
-{
-  "title": "Only display 3rd level Record Categories on an Incident/Request/Change",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>In the category field on the request or incident form, it’s possible to only display the level 3 record categories. The following rule will search the level2Parent field and confirms that the value is populated, the level2parent field contains the name of the parent of the 3<sup>rd</sup> level value so it will only be populated if the record is a 3<sup>rd</sup> level category. A dummy value is used for the comparison, in this case, ‘Empty’. The rule will only compare it to valid values; categories with a null in the field will not be displayed in the drop-down list.</p>\n<p><a onclick=\"javascript:loadingImage(this);\"></a><a class=\"image\" href=\"/file/images/e/e6/xc_bre_ex5_1.png\" title=\"/file/images/e/e6/xc_bre_ex5_1.png\"> <img alt=\"xc bre ex5 1.png\" data-file-height=\"123\" data-file-width=\"891\" height=\"123\" src=\"../../../images/xc_bre_ex5_1_592f13a4.png\" width=\"891\"/> </a></p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

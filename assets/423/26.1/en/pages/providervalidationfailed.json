@@ -1,5 +1,0 @@
-{
-  "title": "Provider validation failed",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>While configuring resource providers with an HTTPS endpoint, you get the following override message:</p>\n<pre><code><strong>Provider Validation Failed</strong></code>\n\n<code>The provider information you have entered was unable to be validated successfully. This is most likely due to an invalid/unreachable URL or an untrusted provider certificate. Continue anyway?</code></pre>\n<p>This override appears even if you have configured the certificate in the DND truststore and entered the correct Resource Provider URL and credentials on the UI.</p>\n<h2>Cause</h2>\n<p>This issue occurs because of the custom trust manager as FIPS has a restriction on it.</p>\n<h2>Solution</h2>\n<p>Select <strong>Yes</strong> on the Provider Validation Failure override message to continue the resource provider configuration. </p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

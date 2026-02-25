@@ -1,5 +1,0 @@
-{
-  "title": "An error occurs when you create a record from an Incident if the title is too long",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>When you create a record (Problem/Article/News/Change/Request) from an Incident, if the title is too long, a \"Field value is not valid\" error occurs.</p>\n<h2>Cause</h2>\n<p>The logical type of the display label is \"Medium Text\" for Incident while the logical type of the display label is \"Small Text\" for the other records.</p>\n<h2>Solution</h2>\n<p>To work around this issue, revise the new record's title and include the details in the symptom description.</p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

@@ -1,5 +1,0 @@
-{
-  "title": "Services and CIs are no longer federated",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\"></p><div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>Services and CIs are no longer federated.</p>\n<h2>Cause</h2>\n<p>When Service Management can't connect to UCMDB for more than 2 hours, the WebSocket connections are closed. </p>\n<h2>Workaround</h2>\n<p>To restart the network connection, reset the UCMDB connection by running the following REST call with a Tenant Admin account.<br/>\nURL: <code>http(s)://&lt;hostname&gt;/rest/&lt;tenantId&gt;/cmsx/reset</code><br/>\nMethod: <code>PUT</code><br/>\nBody: <code>{}</code><br/>\n<br/>\n<strong>Note: </strong>Use your actual Service Management hostname and tenant ID to replace the placeholders.</p>\n<p class=\"mw-empty-elt\"></p></div>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

@@ -1,5 +1,0 @@
-{
-  "title": "Change Calendar",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><div>\n<p class=\"mw-empty-elt\"></p>\n</div>\n<p>Service Management's Change Calendar displays changes and <span class=\"SAW_VariablesTimePeriod\">time period</span>s, and allows you to view, schedule, and manage changes in a Gantt chart.</p>\n<p>There is also an individual Change Calendar displayed in the <b>Schedule</b> tab of each change record.</p>\n<h2 class=\"mw-headline\" id=\"Related_topics\">Related topics</h2>\n<ul>\n<li><a href=\"/doc/423/26.1/cmviewchangecalendar\" title=\"SMAX:25.1/cmViewChangeCalendar\">How to view the Change Calendar</a></li>\n<li><a href=\"/doc/423/26.1/usechangecalendar\" title=\"SMAX:25.1/UseChangeCalendar\">How to use the Change Calendar</a></li>\n<li><a href=\"/doc/423/26.1/changecalendarfilter\" title=\"SMAX:25.1/ChangeCalendarFilter\">How to filter records in the Change Calendar</a></li>\n</ul>\n<p class=\"mw-empty-elt\"></p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

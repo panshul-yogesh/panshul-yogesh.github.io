@@ -1,5 +1,0 @@
-{
-  "title": "Delete a service design component",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>When you delete a service component, all the subscriber option target bindings and component property mappings are also deleted.</p>\n<h2 id=\"To_delete_a_service_component\">To delete a service component</h2>\n<ol>\n<li>Select the service component you want to delete.</li>\n<li>Click the trash can icon.</li>\n<li>Click <b>Yes</b> to confirm the deletion.</li>\n</ol>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

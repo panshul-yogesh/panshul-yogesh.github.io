@@ -1,5 +1,0 @@
-{
-  "title": "Troubleshoot Audit service",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>The section provides the following troubleshooting tips:</p>\n<ul>\n<li><a href=\"/doc/423/26.1/audittenantcreationfail\" title=\"Create Tenant in Audit API fails\">Create Tenant in Audit API fails</a></li>\n<li><a href=\"/doc/423/26.1/loginauditsnotvisible\" title=\"Audits related to login events aren't visible in the Audit UI\">Audits related to login events aren't visible in the Audit UI</a></li>\n<li><a href=\"/doc/423/26.1/auditnotworkingforexistingtenants\" title=\"Audit service isn't working for existing tenants\">Audit service isn't working for existing tenants</a></li>\n</ul>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

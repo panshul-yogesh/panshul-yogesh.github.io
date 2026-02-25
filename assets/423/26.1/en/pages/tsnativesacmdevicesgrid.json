@@ -1,5 +1,0 @@
-{
-  "title": "The current count of total Device items is shown at the bottom but all rows are empty",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\"></p><div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><h2>Symptom</h2>\n<p>In the Devices grid, the current count of total items is shown at the bottom, however, all rows are empty.</p>\n<h2>Cause</h2>\n<p>The HTTP request headers with the Service Management token are removed from load balancers. The error.log of UCMDB Gateway reports the following error: api-gateway.GraphqlController authentication failed due to smax token is missing Error: authentication failed due to smax token is missing</p>\n<h2>Solution</h2>\n<p>Check if the \"underscores_in_headers on\" setting is correctly configured in the load balancers. See <a href=\"/doc/423/26.1/installcmshelm\" title=\"Install containerized UD/UCMDB (on-premises)\">Install containerized UD/UCMDB (on-premises)</a>.</p>\n<p class=\"mw-empty-elt\"></p></div>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

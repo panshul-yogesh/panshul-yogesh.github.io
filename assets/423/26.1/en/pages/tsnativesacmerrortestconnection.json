@@ -1,5 +1,0 @@
-{
-  "title": "An error occurs when you try to enable Native SACM",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\"></p><div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>You are in the process of enabling Native SACM, the <strong>Test connection</strong> is completed successfully. However, when you click <strong>Save</strong> to enable Native SACM, you may receive the following error message: </p>\n<p><code>The call to the pre-check function failed due to network problems.</code></p>\n<h2>Solution</h2>\n<p>Restart online and offline platform pods.</p>\n<p class=\"mw-empty-elt\"></p></div>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

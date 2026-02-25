@@ -1,5 +1,0 @@
-{
-  "title": "Accounting Periods",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><div id=\"tag-premium\"></div>\n<p>Accounting periods enable you to specify any period of time within a fiscal year to cover a set of financial statements.</p>\n<p>To create an accounting period, you must first create a fiscal year. For details, see <a href=\"/doc/423/26.1/createfiscalyear\" title=\"SMAX:25.1/CreateFiscalYear\">How to create a fiscal year record</a>.</p>\n<h2 class=\"mw-headline\" id=\"Related_topics\">Related topics</h2>\n<ul>\n<li><a href=\"/doc/423/26.1/accountperiodwflw\" title=\"SMAX:25.1/AccountPeriodWflw\">Accounting period workflow</a></li>\n<li><a href=\"/doc/423/26.1/createaccountperiod\" title=\"SMAX:25.1/CreateAccountPeriod\">How to create an accounting period record</a></li>\n<li><a href=\"/doc/423/26.1/editaccountperiod\" title=\"SMAX:25.1/EditAccountPeriod\">How to edit an accounting period record</a></li>\n</ul>\n<p class=\"mw-empty-elt\"></p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

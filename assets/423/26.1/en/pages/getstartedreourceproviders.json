@@ -1,5 +1,0 @@
-{
-  "title": "Resource providers",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>Deployment resource providers are management platforms that offer centralized control over the infrastructure and resources used in a cloud computing environment. For example, a provider such as VMware vCenter can deploy virtual machines, while a provider such as SiteScope can monitor applications.</p>\n<p>A provider corresponds to a specific instance of an application that can provision service designs. For example, to provision service designs that target VMware vCenter, you must first create a provider (with a provider type of VMware vCenter).</p>\n<p>For more information, see <a href=\"/doc/423/26.1/providers\">Deployment Resource Providers</a></p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

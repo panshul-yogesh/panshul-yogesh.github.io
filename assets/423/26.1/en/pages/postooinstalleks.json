@@ -1,5 +1,0 @@
-{
-  "title": "Post installation task for OO Containerized on AWS (EKS)",
-  "content": "<div class=\"mw-parser-output\"><p>After successful installation of OO Containerized, perform the following tasks:</p>\n<ol>\n<li><a href=\"/doc/423/26.1/399-configurealbeksooc\" title=\"Configure load balancers for OO\">Configure load balancers for OO</a></li>\n<li><a href=\"/doc/423/26.1/importoocertificateintosuite\" title=\"Import OO certificate into the suite\">Import OO certificate into the suite</a></li>\n</ol>\n<div> </div>\n</div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

@@ -1,5 +1,0 @@
-{
-  "title": "\"No License Found\" error during user login",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>The user gets a \"No License Found\" error when logging in to the Service Portal, and the user's Person record has an empty <code>License</code> field.</p>\n<h2>Cause</h2>\n<p>There are many possible causes for this issue. One common cause is that the <code>LicenseUsers_&lt;TENANTID&gt;</code> table in the <code>RMS</code> database has some wrong data with empty <code>users</code> value.</p>\n<p>To determine this is indeed the cause for the problem, connect to the xruntime <code>RMS</code> database, and run the following SQL:</p>\n<pre>select jsonb_typeof(body-&gt;'users') from \"LicenseUsers_&lt;TENANTID&gt;\" order by id DESC</pre>\n<p>If the query result is <code>NULL</code>, then this is the cause of the problem.</p>\n<h2>Solution</h2>\n<p>Contact support and provide the query results. Support will help fix the wrong data accordingly.</p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

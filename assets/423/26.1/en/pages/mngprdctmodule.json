@@ -1,5 +1,0 @@
-{
-  "title": "Manage product modules",
-  "content": "<div class=\"mw-parser-output\"><br/><div>This page explains product modules and lists the topics related to managing product modules.</div>\n<h2>Product module</h2>\n<p>A product module is a subset of a product model. It can represent a specific set of features or a specific subcomponent of the product. Product modules help break a product into manageable components, making it easier to classify and route requests effectively during request handling.</p>\n<h2>Topics related to managing product modules</h2>\n<ul>\n<li>Product module workflow</li>\n<li>Add product module</li>\n<li>View or edit product module</li>\n<li>Delete product module</li>\n</ul>\n</div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

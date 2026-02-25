@@ -1,5 +1,0 @@
-{
-  "title": "View resource offering property references",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>To view reference to a resource offering property, go to the <b>Properties</b> tab for a resource offering, and then click <b>View References</b> for the property.</p>\n<h2 class=\"mw-headline\" id=\"Reference_Types\">Reference Types</h2>\n<ul>\n<li><b>Service Designs: </b>Click the design link to view the design containing these references.</li>\n<li><b>Component Templates: </b>Click the template link to view the template containing these references.</li>\n<li><b>Lifecycle Actions: </b>Go to the <b>Lifecycle</b> tab to view these references.</li>\n<li><b>User Operations: </b>Go to the <b>User Operations</b> tab to view these references.</li>\n</ul>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

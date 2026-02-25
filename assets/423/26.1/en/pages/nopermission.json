@@ -1,5 +1,0 @@
-{
-  "title": "Received a failure response from the server. Please check your permission details and retry",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>The following error message appears while performing an action.</p>\n<p><code>You do not have permission to perform this action</code></p>\n<h2 class=\"mw-headline\" id=\"Cause\">Cause</h2>\n<p>This issue occurs when you are logged in as a user that doesn't have permission to perform the action.</p>\n<h2 class=\"mw-headline\" id=\"Solution\">Solution</h2>\n<p>Log in as a user with the appropriate permission. Or, ask the administrator to give you the permission to perform the action.</p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

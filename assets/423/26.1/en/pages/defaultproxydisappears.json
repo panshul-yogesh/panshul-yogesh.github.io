@@ -1,5 +1,0 @@
-{
-  "title": "Default proxy settings disappear while creating a provider integration",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>While creating an image aggregation provider integration, the default proxy settings disappear if you select Custom Proxy and then go back to System Default Proxy. The proxy host and port values disappear and you can't edit these settings.</p>\n<h2>Cause</h2>\n<p>System limitation.</p>\n<h2>Solution</h2>\n<p>Cancel the provider integration task and start over.</p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

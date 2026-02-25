@@ -1,5 +1,0 @@
-{
-  "title": "Service Design Components",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>Components are elements of service design. Only topology components are displayed in the Components tab. Sequenced components aren't associated with providers or provider types. From the Components tab, you can view the topology components associated with a specific provider instance and manage the topological components.</p>\n<p>For more information, see <a href=\"/doc/423/26.1/mgmtconssdservicecompabout\">Service Design Components</a>.</p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

@@ -1,5 +1,0 @@
-{
-  "title": "Reorder configuration option sets and options",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>The <b>Configuration Options</b> tab isn't editable if you publish the service design.</p>\n<p>To change to order of option sets or options:</p>\n<ol>\n<li>Select the service design version whose configuration options and option sets you want to reorder.</li>\n<li>Select the <b>Configuration Options</b> tab.</li>\n<li>Select an option set and then use &lt;Ctrl&gt;+ the arrow keys to move the selection in the list. You can also reorder an option set by clicking and dragging it.</li>\n<li>Click <b>Navigate to Option Set</b> to view the options for an option set.</li>\n<li>Select an option and then use &lt;Ctrl&gt;+ the arrow keys to move the selection in the list. You can also reorder an option by clicking and dragging it.</li>\n</ol>\n<p>For descriptions of the additional icons available on the <b>Configuration Options</b> tab, see Sequenced design configuration options.</p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

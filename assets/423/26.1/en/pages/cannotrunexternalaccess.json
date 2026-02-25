@@ -1,5 +1,0 @@
-{
-  "title": "Can't run the replaceExternalAccess.sh",
-  "content": "<div class=\"mw-parser-output\"><span class=\"snippet-start\" data-sname=\"423-25.4-423-25.3-CannotRunExternalAccess||N\"></span><p class=\"mw-empty-elt\">\n</p><p>When you try to run some OMT <code>Tools</code>, such as <code>replaceExternalAccess.sh</code>, you might get the following errors:</p>\n<pre>cdf chart doesn't exist, so you can not change FQDN</pre>\n<p>Or</p>\n<pre>Failed to find CDF_HOME. Please make sure CDF_HOME is in /root/itom-cdf.sh</pre>\n<h2>Cause</h2>\n<p>From 2021.05, you must enable the <code>Tools</code> capabilities on the bastion node before running any script or tools.</p>\n<h2>Solution</h2>\n<p>For how to enable the <code>Tools</code> capabilities, refer to the installation section for external Kubernetes deployments of OMT or the “Enable OMT capabilities Tools on a new bastion node” in the <strong>Administer</strong> section.</p>\n<p><br/>\n</p>\n<p class=\"mw-empty-elt\"></p><span class=\"snippet-end\" data-sname=\"423-25.4-423-25.3-CannotRunExternalAccess||N\"></span></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

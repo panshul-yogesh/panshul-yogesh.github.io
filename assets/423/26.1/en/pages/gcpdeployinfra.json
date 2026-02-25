@@ -1,5 +1,0 @@
-{
-  "title": "Deploy the infrastructure services",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\"></p><div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p><br/>\nAt the <b>Prepare</b> phase, the installation portal deploys the infrastructure services. Follow these steps to complete the OMT deployment.</p>\n<ol>\n<li>The <b>Deployment of Infrastructure Services</b> page lists the core foundation services in the deployment. After the deployment finishes, click <b>Next</b>.</li>\n<li>On the <b>Preparation Complete</b> page, click <b>Next</b> to complete the preparation.</li>\n</ol>\n<p>This will take you to the <b>Configure/Deploy</b> phase in the installation portal. After you click <b>Next</b>, you can't go back to the <b>Prepare</b> phase.</p>\n<p class=\"mw-empty-elt\"></p></div>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

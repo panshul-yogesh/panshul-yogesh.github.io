@@ -1,5 +1,0 @@
-{
-  "title": "(Optional) Install Audit collector on GCP",
-  "content": "<div class=\"mw-parser-output\"><p data-end=\"300\" data-start=\"0\">Services integrated with the Audit service store audits on the NFS file system when the Audit service isn't reachable. The Audit collector is a microservice that collects audits from the NFS file system and sends them to the Audit service through REST. You can deploy the Audit collector using Helm charts.</p>\n<p data-end=\"529\" data-start=\"302\">Install and configure the Audit collector in each namespace that contains Audit producer services, such as Service Management and UD/UCMDB. The Audit collector requires the Audit producer file system and uses the Audit producer PVC and subpath.</p>\n<p data-end=\"588\" data-start=\"531\">This section explains how to install the Audit collector.</p>\n<table>\n<thead>\n</thead>\n</table>\n</div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

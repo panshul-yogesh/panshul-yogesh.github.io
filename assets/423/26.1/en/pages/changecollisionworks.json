@@ -1,5 +1,0 @@
-{
-  "title": "How change collision detection works",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>If you have correctly set up the change collision detection feature, a user is unable to save a change that collides according to the rule configuration. The system displays a warning message, and the user must reschedule the change to avoid all collisions before the user can save the record.</p>\n<div class=\"Admonition_Note\">\n<p><span class=\"autonumber\">Note</span> The change collision detection feature takes into account only active changes.</p>\n</div>\n<h2 class=\"mw-headline\" id=\"Related_topics\">Related topics</h2>\n<ul>\n<li><a href=\"/doc/423/26.1/changecollision\" title=\"SMAX:25.1/ChangeCollision\">Change collision detection</a></li>\n<li><a href=\"/doc/423/26.1/changecollisionenable\" title=\"SMAX:25.1/ChangeCollisionEnable\">How to enable change collision detection</a></li>\n</ul>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

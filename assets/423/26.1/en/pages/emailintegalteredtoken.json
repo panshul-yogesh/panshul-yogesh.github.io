@@ -1,5 +1,0 @@
-{
-  "title": "Email fails to be processed due to invalid security token",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p><br/>\nThe user receives the following email notification:</p>\n<pre>We could not process your email. The email's security token may have been altered. Try to send it again by clicking the same action link/button.\n\nTo track or update the request, log in to the Service Portal.\n</pre>\n<h2 class=\"mw-headline\" id=\"Cause\">Cause</h2>\n<p>Service Management failed to process an email action due to an invalid or altered token.</p>\n<h2 class=\"mw-headline\" id=\"Solution\">Solution</h2>\n<p>Make sure that the bottom part of the incoming email that contains the security token isn't changed.</p>\n<p>Contact Support if the problem persists for multiple users.</p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

@@ -1,5 +1,0 @@
-{
-  "title": "Revoke authority to upgrade OMT",
-  "content": "<div class=\"mw-parser-output\"><span class=\"snippet-start\" data-sname=\"423-25.4-423-25.3-RevokeSudoUpg||N\"></span><p>This is an optional step. For security reasons, you may revoke the authority that you granted to the regular user after you've upgraded OMT. To revoke the authority after upgrade, remove the file <code>/etc/sudoers.d/OMT_cmnd_alias_upgrade</code> on all nodes.\n</p><span class=\"snippet-end\" data-sname=\"423-25.4-423-25.3-RevokeSudoUpg||N\"></span></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

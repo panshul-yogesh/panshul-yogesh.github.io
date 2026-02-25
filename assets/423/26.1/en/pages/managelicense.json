@@ -1,5 +1,0 @@
-{
-  "title": "Manage sold licenses",
-  "content": "<div class=\"mw-parser-output\"><br/><div>\n<div>This page explains the license classifications: Sold license and Purchased license, and lists the topics involved in managing sold licenses.</div>\n<h2>License classifications</h2>\n<div>\n<div>\n<ul>\n<li>Purchased Licenses: In the Software Asset Management (SAM) module, you can create license records to track the licenses your organization has purchased. These licenses are referred to as purchased licenses.</li>\n<li>Sold Licenses: When CSM is enabled, you can create license records in the Company Management module to track the licenses your organization has sold to its customers. These licenses are referred to as sold licenses.</li>\n</ul>\n</div>\n</div>\n</div>\n<div>\n<h2>Topics related to managing sold licenses</h2>\n<ul>\n<li>Sold license workflow</li>\n<li>Add sold license</li>\n<li>View or edit sold license</li>\n<li>Delete sold license<br/>\n\t </li>\n</ul>\n</div>\n</div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

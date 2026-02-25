@@ -1,5 +1,0 @@
-{
-  "title": "Fail to log in to Service Portal with server error",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>When you attempt to log in to Service Portal, the following error occurs:<br/>\n<code>Server Error. Please try to refresh, or come back in a few minutes.</code></p>\n<h2 class=\"mw-headline\" id=\"Cause\">Cause</h2>\n<p>This issues happens when the itom-xruntime-gateway service is restarted at the backend. When the service is recreated, it's assigned a new IP address by Kubernetes. However, Nginx in itom-xruntime-ui doesn't pick up the new IP address of itom-xruntime-gateway and still attempts to connect to the old IP address.</p>\n<h2 class=\"mw-headline\" id=\"Solution\">Solution</h2>\n<p>To work around this issue, restart the itom-xruntime-ui deployment/service.</p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

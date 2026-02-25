@@ -1,5 +1,0 @@
-{
-  "title": "Operations Orchestration doesn't support ping operation",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>Operations Orchestration which is internal to <strong>Design and Deploy</strong> doesn't support <strong>ping</strong> operation.</p>\n<p>The following error is displayed when you run the <strong>ping</strong> command.</p>\n<p><b>bash: ping: command not found</b>\n</p><h2 id=\"Cause\">Cause</h2>\n<p>The ping command is available in the <strong>iputils </strong>package. This<strong> </strong>package isn't available in<strong> </strong>OpenSUSE by default. </p>\n<h2 id=\"Solution\">Solution</h2>\n<p>Install the <strong>iputils </strong>package to start using the ping command.</p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

@@ -1,5 +1,0 @@
-{
-  "title": "Smart virtual agent stop words",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p><br/>\nStop words are words that are filtered out before processing of natural language data, smart virtual agent ignores these words when searching. The smart virtual agent stop words list can be found in:</p>\n<p><code>&lt;global NFS root folder&gt;/itsma-itsma-global/va/stopwords/stopwords.txt</code></p>\n<p>The out-of-the-box list includes stop words in English, French, and German, the users with root or sudo permission on the suite NFS server can edit the list.</p>\n<p>To add stop words in other languages, specify the language in [], and then add the stop words after the language name. For example, to add un and una in Spanish to the list, add them as below:</p>\n<pre>[spanish]\n\nun\n\nuna\n</pre>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

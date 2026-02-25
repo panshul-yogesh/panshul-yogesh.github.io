@@ -1,5 +1,0 @@
-{
-  "title": "The service level agreements and operational level agreements do not appear on the Targets tab",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>A user can view the agreements on the Targets tab, however, he/she can’t view the target-type-related data.</p>\n<h2>Cause</h2>\n<p>The user doesn't have permission for Service Level Target.</p>\n<h2>Solution</h2>\n<p>Grant permission for Service Level Target to the user's role.</p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

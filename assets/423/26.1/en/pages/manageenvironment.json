@@ -1,5 +1,0 @@
-{
-  "title": "Manage environments",
-  "content": "<div class=\"mw-parser-output\">\n \n\n<div>This page explains environments and lists the topics related to managing environments.</div>\n<h2><a id=\"Environment\" name=\"Environment\" title=\"Environment\"></a>Environment</h2>\n<p>An environment record captures details of the infrastructure where a customer's product instance is deployed. Environment information is helpful when handling cases related to the product instance. </p>\n<h2><a id=\"Topics_related_to_managing_environments\" name=\"Topics_related_to_managing_environments\" title=\"Topics related to managing environments\"></a>Topics related to managing environments</h2>\n<ul style=\"padding-left: 0px;\"><li style=\"margin-left: 28px; position: relative;\">Environment workflow</li><li style=\"margin-left: 28px; position: relative;\">Add environment</li><li style=\"margin-left: 28px; position: relative;\">View or edit environment</li><li style=\"margin-left: 28px; position: relative;\">Delete environment</li></ul>\n</div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

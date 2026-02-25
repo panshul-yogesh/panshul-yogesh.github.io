@@ -1,5 +1,0 @@
-{
-  "title": "Get started with OMT",
-  "content": "<div class=\"mw-parser-output\">\n<p>OMT stands for OPTIC Management Toolkit, the necessary tooling for installing and running containerized ITOM applications on Kubernetes. If you're just getting started with OMT and want to learn what it is, what it can do, and why you might need to use it, see <a href=\"/doc/406/25.4/getstarted\" title=\"Get started with OMT\">Get started with OMT</a>.</p>\n</div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

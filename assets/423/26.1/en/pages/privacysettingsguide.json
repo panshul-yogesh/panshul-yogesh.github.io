@@ -1,5 +1,0 @@
-{
-  "title": "Administrator and end user privacy settings guide",
-  "content": "<div class=\"mw-parser-output\">\n<div></div>\n<p><em>The</em> <i>Service Management &amp; ESM Privacy Settings Guide for Administrators and End Users</i> is available on the <a href=\"https://portal.microfocus.com/s/article/KM000001544\" title=\"Software Support Portal\">Software Support Portal</a>. This document provides information about how the solution collects personally identifiable information (PII) and how to configure privacy settings. Use this document as guidance for following requirements from regulations like GDPR or CCPA. To download this document, log on to the Software Support Portal and ensure that you configure your account to contain a valid Service Agreement ID (SAID).</p>\n<p>Configure entitlements and remove <strong>PII</strong> data before importing it into Service Management to prevent exposing entities with <strong>PII</strong> to all users within the tenant.</p>\n</div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

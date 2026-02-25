@@ -1,5 +1,0 @@
-{
-  "title": "Mapping records created from an idea record",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><div>\n<p class=\"mw-empty-elt\"></p>\n</div>\n<p>The following tables list those fields and associations whose contents are, by default, copied to a record created from an idea record.</p>\n<h2 class=\"mw-headline\" id=\"Idea_record_to_new_proposal_record\">Idea record to new proposal record</h2>\n<table>\n<tbody>\n<tr>\n<th>Idea record field</th>\n<th>Proposal record field</th>\n</tr>\n<tr>\n<td>Title</td>\n<td>Title</td>\n</tr>\n<tr>\n<td>Description</td>\n<td>Description</td>\n</tr>\n</tbody>\n</table>\n<h2 class=\"mw-headline\" id=\"Idea_record_to_new_change_record\">Idea record to new change record</h2>\n<table>\n<tbody>\n<tr>\n<th>Idea record field</th>\n<th>Change record field</th>\n</tr>\n<tr>\n<td>Title</td>\n<td>Title</td>\n</tr>\n<tr>\n<td>Created by</td>\n<td>Reported by</td>\n</tr>\n<tr>\n<td>Description</td>\n<td>Description</td>\n</tr>\n</tbody>\n</table>\n<p class=\"mw-empty-elt\"></p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

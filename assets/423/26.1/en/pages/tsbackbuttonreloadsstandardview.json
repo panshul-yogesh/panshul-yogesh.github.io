@@ -1,5 +1,0 @@
-{
-  "title": "Clicking the Back button reloads the standard view",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>Clicking the <strong>Back</strong> button reloads the standard view instead of using the previous state filter in the SACM module. This issue occurs if you have entered the grid through tiles on the SACM landing page.</p>\n<h2>Solution</h2>\n<p>To work around this issue, you can enter the grid by selecting the menu item on the SACM page, now, the added filter won't disappear after you drill down into a record's detail page and then click the <strong>Back</strong> button to return.</p>\n<p>Alternatively, you can define a customized view, and click the view to recover the filter after going back from any record detail pages.</p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

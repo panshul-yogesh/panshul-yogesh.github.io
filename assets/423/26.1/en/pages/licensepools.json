@@ -1,5 +1,0 @@
-{
-  "title": "License pools",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>Licenses pools provides a centralized management of license capacity and assignments. Licenses are added to license pools, then you can assign a combination of multiple licenses to the tenants.</p>\n<p>You can create license pools by business function, organization, or license mode.</p>\n<div class=\"Admonition_Note\"><span class=\"autonumber\">Note:</span> You don't need a license to deploy the Service Manager tenant, so the Service Manager tenant isn't listed for selection.</div>\n<h2 class=\"mw-headline\" id=\"Related_topics\">Related topics</h2>\n<ul>\n<li><a href=\"/doc/423/26.1/createlicensepools\" title=\"SMAX:25.1/CreateLicensepools\">How to create and edit a license pool</a></li>\n<li><a href=\"/doc/423/26.1/licensesmgmt\" title=\"SMAX:25.1/LicensesMgmt\">Licenses</a></li>\n</ul>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

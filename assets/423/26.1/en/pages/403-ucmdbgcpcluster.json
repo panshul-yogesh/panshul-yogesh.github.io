@@ -1,5 +1,0 @@
-{
-  "title": "Create a node pool for UD/UCMDB",
-  "content": "<div class=\"mw-parser-output\"><br/><p>To create a NODE POOL for UD/UCMDB, follow these steps:</p>\n<ol>\n<li>Log in to the Google Cloud Platform Console at <a class=\"external free\" href=\"https://console.cloud.google.com/\" rel=\"nofollow\" target=\"1\" title=\"https://console.cloud.google.com/\">https://console.cloud.google.com/</a>.</li>\n<li>\n<p>From the left navigation bar, select <b>CLUSTER &gt; select your cluster &gt; NODES &gt; ADD NODE POOL, </b>and populate the following fields:</p>\n<p>Make sure you define one Kubernetes label: <b>worker: ucmdb.</b></p>\n</li>\n</ol>\n<p>For details about the number of nodes, see <a href=\"/doc/423/26.1/ekssizing#Additional_hardware_requirements_for_CMS\" title=\"Sizing on GCP\">Sizing on GCP</a>.</p>\n</div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

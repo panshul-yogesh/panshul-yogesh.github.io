@@ -1,5 +1,0 @@
-{
-  "title": "Software titles",
-  "content": "<div class=\"mw-parser-output\">\n<div id=\"tag-premium\"></div>\n<div class=\"transcontent stn-begin--SoftwareTitles\"> </div>\n<div class=\"Admonition_Note\">\n<p><span class=\"autonumber\">Note</span> This functionality isn't fully developed, and is only available on a restricted release basis.</p>\n</div>\n<p>In Service Management, <b>software titles</b> are a type of asset model: a classification that's applied to your installed software to help define how it's managed. An <strong>installation</strong> is a software installed on a device that conforms to a software title.</p>\n<p>Synchronization enables UCMDB to populate Service Management with details of your installations, and based on that information, software titles are created. In addition, details of the software installed on a device are displayed on the <b>Software</b> tab of the device record.</p>\n<div class=\"transcontent stn-end--SoftwareTitles\"> </div>\n</div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

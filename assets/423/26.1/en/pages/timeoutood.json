@@ -1,5 +1,0 @@
-{
-  "title": "Change the session timeout limit for OO Workflow Designer",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>You can change the default session timeout (30 minutes) of the OO Workflow Designer server by configuring the <b>tomcat web.xml</b> file.</p>\n<p>To change the timeout limit for OO Workflow Designer server:</p>\n<ol>\n<li>Open the <b>&lt;installation_folder&gt;/designer/tomcat/conf/web.xml</b> file with any XML editor.</li>\n<li>\n<p>Search for the following property:</p>\n<pre><code>&lt;session-config&gt; &lt;session-timeout&gt;30&lt;/session-timeout&gt; &lt;/session-config&gt;</code></pre>\n</li>\n<li>\n<p>Change the <b>&lt;session-timeout&gt;</b> value in minutes as required and save the file.</p>\n</li>\n<li>\n<p>Restart the OO Workflow Designer server.</p>\n</li>\n</ol>\n<h2 id=\"Related_topics\">Related topics</h2>\n<ul>\n<li>To change the service name, see <a href=\"/doc/423/26.1/changeservicenameood\" title=\"SMAX:25.1/ChangeServiceNameOOD\">Change the service name</a> topic.</li>\n</ul>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

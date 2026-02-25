@@ -1,5 +1,0 @@
-{
-  "title": "System status check fails",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>As part of the suite version update precheck, the suite system status check is mainly focused on the status of all pods. If any pod is in Failed status, the status check will fail and you can't continue.</p>\n<h2 class=\"mw-headline\" id=\"Cause\">Cause</h2>\n<p>The root cause may be different from one pod to another. One possible cause lies in the fluentd and itom-logrotate daemonsets, both of which aren't used by SMA.</p>\n<h2 class=\"mw-headline\" id=\"Solution\">Solution</h2>\n<p>Run the following commands on a control plane node (embedded Kubernetes) or the bastion node (managed Kubernetes) to delete the fluentd and itom-logrotate daemonsets:</p>\n<pre>kubectl delete daemonset fluentd --namespace=core \nkubectl delete daemonset itom-logrotate --namespace=core \n</pre>\n<p>Then, retry the version update precheck. If the problem still persists, contact the support team.</p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

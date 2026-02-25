@@ -1,5 +1,0 @@
-{
-  "title": "Selected file is invalid or corrupted",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>The capsule installation fails and you may come across any one of the following error messages:</p>\n<ol>\n<li><code><span style=\"font-size:12.0pt\"><span style='font-family:\"Segoe UI\"'>Selected file is invalid or corrupted, please select a valid content to install</span></span></code></li>\n<li><code><span style=\"font-size:12.0pt\"><span style='font-family:\"Segoe UI\"'>Selected file doesn't contain a valid content manifest, please select a valid content to install</span></span></code></li>\n</ol>\n<h2>Causes</h2>\n<ol>\n<li>The first error occurs if the selected capsule file isn't a zip file.</li>\n<li>The second occurs if the manifest file isn't present inside the capsule zip.</li>\n</ol>\n<h2>Solution</h2>\n<p> Select a valid capsule file to install.</p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

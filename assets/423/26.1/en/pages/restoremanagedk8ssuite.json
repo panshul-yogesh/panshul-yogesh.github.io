@@ -1,5 +1,0 @@
-{
-  "title": "Restore the suite when upgrade fails (managed Kubernetes)",
-  "content": "<div class=\"mw-parser-output\"><p>If the suite version update fails, you need to restore the suite. </p>\n<p>For details, see the <strong>SMA Restore Procedures</strong> topic in the help center for the version you upgrade from. </p>\n</div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

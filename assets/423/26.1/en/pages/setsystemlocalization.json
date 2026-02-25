@@ -1,5 +1,0 @@
-{
-  "title": "Set the system localization",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>If your OO Workflow Designer system is localized, you will need to set the properties to reflect the system locale, in the designer-wrapper.conf file.</p>\n<ol>\n<li>Open the designer-wrapper.conf file in a text editor (located under &lt;installation_folder&gt;/designer/conf).</li>\n<li>Edit the following properties:\n\t<pre>set.LANG=\nset.LC_ALL=\nset.LANGUAGE=\nwrapper.java.additional.&lt;x&gt;=-Duser.language=\nwrapper.java.additional.&lt;x&gt;=-Duser.country=\n</pre>\n<pre>For example, for Japanese: \nset.LANG=ja_JP \nset.LC_ALL=ja_JP </pre>\n</li>\n<li>Save the designer-wrapper.conf file.</li>\n</ol>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

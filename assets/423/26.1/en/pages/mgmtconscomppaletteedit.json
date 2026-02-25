@@ -1,5 +1,0 @@
-{
-  "title": "Edit a component palette",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><h2 class=\"mw-headline\" id=\"To_edit_a_component_palette\">To edit a component palette</h2>\n<ol>\n<li>Click the gear icon and select <b>Manage Component Palettes</b>.</li>\n<li>In the Component Palettes dialog, select a component you want to edit.</li>\n<li>Click the <b>Edit Component Palette</b> icon.</li>\n<li>Offer the desired information, and click <b>Save</b>. For information about the specific fields, see Create a component palette.</li>\n<li>Click <b>Save</b> and then click <b>Done</b>.</li>\n</ol>\n<h2 class=\"mw-headline\" id=\"Related_topics\">Related topics</h2>\n<ul>\n<li><a href=\"/doc/423/26.1/mgmtconscomppalettecreate\" title=\"SMAX:25.1/MgmtConsCompPaletteCreate\">Create a component palette</a></li>\n</ul>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

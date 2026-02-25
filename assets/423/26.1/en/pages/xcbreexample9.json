@@ -1,5 +1,0 @@
-{
-  "title": "Send notification to first non-empty recipient",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>One common use of the expression language is building a list of recipients. In the below example the email will be sent to the first non-empty value, either the manager of the reported by person or the reported by person themselves.</p>\n<p><a onclick=\"javascript:loadingImage(this);\"></a><a class=\"image\" href=\"/file/images/d/d5/xc_bre_ex9_1.png\" title=\"/file/images/d/d5/xc_bre_ex9_1.png\"> <img alt=\"xc bre ex9 1.png\" data-file-height=\"89\" data-file-width=\"1075\" height=\"89\" src=\"../../../images/xc_bre_ex9_1_22e5fe32.png\" width=\"1075\"/> </a></p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

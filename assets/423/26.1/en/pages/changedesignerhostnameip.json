@@ -1,5 +1,0 @@
-{
-  "title": "Change the hostname or IP",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>If the hostname/IP has changed in OO Workflow Designer, you must manually update this hostname/IP address.</p>\n<ol>\n<li>\n<p>If you are using an OO Workflow Designer certificate, generate a new certificate with the new FQDN.</p>\n<p>It's not recommended to use the IP address.</p>\n<p>You must also replace the certificate in the OO Workflow Designer keystore.</p>\n</li>\n<li>Restart OO Workflow Designer.</li>\n</ol>\n<h2 class=\"mw-headline\" id=\"Related_topics\">Related topics</h2>\n<p><a href=\"/doc/397/2018.05/administer/security_hardening_ood/authenticateservercertificate/replace_the_ood_tls_server_certificate\" title=\"Operations Orchestration:2018.05/Administer/Security Hardening OOD/AuthenticateServerCertificate/Replace the OOD TLS server certificate\">Replace the OO Workflow Designer TLS server certificate</a></p>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

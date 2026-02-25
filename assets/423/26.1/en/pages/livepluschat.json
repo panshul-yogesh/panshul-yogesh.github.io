@@ -1,5 +1,0 @@
-{
-  "title": "Live Support and chat",
-  "content": "<div class=\"mw-parser-output\">\n<p>Service Management supports integration with your Computer Telephony Integration (CTI) system, enabling automatic display of relevant information. Service Management also allows you to enable chat capability for use with service requests, support requests, and case requests.</p>\n<h2 class=\"mw-headline\" id=\"Related_topics\"><a id=\"Related-topics\" name=\"Related-topics\" title=\"Related topics\"></a>Related topics</h2>\n<ul>\n<li><a href=\"/doc/423/26.1/chatoverview\" title=\"SMAX:25.1/ChatOverview\">Chat capability for the Service Portal</a></li>\n<li><a href=\"/doc/423/26.1/ctilivesupport\" title=\"SMAX:25.1/ctiLiveSupport\">How to configure Live Support with CTI</a></li>\n<li><a href=\"/doc/423/26.1/enablechat\" title=\"SMAX:25.1/EnableChat\">How to enable chat capability for the Service Portal</a></li>\n<li><a href=\"/doc/423/26.1/anonymousagent\" title=\"SMAX:25.1/AnonymousAgent\">How to configure support agent anonymity</a></li>\n</ul>\n</div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}

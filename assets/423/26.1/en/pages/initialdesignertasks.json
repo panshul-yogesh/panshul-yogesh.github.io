@@ -1,5 +1,0 @@
-{
-  "title": "Initial administration tasks",
-  "content": "<div class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p><p>This topic includes administration tasks that you will perform once while setting up Operations Orchestration (OO) Workflow Designer after installation.</p>\n<p>The following subtopics are covered in this topic:</p>\n<ul>\n<li><a href=\"/doc/423/26.1/administeridmood\" title=\"SMAX:25.1/AdministerIdMOOD\">Administer IdM in OO Workflow Designer</a></li>\n<li><a href=\"/doc/423/26.1/manageauthenticationood\">Manage user authentication in OO Workflow Designer</a></li>\n</ul>\n<p class=\"mw-empty-elt\"></p></div>",
-  "modifiedon": "2025-10-24 08:51:12"
-}
